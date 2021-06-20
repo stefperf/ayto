@@ -7,8 +7,8 @@ SUMMARY
 
 PERFORMANCE STATS
 -----------------
-- The solver won 50 out of 50 test games, or 100.00% of them. 
-- On average, a victory took 7.88 days.
+- The solver won 100 out of 100 test games, i.e. 100.00% of them. 
+- On average, a victory took 7.93 days.
 - On my MacBook Air with processor 2.2 GHz Dual-Core Intel Core i7, it takes about 1 minute on average to solve a game.
 
 ALGORITHM
