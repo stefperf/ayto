@@ -16,7 +16,7 @@ ALGORITHM
 The solver:
 1. tracks all the still admissible permutations as its search space
 2. exactly prunes the search space based on every test result
-3. tries to optimally choose one test at a time, in a greedy way (which is probably optimal)
+3. tries to optimally choose one test at a time, in a greedy way (which is probably optimal anyway)
 4. chooses one of the M-test with maximum [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) among all possible M-tests
     1. the M-test result probabilities (coinciding with the couple probabilities) needed for these entropy calculations are re-computed whenever needed from the still admissible permutations
 5. chooses one of the N-test with maximum entropy among an adaptive number of randomly chosen possible N-tests; the number is increased as the search space and consequently the computational cost grow smaller
