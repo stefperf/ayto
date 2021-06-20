@@ -26,4 +26,4 @@ However, 5. could be easily parallelized in order to assess all possible N-tests
 
 ACKNOWLEDGEMENTS
 ----------------
-Many thanks to Daniel Ronde for identifying and formulating the problem.
+Many thanks to Daniel Ronde for presenting the problem to me.
