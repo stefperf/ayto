@@ -2,7 +2,11 @@
 
 DESCRIPTION
 -----------
-Solving the information theory problem underlying the reality show "Are You the One?", 1st season.
+Solving the information theory problem underlying the reality show "Are You the One?", 1st season. Developed with Python 3.9.1.
+
+STATS
+-----
+
 
 ACKNOWLEDGEMENTS
 ----------------
