@@ -2,7 +2,7 @@
 
 DESCRIPTION
 -----------
-Solving the information theory problem implicit in the reality show "Are You the One?", 1st season.
+Solving the information theory problem underlying the reality show "Are You the One?", 1st season.
 
 ACKNOWLEDGEMENTS
 ----------------
