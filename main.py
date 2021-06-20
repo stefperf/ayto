@@ -80,7 +80,7 @@ for game_nr in range(1, n_games + 1):
         print(f'The solver lost game # {game_nr}.')
     if not (game_nr % 10):
         print()
-        print(f'The solver won {n_games_won} out of {game_nr} test games, or '
+        print(f'The solver won {n_games_won} out of {game_nr} test games, i.e. '
               f'{n_games_won / game_nr * 100:.2f}% of them. '
               f'On average, a victory took '
               f'{sum([n_days * freq for n_days, freq in n_days_distrib.items()]) / n_games_won:.2f} days.')
