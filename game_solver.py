@@ -12,29 +12,24 @@ np.set_printoptions(formatter={'float_kind': FF})
 
 class GameSolver:
     """
-    Try to solve the information theory game underlying "Are You the One?", 1st season with an approach that:
-    1. uses the (still) admissible permutations / couplings as the search space
-    2. exactly prunes the search space based on every test result
-    3. tries to optimally choose one test at a time, in a greedy way (which may or may not be optimal)
-    4. chooses one of the M-test with maximum information entropy among all possible M-tests
-    5. chooses one of the N-test with maximum information entropy among an adaptive number of randomly chosen possible
-      N-tests; the number is increased as the search space and consequently the computational cost grow smaller.
-
-     The speed-up trick used in 5. works pretty well because, at the start of the game, all possible N-tests have more
-     or less the same entropy, due to the symmetrical nature of the problem; the possible N-tests start having
-     significantly different entropies only later, as the search space grows smaller and consequently computing their
-     entropies becomes faster.
-     However, 5. could be easily parallelized in order to assess all possible N-tests.
-
+    Try to solve the information theory game underlying "Are You the One?", 1st season's rules.
+    See project's README.md for more info on the algorithm used.
     """
-    def __init__(self, n, max_show=24, max_optimize=1e7, show_optimization=False):
+    def __init__(self, n, max_permutations_show=24, max_optimize=1e7, show_optimization=False):
+        """
+        init
+        :param n: nr. of couples
+        :param max_permutations_show: max. number of permutations being shown when showing the search space
+        :param max_optimize: max. number of comparisons between permutations for calculating N-test entropies
+        :param show_optimization: True if the internal "reasoning" must be shown, else False
+        """
         self.n = n
         self.alphas = list(range(n))
         self.betas = self.alphas
         self.admissible_permutations = set(itertools.permutations(self.betas))
         self.nr_admissible_permutations = len(self.admissible_permutations)
         self.max_admissible_permutations = int(math.factorial(self.n))
-        self.max_show = max_show
+        self.max_permutations_show = max_permutations_show
         self.max_optimize = max_optimize
         self.show_optimization = show_optimization
         self._couple_probabilities = np.ones((n, n)) / n
@@ -43,6 +38,9 @@ class GameSolver:
         self._moment = 0  # 0 = before testing, 1 = after testing
 
     def get_couple_probabilities(self):
+        """
+        return all couple probabilities computed from the still admissible permutations
+        """
         couple_probabilities = np.zeros((self.n, self.n), dtype=float)
         incr = 1. / len(self.admissible_permutations)
         for ap in self.admissible_permutations:
@@ -51,6 +49,9 @@ class GameSolver:
         return couple_probabilities
 
     def choose_m_test(self):
+        """
+        return the optimally chosen couple (alpha, beta) to be tested in the morning (M-test)
+        """
         assert self._day < self.n and self._time == 0 and self._moment == 0
         self._moment = 1
         if self.nr_admissible_permutations == self.max_admissible_permutations:
@@ -69,10 +70,13 @@ class GameSolver:
         prob = self._couple_probabilities[candidate_coords[0]]
         test_entropy = sum([-p * math.log2(p) for p in [prob, 1. - prob] if p > 0.])
         if self.show_optimization:
-            self.print_couple_probabilities()
+            self.print_couple_stats()
         return random.choice(candidate_coords)
 
     def assess_m_test(self, alpha, beta, result):
+        """
+        prune the search space upon learning the result of the M-test on the couple (alpha, beta)
+        """
         assert self._day < self.n and self._time == 0 and self._moment == 1
         self._time = 1
         self._moment = 0
@@ -85,6 +89,9 @@ class GameSolver:
             self.print_admissible_permutations()
 
     def choose_n_test(self):
+        """
+        return the optimally chosen permutation (a.k.a. sequence "betas") to be tested in the night (N-test)
+        """
         assert self._day < self.n and self._time == 1 and self._moment == 0
         self._moment = 1
         nr_analyzed_permutations = min(
@@ -130,6 +137,9 @@ class GameSolver:
         return highest_entropy_candidate
 
     def assess_n_test(self, betas, result):
+        """
+        prune the search space upon learning the result of the N-test on the permutation "betas"
+        """
         assert self._day < self.n and self._time == 1 and self._moment == 1
         self._day += 1
         self._time = 0
@@ -142,16 +152,22 @@ class GameSolver:
             self.print_admissible_permutations()
 
     def print_admissible_permutations(self):
+        """
+        print all still admissible permutations, or just their number if they are more than self.max_permutations_show
+        """
         message = f'The solver knows that there {"are" if self.nr_admissible_permutations > 1 else "is"} ' + \
                   f'{self.nr_admissible_permutations} ' + \
                   f'admissible permutation{"s" if self.nr_admissible_permutations > 1 else ""} now'
-        if self.nr_admissible_permutations > self.max_show:
+        if self.nr_admissible_permutations > self.max_permutations_show:
             print(message + '.')
         else:
             print(message + ':')
             pprint(sorted(self.admissible_permutations))
 
-    def print_couple_probabilities(self):
+    def print_couple_stats(self):
+        """
+        print all couple probabilities and entropies, if available
+        """
         if self._couple_probabilities is not None:
             print('Based on the admissible permutations, the solver knows that these are the couple probabilities:')
             print(self._couple_probabilities)
