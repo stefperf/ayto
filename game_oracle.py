@@ -2,6 +2,9 @@ import numpy as np
 
 
 class GameOracle:
+    """
+    Randomly choose the secret perfect matches to be guessed, then compute the M- and N-test results
+    """
     def __init__(self, n, betas=None):
         assert isinstance(n, int) and n > 0
         self.n = n
