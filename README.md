@@ -2,13 +2,14 @@
 
 SUMMARY
 -------
-- Solving the mathematical problem underlying the reality show ["Are You the One?"](https://en.wikipedia.org/wiki/Are_You_the_One%3F), 1st season's rules. 
+- Solving the mathematical problem underlying the reality show ["Are You the One?"](https://en.wikipedia.org/wiki/Are_You_the_One%3F), 1st season's rules.
+- Mathematical problem: 20 "contestants", 10 male and 10 female, have 10 days to pair up in 10 "perfect" mixed-sex couples, as chosen secretly by the game oracle at the start. Every morning, they can test the correctness of one single couple, with the oracle replying truthfully. Every evening, they can test the correctness of 10 mixed-sex couples at the same time, with the oracle telling them truthfully how many perfect matches they got right. What algorithm is best for deducing the solution 1. with the highest winning probability, 2. with the lowest number of guesses, 3. computing fastest?
 - Developed with Python 3.9.1.
 
 PERFORMANCE STATS
 -----------------
 - The solver won 100 out of 100 test games, i.e. 100.00% of them. 
-- On average, a victory took 7.93 days.
+- On average, a victory took 7.93 in-game days.
 - On my MacBook Air with processor 2.2 GHz Dual-Core Intel Core i7, it takes about 1 minute on average to solve a game.
 
 ALGORITHM
@@ -24,7 +25,7 @@ The solver:
 
 Using just a random sample in point 5. for speed-up works pretty well because, at the start of the game, all possible N-tests have more or less the same entropy, due to the symmetrical nature of the problem; the possible N-tests start having significantly different entropies only later, right when the search space grows smaller and consequently computing their entropies becomes faster.
 
-However, 5. could be easily parallelized in order to assess all possible N-tests.
+However, point 5. could be parallelized in order to assess all possible N-tests.
 
 ACKNOWLEDGEMENTS
 ----------------
