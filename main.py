@@ -66,7 +66,7 @@ def play_game(show_process):
 
 print()
 print('------------------------------------------------------------------------------')
-print(f"Collecting stats over {n_games}, of which the first is fully shown:")
+print(f"Collecting stats over {n_games} games, of which the first is fully shown:")
 print('------------------------------------------------------------------------------')
 n_games_won = 0
 n_days_distrib = {d: 0 for d in range(1, n_couples + 1)}
