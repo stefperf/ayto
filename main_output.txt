@@ -1,7 +1,7 @@
 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/python/ayto/main.py
 
 ------------------------------------------------------------------------------
-Collecting stats over 100, of which the first is fully shown:
+Collecting stats over 100 games, of which the first is fully shown:
 ------------------------------------------------------------------------------
 
 === START OF THE GAME ===
