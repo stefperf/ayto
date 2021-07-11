@@ -24,7 +24,7 @@ Using just a random sample in point 5. for speed-up works pretty well because, a
 
 However, point 5. could be parallelized in order to assess all possible N-tests.
 
-After testing each variant with 100 games each, the entropy-ranking variant seemed slightly superior under both criteria of winning speed and leaving "buffer", contrary to expectations, but this could be an artefact of testing with only 100 games and/or of not optimizing over all possible tests.
+After testing each variant with 100 games each, the entropy-ranking variant seemed slightly superior under both criteria of winning speed and leaving a "buffer" of in-game days, contrary to expectations, but this could be an artefact of testing with only 100 games and/or of not optimizing over all possible tests.
 
 PERFORMANCE STATS
 -----------------
