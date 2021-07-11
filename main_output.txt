@@ -1,12 +1,14 @@
-/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/python/ayto/main.py
-
+/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/Documents/GitHub/ayto/main.py
+time = 2021-07-11 14:06:02.471239
+========================================================================================================================
+--- Ranking possible tests by entropy ---
 ------------------------------------------------------------------------------
 Collecting stats over 100 games, of which the first is fully shown:
 ------------------------------------------------------------------------------
 
 === START OF THE GAME ===
 The oracle has randomly chosen this solution:
-[4, 6, 2, 1, 8, 5, 0, 3, 7, 9]
+[1, 5, 0, 9, 3, 6, 4, 8, 7, 2]
 The solver has 10 days to guess it.
 The solver knows that there are 3628800 admissible permutations now.
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
@@ -20,1019 +22,566 @@ Based on the admissible permutations, the solver knows that these are the couple
  [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
  [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
  [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]
- [0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469 0.469]]
 
 === On the morning of day 1:
-The solver chooses the M-test (8, 8).
+The solver chooses the M-test (8, 6).
 The oracle answers 0.
 The solver knows that there are 3265920 admissible permutations now.
 
 --- On the night of day 1:
-The solver chooses the N-test [2, 8, 5, 9, 1, 0, 7, 6, 3, 4].
+The solver chooses the N-test [6, 1, 5, 4, 7, 8, 3, 0, 2, 9].
 The oracle answers 0.
 The solver knows that there are 1186632 admissible permutations now.
 
 === On the morning of day 2:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.109 0.109 0.000 0.111 0.109 0.109 0.109 0.109 0.125 0.109]
- [0.111 0.111 0.111 0.112 0.111 0.111 0.111 0.111 0.000 0.111]
- [0.109 0.109 0.109 0.111 0.109 0.000 0.109 0.109 0.125 0.109]
- [0.109 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.125 0.000]
- [0.109 0.000 0.109 0.111 0.109 0.109 0.109 0.109 0.125 0.109]
- [0.000 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.125 0.109]
- [0.109 0.109 0.109 0.111 0.109 0.109 0.109 0.000 0.125 0.109]
- [0.109 0.109 0.109 0.111 0.109 0.109 0.000 0.109 0.125 0.109]
- [0.125 0.125 0.125 0.000 0.125 0.125 0.125 0.125 0.000 0.125]
- [0.109 0.109 0.109 0.111 0.000 0.109 0.109 0.109 0.125 0.109]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.497 0.497 0.000 0.503 0.497 0.497 0.497 0.497 0.544 0.497]
- [0.503 0.503 0.503 0.507 0.503 0.503 0.503 0.503 0.000 0.503]
- [0.497 0.497 0.497 0.503 0.497 0.000 0.497 0.497 0.544 0.497]
- [0.497 0.497 0.497 0.503 0.497 0.497 0.497 0.497 0.544 0.000]
- [0.497 0.000 0.497 0.503 0.497 0.497 0.497 0.497 0.544 0.497]
- [0.000 0.497 0.497 0.503 0.497 0.497 0.497 0.497 0.544 0.497]
- [0.497 0.497 0.497 0.503 0.497 0.497 0.497 0.000 0.544 0.497]
- [0.497 0.497 0.497 0.503 0.497 0.497 0.000 0.497 0.544 0.497]
- [0.544 0.544 0.544 0.000 0.544 0.544 0.544 0.544 0.000 0.544]
- [0.497 0.497 0.497 0.503 0.000 0.497 0.497 0.497 0.544 0.497]]
-The solver chooses the M-test (6, 8).
+[[0.111 0.111 0.112 0.111 0.111 0.111 0.000 0.111 0.111 0.111]
+ [0.109 0.000 0.111 0.109 0.109 0.109 0.125 0.109 0.109 0.109]
+ [0.109 0.109 0.111 0.109 0.109 0.000 0.125 0.109 0.109 0.109]
+ [0.109 0.109 0.111 0.109 0.000 0.109 0.125 0.109 0.109 0.109]
+ [0.109 0.109 0.111 0.109 0.109 0.109 0.125 0.000 0.109 0.109]
+ [0.109 0.109 0.111 0.109 0.109 0.109 0.125 0.109 0.000 0.109]
+ [0.109 0.109 0.111 0.000 0.109 0.109 0.125 0.109 0.109 0.109]
+ [0.000 0.109 0.111 0.109 0.109 0.109 0.125 0.109 0.109 0.109]
+ [0.125 0.125 0.000 0.125 0.125 0.125 0.000 0.125 0.125 0.125]
+ [0.109 0.109 0.111 0.109 0.109 0.109 0.125 0.109 0.109 0.000]]
+The solver chooses the M-test (8, 3).
 The oracle answers 0.
 The solver knows that there are 1038303 admissible permutations now.
 
 --- On the night of day 2:
-The solver chooses the N-test [6, 2, 9, 1, 4, 7, 5, 8, 0, 3].
-The oracle answers 1.
-The solver knows that there are 378226 admissible permutations now.
+The solver chooses the N-test [9, 0, 4, 6, 8, 3, 1, 5, 7, 2].
+The oracle answers 2.
+The solver knows that there are 216883 admissible permutations now.
 
 === On the morning of day 3:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.108 0.108 0.000 0.110 0.108 0.108 0.092 0.110 0.145 0.108]
- [0.112 0.113 0.096 0.114 0.113 0.112 0.113 0.114 0.000 0.113]
- [0.108 0.109 0.108 0.111 0.109 0.000 0.108 0.110 0.145 0.092]
- [0.108 0.091 0.108 0.111 0.109 0.108 0.108 0.111 0.145 0.000]
- [0.108 0.000 0.108 0.111 0.091 0.108 0.108 0.111 0.145 0.109]
- [0.000 0.108 0.108 0.110 0.108 0.109 0.108 0.094 0.145 0.108]
- [0.127 0.127 0.127 0.129 0.127 0.110 0.127 0.000 0.000 0.127]
- [0.109 0.108 0.109 0.110 0.108 0.109 0.000 0.110 0.129 0.108]
- [0.110 0.127 0.127 0.000 0.127 0.127 0.127 0.129 0.000 0.127]
- [0.109 0.109 0.108 0.094 0.000 0.108 0.108 0.110 0.145 0.108]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.495 0.495 0.000 0.501 0.495 0.495 0.444 0.501 0.598 0.495]
- [0.507 0.508 0.457 0.513 0.508 0.507 0.508 0.513 0.000 0.507]
- [0.495 0.496 0.495 0.501 0.496 0.000 0.495 0.501 0.597 0.442]
- [0.495 0.441 0.495 0.502 0.496 0.495 0.495 0.502 0.597 0.000]
- [0.495 0.000 0.495 0.502 0.441 0.495 0.495 0.501 0.597 0.496]
- [0.000 0.495 0.495 0.501 0.495 0.495 0.495 0.450 0.597 0.495]
- [0.548 0.549 0.548 0.554 0.549 0.500 0.548 0.000 0.000 0.549]
- [0.495 0.495 0.495 0.501 0.495 0.495 0.000 0.501 0.555 0.495]
- [0.501 0.549 0.548 0.000 0.549 0.548 0.548 0.555 0.000 0.549]
- [0.496 0.496 0.495 0.449 0.000 0.495 0.495 0.501 0.597 0.495]]
-The solver chooses the M-test (0, 8).
-The oracle answers 0.
-The solver knows that there are 323227 admissible permutations now.
+[[0.100 0.100 0.102 0.113 0.100 0.100 0.000 0.095 0.100 0.189]
+ [0.186 0.000 0.101 0.112 0.099 0.099 0.112 0.094 0.099 0.099]
+ [0.099 0.099 0.101 0.112 0.186 0.000 0.112 0.094 0.099 0.099]
+ [0.097 0.096 0.099 0.109 0.000 0.097 0.218 0.092 0.096 0.096]
+ [0.098 0.098 0.101 0.112 0.098 0.098 0.112 0.000 0.186 0.098]
+ [0.097 0.096 0.099 0.218 0.096 0.097 0.109 0.092 0.000 0.096]
+ [0.100 0.189 0.102 0.000 0.100 0.100 0.113 0.095 0.100 0.100]
+ [0.000 0.099 0.101 0.112 0.099 0.186 0.112 0.094 0.099 0.099]
+ [0.125 0.125 0.000 0.000 0.125 0.125 0.000 0.250 0.125 0.125]
+ [0.098 0.098 0.193 0.112 0.098 0.098 0.112 0.094 0.098 0.000]]
+The solver chooses the M-test (8, 7).
+The oracle answers 1.
+The solver knows that there are 54213 admissible permutations now.
 
 --- On the night of day 3:
-The solver randomly chooses and analyzes these 3 admissible permutations:
-An N-test using the admissible permutation [4, 6, 2, 1, 8, 3, 9, 0, 5, 7] would be worth 2.019 bits of additional information.
-An N-test using the admissible permutation [9, 4, 8, 5, 7, 3, 6, 1, 0, 2] would be worth 2.022 bits of additional information.
-An N-test using the admissible permutation [0, 7, 4, 2, 5, 3, 6, 8, 1, 9] would be worth 2.028 bits of additional information.
-The solver chooses the N-test [0, 7, 4, 2, 5, 3, 6, 8, 1, 9].
-The oracle answers 1.
-The solver knows that there are 116268 admissible permutations now.
+The solver randomly chooses and analyzes 18 admissible permutations:
+The N-test using the admissible permutation [1, 5, 2, 0, 8, 6, 9, 4, 7, 3] has rank [19810, 17865, 10949, 4086, 1155, 281, 50, 16, 1, 0, 0].
+...
+The N-test using the admissible permutation [0, 8, 4, 9, 3, 2, 5, 1, 7, 6] has rank [19702, 17930, 10969, 4094, 1172, 275, 54, 16, 1, 0, 0].
+The solver chooses the N-test [0, 8, 4, 9, 3, 2, 5, 1, 7, 6].
+The oracle answers 3.
+The solver knows that there are 10969 admissible permutations now.
 
 === On the morning of day 4:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.112 0.129 0.000 0.131 0.129 0.128 0.112 0.130 0.000 0.129]
- [0.114 0.114 0.099 0.117 0.114 0.114 0.115 0.099 0.000 0.114]
- [0.107 0.107 0.109 0.109 0.088 0.000 0.107 0.109 0.176 0.089]
- [0.106 0.088 0.091 0.109 0.107 0.106 0.106 0.109 0.176 0.000]
- [0.106 0.000 0.109 0.109 0.088 0.089 0.107 0.109 0.176 0.107]
- [0.000 0.107 0.108 0.091 0.107 0.106 0.106 0.092 0.176 0.107]
- [0.128 0.129 0.131 0.131 0.129 0.111 0.112 0.000 0.000 0.129]
- [0.109 0.109 0.112 0.112 0.109 0.109 0.000 0.112 0.118 0.109]
- [0.111 0.111 0.131 0.000 0.129 0.129 0.129 0.131 0.000 0.129]
- [0.107 0.107 0.109 0.091 0.000 0.106 0.107 0.109 0.176 0.088]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.505 0.553 0.000 0.560 0.554 0.552 0.506 0.559 0.000 0.554]
- [0.511 0.512 0.467 0.520 0.512 0.511 0.514 0.467 0.000 0.513]
- [0.490 0.490 0.497 0.497 0.430 0.000 0.490 0.496 0.672 0.432]
- [0.489 0.431 0.441 0.497 0.491 0.489 0.489 0.497 0.672 0.000]
- [0.489 0.000 0.496 0.498 0.431 0.433 0.489 0.496 0.672 0.490]
- [0.000 0.490 0.495 0.441 0.490 0.489 0.487 0.442 0.672 0.490]
- [0.552 0.554 0.560 0.561 0.554 0.504 0.507 0.000 0.000 0.554]
- [0.498 0.498 0.505 0.505 0.497 0.498 0.000 0.505 0.524 0.497]
- [0.503 0.502 0.561 0.000 0.555 0.555 0.554 0.561 0.000 0.554]
- [0.490 0.490 0.498 0.439 0.000 0.489 0.490 0.497 0.672 0.430]]
-The solver chooses the M-test (2, 8).
-The oracle answers 0.
-The solver knows that there are 95758 admissible permutations now.
+[[0.229 0.113 0.101 0.115 0.116 0.113 0.000 0.000 0.112 0.101]
+ [0.099 0.000 0.102 0.114 0.115 0.112 0.112 0.000 0.232 0.112]
+ [0.116 0.113 0.105 0.118 0.201 0.000 0.115 0.000 0.116 0.115]
+ [0.112 0.111 0.100 0.114 0.000 0.112 0.105 0.000 0.113 0.233]
+ [0.103 0.101 0.092 0.206 0.104 0.102 0.100 0.000 0.091 0.101]
+ [0.116 0.115 0.204 0.106 0.118 0.114 0.113 0.000 0.000 0.114]
+ [0.112 0.102 0.102 0.000 0.116 0.231 0.111 0.000 0.113 0.112]
+ [0.000 0.232 0.102 0.113 0.115 0.104 0.111 0.000 0.112 0.111]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.113 0.112 0.091 0.114 0.115 0.113 0.232 0.000 0.111 0.000]]
+The solver chooses the M-test (3, 9).
+The oracle answers 1.
+The solver knows that there are 2557 admissible permutations now.
 
 --- On the night of day 4:
-The solver randomly chooses and analyzes these 10 admissible permutations:
-An N-test using the admissible permutation [7, 3, 6, 8, 2, 5, 4, 1, 0, 9] would be worth 2.052 bits of additional information.
-An N-test using the admissible permutation [6, 3, 1, 2, 7, 5, 0, 4, 9, 8] would be worth 2.055 bits of additional information.
-An N-test using the admissible permutation [0, 2, 3, 8, 7, 4, 1, 9, 6, 5] would be worth 2.055 bits of additional information.
-An N-test using the admissible permutation [7, 3, 9, 5, 2, 6, 0, 4, 1, 8] would be worth 2.055 bits of additional information.
-An N-test using the admissible permutation [7, 2, 4, 8, 0, 6, 1, 3, 9, 5] would be worth 2.056 bits of additional information.
-An N-test using the admissible permutation [7, 2, 6, 4, 0, 5, 9, 3, 1, 8] would be worth 2.056 bits of additional information.
-An N-test using the admissible permutation [5, 0, 9, 7, 8, 4, 3, 2, 1, 6] would be worth 2.057 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 8, 0, 2, 6, 4, 5, 3] would be worth 2.058 bits of additional information.
-An N-test using the admissible permutation [1, 3, 9, 7, 8, 5, 6, 4, 2, 0] would be worth 2.059 bits of additional information.
-An N-test using the admissible permutation [7, 3, 0, 4, 8, 6, 5, 9, 1, 2] would be worth 2.059 bits of additional information.
-The solver chooses the N-test [7, 3, 0, 4, 8, 6, 5, 9, 1, 2].
-The oracle answers 1.
-The solver knows that there are 34340 admissible permutations now.
+The solver randomly chooses and analyzes 391 admissible permutations:
+The N-test using the admissible permutation [1, 5, 0, 9, 8, 2, 4, 6, 7, 3] has rank [973, 831, 487, 192, 56, 13, 4, 1, 0, 0, 0].
+...
+The N-test using the admissible permutation [3, 4, 8, 9, 5, 2, 1, 6, 7, 0] has rank [885, 867, 521, 200, 63, 13, 7, 1, 0, 0, 0].
+The solver chooses the N-test [3, 4, 8, 9, 5, 2, 1, 6, 7, 0].
+The oracle answers 2.
+The solver knows that there are 867 admissible permutations now.
 
 === On the morning of day 5:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.110 0.133 0.000 0.135 0.131 0.135 0.113 0.111 0.000 0.131]
- [0.115 0.118 0.100 0.100 0.117 0.119 0.116 0.099 0.000 0.115]
- [0.108 0.134 0.136 0.135 0.110 0.000 0.134 0.135 0.000 0.109]
- [0.106 0.083 0.086 0.109 0.078 0.110 0.103 0.108 0.217 0.000]
- [0.105 0.000 0.106 0.106 0.081 0.089 0.103 0.107 0.200 0.103]
- [0.000 0.107 0.106 0.084 0.105 0.109 0.080 0.087 0.216 0.106]
- [0.133 0.135 0.135 0.136 0.134 0.079 0.114 0.000 0.000 0.135]
- [0.107 0.109 0.110 0.109 0.108 0.112 0.000 0.110 0.150 0.083]
- [0.112 0.074 0.136 0.000 0.136 0.138 0.133 0.137 0.000 0.134]
- [0.104 0.107 0.085 0.086 0.000 0.109 0.103 0.107 0.216 0.083]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.500 0.565 0.000 0.571 0.561 0.571 0.510 0.504 0.000 0.561]
- [0.515 0.524 0.470 0.471 0.520 0.527 0.519 0.466 0.000 0.515]
- [0.495 0.568 0.573 0.572 0.500 0.000 0.568 0.570 0.000 0.496]
- [0.489 0.411 0.424 0.496 0.396 0.500 0.479 0.493 0.755 0.000]
- [0.483 0.000 0.487 0.489 0.406 0.434 0.478 0.490 0.722 0.479]
- [0.000 0.491 0.487 0.416 0.485 0.497 0.402 0.427 0.753 0.488]
- [0.565 0.572 0.571 0.573 0.568 0.397 0.513 0.000 0.000 0.570]
- [0.492 0.498 0.501 0.496 0.495 0.505 0.000 0.500 0.611 0.414]
- [0.506 0.381 0.572 0.000 0.573 0.580 0.566 0.576 0.000 0.569]
- [0.480 0.491 0.420 0.423 0.000 0.497 0.480 0.490 0.753 0.413]]
-The solver chooses the M-test (3, 8).
+[[0.151 0.180 0.158 0.000 0.161 0.168 0.000 0.000 0.181 0.000]
+ [0.190 0.000 0.142 0.164 0.000 0.188 0.178 0.000 0.138 0.000]
+ [0.178 0.187 0.149 0.180 0.122 0.000 0.185 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.148 0.149 0.121 0.136 0.128 0.000 0.149 0.000 0.170 0.000]
+ [0.158 0.180 0.000 0.188 0.144 0.153 0.176 0.000 0.000 0.000]
+ [0.175 0.000 0.148 0.000 0.164 0.155 0.176 0.000 0.182 0.000]
+ [0.000 0.161 0.146 0.165 0.157 0.194 0.000 0.000 0.176 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.143 0.136 0.167 0.123 0.142 0.136 0.000 0.152 0.000]]
+The solver chooses the M-test (7, 5).
 The oracle answers 0.
-The solver knows that there are 26890 admissible permutations now.
+The solver knows that there are 699 admissible permutations now.
 
 --- On the night of day 5:
-The solver randomly chooses and analyzes these 37 admissible permutations:
-An N-test using the admissible permutation [9, 0, 2, 3, 6, 7, 4, 5, 1, 8] would be worth 2.081 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 7, 0, 1, 5, 2, 6, 8] would be worth 2.085 bits of additional information.
-An N-test using the admissible permutation [1, 4, 7, 0, 9, 3, 5, 2, 6, 8] would be worth 2.087 bits of additional information.
-An N-test using the admissible permutation [1, 3, 4, 0, 9, 7, 2, 5, 6, 8] would be worth 2.095 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 0, 5, 8, 2, 9, 4, 7] would be worth 2.095 bits of additional information.
-An N-test using the admissible permutation [6, 1, 0, 2, 7, 8, 9, 3, 4, 5] would be worth 2.097 bits of additional information.
-An N-test using the admissible permutation [1, 5, 3, 4, 9, 2, 6, 7, 0, 8] would be worth 2.099 bits of additional information.
-An N-test using the admissible permutation [9, 3, 6, 7, 5, 2, 1, 4, 0, 8] would be worth 2.100 bits of additional information.
-An N-test using the admissible permutation [7, 0, 6, 2, 9, 8, 4, 1, 5, 3] would be worth 2.100 bits of additional information.
-An N-test using the admissible permutation [5, 3, 1, 0, 9, 7, 6, 2, 4, 8] would be worth 2.101 bits of additional information.
-An N-test using the admissible permutation [4, 5, 7, 1, 3, 8, 6, 0, 9, 2] would be worth 2.101 bits of additional information.
-An N-test using the admissible permutation [5, 4, 3, 0, 9, 6, 1, 8, 2, 7] would be worth 2.102 bits of additional information.
-An N-test using the admissible permutation [7, 6, 4, 5, 9, 8, 2, 3, 0, 1] would be worth 2.102 bits of additional information.
-An N-test using the admissible permutation [3, 4, 7, 1, 2, 8, 6, 9, 5, 0] would be worth 2.102 bits of additional information.
-An N-test using the admissible permutation [5, 1, 0, 3, 9, 7, 6, 4, 2, 8] would be worth 2.102 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 9, 8, 4, 1, 5, 2] would be worth 2.103 bits of additional information.
-An N-test using the admissible permutation [5, 1, 9, 4, 7, 8, 6, 3, 2, 0] would be worth 2.104 bits of additional information.
-An N-test using the admissible permutation [0, 3, 9, 5, 7, 8, 2, 1, 4, 6] would be worth 2.106 bits of additional information.
-An N-test using the admissible permutation [4, 5, 3, 0, 7, 6, 2, 8, 9, 1] would be worth 2.107 bits of additional information.
-An N-test using the admissible permutation [1, 4, 7, 0, 9, 6, 3, 8, 2, 5] would be worth 2.109 bits of additional information.
-An N-test using the admissible permutation [4, 3, 2, 1, 9, 8, 6, 7, 5, 0] would be worth 2.110 bits of additional information.
-An N-test using the admissible permutation [7, 5, 3, 1, 2, 8, 6, 4, 9, 0] would be worth 2.110 bits of additional information.
-An N-test using the admissible permutation [9, 4, 2, 7, 8, 3, 1, 5, 0, 6] would be worth 2.112 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 3, 6, 5, 0, 8, 4, 2] would be worth 2.115 bits of additional information.
-An N-test using the admissible permutation [5, 1, 6, 0, 9, 4, 3, 8, 7, 2] would be worth 2.116 bits of additional information.
-An N-test using the admissible permutation [1, 0, 9, 6, 8, 3, 4, 7, 2, 5] would be worth 2.116 bits of additional information.
-An N-test using the admissible permutation [4, 6, 7, 5, 8, 2, 1, 3, 0, 9] would be worth 2.117 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 1, 8, 3, 0, 4, 7, 6] would be worth 2.118 bits of additional information.
-An N-test using the admissible permutation [1, 6, 4, 7, 8, 5, 9, 0, 2, 3] would be worth 2.120 bits of additional information.
-An N-test using the admissible permutation [5, 3, 6, 0, 7, 4, 9, 8, 2, 1] would be worth 2.121 bits of additional information.
-An N-test using the admissible permutation [9, 6, 4, 1, 8, 5, 2, 3, 7, 0] would be worth 2.122 bits of additional information.
-An N-test using the admissible permutation [1, 6, 4, 3, 8, 7, 2, 0, 9, 5] would be worth 2.123 bits of additional information.
-An N-test using the admissible permutation [3, 2, 1, 7, 8, 5, 6, 4, 9, 0] would be worth 2.125 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 3, 8, 7, 1, 4, 5, 6] would be worth 2.126 bits of additional information.
-An N-test using the admissible permutation [0, 6, 2, 7, 8, 1, 9, 5, 4, 3] would be worth 2.127 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 8, 5, 2, 0, 4, 9] would be worth 2.128 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 2, 8, 5, 0, 3, 4, 1] would be worth 2.131 bits of additional information.
-The solver chooses the N-test [6, 9, 7, 2, 8, 5, 0, 3, 4, 1].
-The oracle answers 4.
-The solver knows that there are 950 admissible permutations now.
+The solver randomly chooses and analyzes 699 admissible permutations:
+The N-test using the admissible permutation [8, 0, 1, 9, 2, 6, 5, 4, 7, 3] has rank [274, 168, 130, 82, 31, 7, 6, 1, 0, 0, 0].
+...
+The N-test using the admissible permutation [8, 0, 3, 9, 2, 6, 5, 4, 7, 1] has rank [208, 207, 164, 66, 37, 12, 4, 1, 0, 0, 0].
+The solver chooses the N-test [8, 0, 3, 9, 2, 6, 5, 4, 7, 1].
+The oracle answers 3.
+The solver knows that there are 207 admissible permutations now.
 
 === On the morning of day 6:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.075 0.099 0.000 0.105 0.092 0.096 0.394 0.035 0.000 0.105]
- [0.095 0.099 0.074 0.037 0.094 0.096 0.095 0.064 0.000 0.347]
- [0.038 0.103 0.114 0.111 0.080 0.000 0.097 0.381 0.000 0.077]
- [0.106 0.076 0.404 0.101 0.032 0.100 0.093 0.088 0.000 0.000]
- [0.042 0.000 0.036 0.040 0.021 0.035 0.038 0.040 0.714 0.035]
- [0.000 0.103 0.087 0.069 0.091 0.337 0.022 0.091 0.111 0.089]
- [0.378 0.105 0.096 0.103 0.104 0.036 0.069 0.000 0.000 0.108]
- [0.098 0.080 0.071 0.349 0.096 0.098 0.000 0.113 0.066 0.029]
- [0.082 0.031 0.092 0.000 0.392 0.107 0.097 0.098 0.000 0.102]
- [0.086 0.304 0.027 0.084 0.000 0.096 0.096 0.091 0.109 0.106]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.383 0.466 0.000 0.485 0.442 0.456 0.967 0.218 0.000 0.485]
- [0.452 0.466 0.380 0.228 0.449 0.456 0.452 0.344 0.000 0.932]
- [0.233 0.479 0.511 0.502 0.402 0.000 0.459 0.959 0.000 0.391]
- [0.489 0.387 0.973 0.472 0.202 0.469 0.445 0.431 0.000 0.000]
- [0.252 0.000 0.223 0.242 0.147 0.218 0.233 0.242 0.864 0.218]
- [0.000 0.479 0.428 0.364 0.438 0.922 0.153 0.438 0.502 0.435]
- [0.957 0.485 0.456 0.479 0.482 0.223 0.364 0.000 0.000 0.495]
- [0.462 0.402 0.368 0.934 0.456 0.462 0.000 0.508 0.352 0.192]
- [0.410 0.197 0.442 0.000 0.966 0.492 0.459 0.462 0.000 0.476]
- [0.424 0.886 0.181 0.417 0.000 0.456 0.456 0.438 0.498 0.489]]
-The solver chooses the M-test (3, 2).
+[[0.174 0.213 0.140 0.000 0.135 0.193 0.000 0.000 0.145 0.000]
+ [0.130 0.000 0.116 0.203 0.000 0.266 0.213 0.000 0.072 0.000]
+ [0.193 0.169 0.155 0.101 0.188 0.000 0.193 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.164 0.140 0.082 0.121 0.111 0.000 0.135 0.000 0.246 0.000]
+ [0.155 0.164 0.000 0.280 0.077 0.169 0.155 0.000 0.000 0.000]
+ [0.184 0.000 0.150 0.000 0.159 0.111 0.188 0.000 0.208 0.000]
+ [0.000 0.217 0.203 0.169 0.179 0.000 0.000 0.000 0.232 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.097 0.155 0.126 0.150 0.261 0.116 0.000 0.097 0.000]]
+The solver chooses the M-test (5, 3).
 The oracle answers 0.
-The solver knows that there are 566 admissible permutations now.
+The solver knows that there are 149 admissible permutations now.
 
 --- On the night of day 6:
-The solver randomly chooses and analyzes these 566 admissible permutations:
-An N-test using the admissible permutation [0, 9, 6, 7, 2, 8, 5, 3, 4, 1] would be worth 2.206 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 3, 8, 4, 6, 2, 0, 1] would be worth 2.216 bits of additional information.
-An N-test using the admissible permutation [5, 9, 6, 1, 8, 3, 0, 2, 4, 7] would be worth 2.226 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 5, 8, 4, 6, 2, 0, 1] would be worth 2.226 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 4, 2, 5, 6, 3, 0, 8] would be worth 2.234 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 3, 8, 2, 6, 5, 0, 1] would be worth 2.236 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 8, 3, 0, 2, 6, 5] would be worth 2.237 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 8, 3, 0, 2, 5, 6] would be worth 2.238 bits of additional information.
-An N-test using the admissible permutation [6, 9, 0, 7, 5, 2, 1, 3, 4, 8] would be worth 2.242 bits of additional information.
-An N-test using the admissible permutation [6, 9, 0, 7, 5, 1, 2, 3, 4, 8] would be worth 2.245 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 3, 8, 2, 6, 4, 0, 1] would be worth 2.247 bits of additional information.
-An N-test using the admissible permutation [9, 6, 7, 1, 8, 3, 0, 2, 4, 5] would be worth 2.250 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 3, 5, 8, 2, 9, 4, 1] would be worth 2.253 bits of additional information.
-An N-test using the admissible permutation [5, 6, 9, 7, 8, 3, 0, 2, 4, 1] would be worth 2.254 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 3, 6, 8, 5, 2, 4, 1] would be worth 2.255 bits of additional information.
-An N-test using the admissible permutation [6, 7, 0, 5, 9, 8, 2, 3, 4, 1] would be worth 2.255 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 5, 9, 8, 0, 3, 4, 2] would be worth 2.255 bits of additional information.
-An N-test using the admissible permutation [6, 9, 0, 7, 5, 8, 4, 3, 2, 1] would be worth 2.258 bits of additional information.
-An N-test using the admissible permutation [7, 9, 6, 1, 5, 2, 0, 3, 4, 8] would be worth 2.258 bits of additional information.
-An N-test using the admissible permutation [5, 7, 9, 6, 8, 4, 0, 3, 2, 1] would be worth 2.259 bits of additional information.
-An N-test using the admissible permutation [6, 9, 0, 7, 5, 8, 3, 2, 4, 1] would be worth 2.259 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 2, 1, 5, 3, 4, 8] would be worth 2.260 bits of additional information.
-An N-test using the admissible permutation [6, 7, 0, 5, 2, 8, 9, 3, 4, 1] would be worth 2.261 bits of additional information.
-An N-test using the admissible permutation [9, 6, 7, 1, 5, 8, 0, 3, 4, 2] would be worth 2.261 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 5, 8, 7, 0, 2, 6, 1] would be worth 2.262 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 8, 3, 0, 5, 2, 6] would be worth 2.263 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 3, 5, 4, 2, 1, 8] would be worth 2.263 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 4, 5, 8, 2, 3, 9, 1] would be worth 2.264 bits of additional information.
-An N-test using the admissible permutation [6, 3, 7, 0, 5, 8, 9, 2, 4, 1] would be worth 2.266 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 2, 5, 4, 0, 1, 8] would be worth 2.266 bits of additional information.
-An N-test using the admissible permutation [6, 9, 3, 7, 5, 8, 0, 1, 4, 2] would be worth 2.268 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 3, 8, 7, 0, 2, 6, 1] would be worth 2.268 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 6, 8, 3, 4, 2, 0, 1] would be worth 2.269 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 7, 6, 8, 5, 3, 4, 1] would be worth 2.269 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 4, 2, 8, 6, 3, 0, 1] would be worth 2.272 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 2, 8, 0, 9, 4, 1] would be worth 2.273 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 5, 2, 3, 0, 9, 4, 8] would be worth 2.274 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 3, 2, 5, 0, 9, 4, 8] would be worth 2.274 bits of additional information.
-An N-test using the admissible permutation [9, 5, 7, 1, 8, 3, 0, 2, 4, 6] would be worth 2.274 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 4, 2, 5, 0, 3, 9, 8] would be worth 2.275 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 5, 8, 2, 6, 4, 0, 1] would be worth 2.276 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 0, 8, 5, 6, 1, 2, 3] would be worth 2.276 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 5, 4, 1, 2, 3] would be worth 2.282 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 6, 8, 7, 0, 2, 5, 1] would be worth 2.283 bits of additional information.
-An N-test using the admissible permutation [9, 6, 7, 4, 3, 5, 0, 8, 2, 1] would be worth 2.284 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 6, 8, 7, 0, 5, 2, 1] would be worth 2.284 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 7, 8, 5, 0, 2, 6, 3] would be worth 2.285 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 0, 5, 4, 2, 1, 8] would be worth 2.285 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 4, 5, 8, 0, 3, 2, 7] would be worth 2.286 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 6, 8, 3, 2, 5, 0, 1] would be worth 2.286 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 5, 8, 3, 0, 1, 4, 6] would be worth 2.287 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 6, 8, 7, 0, 3, 2, 5] would be worth 2.288 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 2, 5, 9, 3, 1, 8] would be worth 2.289 bits of additional information.
-An N-test using the admissible permutation [4, 9, 3, 7, 8, 5, 6, 2, 0, 1] would be worth 2.290 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 6, 7, 8, 5, 3, 4, 1] would be worth 2.290 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 5, 8, 7, 4, 3, 2, 1] would be worth 2.292 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 4, 2, 5, 0, 8, 9, 1] would be worth 2.292 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 6, 8, 5, 0, 2, 7, 3] would be worth 2.293 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 3, 8, 5, 0, 2, 6, 1] would be worth 2.294 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 4, 5, 8, 9, 3, 2, 1] would be worth 2.295 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 0, 8, 1, 6, 2, 4, 3] would be worth 2.295 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 5, 1, 4, 2, 3] would be worth 2.295 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 2, 5, 3, 4, 1, 8] would be worth 2.295 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 6, 8, 3, 2, 4, 0, 1] would be worth 2.296 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 4, 9, 5, 0, 8, 2, 1] would be worth 2.296 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 9, 5, 2, 3, 1, 8] would be worth 2.297 bits of additional information.
-An N-test using the admissible permutation [6, 9, 0, 3, 5, 8, 2, 7, 4, 1] would be worth 2.297 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 3, 8, 5, 2, 4, 1] would be worth 2.297 bits of additional information.
-An N-test using the admissible permutation [6, 3, 7, 5, 2, 8, 0, 1, 4, 9] would be worth 2.297 bits of additional information.
-An N-test using the admissible permutation [6, 9, 3, 4, 5, 8, 0, 2, 7, 1] would be worth 2.297 bits of additional information.
-An N-test using the admissible permutation [9, 3, 6, 7, 2, 5, 0, 8, 4, 1] would be worth 2.298 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 1, 8, 3, 0, 4, 2, 6] would be worth 2.298 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 6, 8, 2, 0, 3, 4, 5] would be worth 2.298 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 3, 0, 6, 2, 8, 4, 1] would be worth 2.299 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 5, 8, 7, 0, 3, 2, 6] would be worth 2.299 bits of additional information.
-An N-test using the admissible permutation [4, 3, 7, 6, 2, 5, 0, 8, 9, 1] would be worth 2.300 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 0, 8, 2, 6, 1, 4, 3] would be worth 2.300 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 5, 8, 2, 6, 0, 4, 3] would be worth 2.301 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 0, 8, 2, 6, 5, 4, 3] would be worth 2.301 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 4, 9, 8, 0, 3, 5, 1] would be worth 2.302 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 5, 8, 9, 3, 4, 2] would be worth 2.302 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 2, 8, 4, 3, 1, 0] would be worth 2.303 bits of additional information.
-An N-test using the admissible permutation [1, 6, 7, 3, 9, 5, 0, 8, 4, 2] would be worth 2.303 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 4, 5, 8, 3, 0, 2, 1] would be worth 2.304 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 4, 9, 5, 0, 3, 2, 8] would be worth 2.305 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 5, 7, 4, 0, 3, 1, 8] would be worth 2.305 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 5, 3, 8, 0, 9, 4, 1] would be worth 2.306 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 1, 0, 8, 6, 3, 4, 2] would be worth 2.307 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 7, 8, 3, 0, 4, 2, 5] would be worth 2.307 bits of additional information.
-An N-test using the admissible permutation [9, 5, 7, 3, 2, 6, 0, 8, 4, 1] would be worth 2.307 bits of additional information.
-An N-test using the admissible permutation [7, 9, 4, 1, 2, 5, 0, 3, 6, 8] would be worth 2.308 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 3, 4, 0, 2, 1, 8] would be worth 2.308 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 3, 8, 5, 0, 2, 4, 6] would be worth 2.309 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 4, 5, 8, 1, 3, 2, 0] would be worth 2.310 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 5, 2, 0, 9, 4, 8] would be worth 2.310 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 6, 8, 3, 0, 1, 4, 5] would be worth 2.310 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 1, 2, 5, 4, 3] would be worth 2.310 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 7, 0, 5, 4, 3, 1, 8] would be worth 2.310 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 6, 4, 2, 0, 3, 1, 8] would be worth 2.311 bits of additional information.
-An N-test using the admissible permutation [7, 9, 4, 1, 6, 5, 0, 3, 2, 8] would be worth 2.311 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 0, 8, 5, 6, 4, 2, 3] would be worth 2.311 bits of additional information.
-An N-test using the admissible permutation [9, 7, 6, 1, 8, 2, 0, 3, 4, 5] would be worth 2.311 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 4, 5, 1, 0, 3, 7, 8] would be worth 2.312 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 4, 5, 2, 0, 3, 7, 8] would be worth 2.312 bits of additional information.
-An N-test using the admissible permutation [9, 4, 7, 3, 8, 5, 6, 2, 0, 1] would be worth 2.313 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 0, 4, 2, 3, 1, 8] would be worth 2.313 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 4, 0, 5, 2, 8, 6, 1] would be worth 2.313 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 3, 5, 2, 4, 1, 8] would be worth 2.313 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 4, 2, 3, 0, 1, 5, 8] would be worth 2.314 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 4, 5, 8, 0, 3, 6, 1] would be worth 2.314 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 5, 3, 6, 0, 8, 2, 1] would be worth 2.314 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 2, 1, 5, 4, 3] would be worth 2.314 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 1, 0, 2, 5, 7] would be worth 2.314 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 0, 5, 2, 4, 1, 8] would be worth 2.316 bits of additional information.
-An N-test using the admissible permutation [7, 9, 2, 1, 0, 5, 6, 3, 4, 8] would be worth 2.316 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 1, 8, 5, 0, 2, 6, 7] would be worth 2.317 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 6, 8, 5, 0, 7, 2, 3] would be worth 2.317 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 6, 5, 8, 0, 9, 4, 1] would be worth 2.317 bits of additional information.
-An N-test using the admissible permutation [9, 2, 6, 7, 8, 3, 0, 5, 4, 1] would be worth 2.317 bits of additional information.
-An N-test using the admissible permutation [6, 9, 3, 4, 5, 8, 0, 7, 2, 1] would be worth 2.318 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 7, 3, 5, 0, 4, 1, 8] would be worth 2.318 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 5, 8, 2, 0, 3, 4, 6] would be worth 2.318 bits of additional information.
-An N-test using the admissible permutation [9, 5, 4, 6, 8, 7, 0, 3, 2, 1] would be worth 2.319 bits of additional information.
-An N-test using the admissible permutation [5, 3, 7, 6, 9, 2, 0, 8, 4, 1] would be worth 2.319 bits of additional information.
-An N-test using the admissible permutation [7, 9, 2, 1, 5, 8, 0, 3, 4, 6] would be worth 2.319 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 6, 4, 5, 0, 2, 1, 8] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 5, 8, 3, 0, 4, 2, 7] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 0, 7, 5, 4, 3, 1, 8] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 5, 8, 7, 3, 2, 4, 1] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 9, 5, 0, 2, 1, 8] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [4, 3, 7, 6, 9, 5, 0, 8, 2, 1] would be worth 2.320 bits of additional information.
-An N-test using the admissible permutation [5, 2, 6, 7, 8, 1, 0, 3, 4, 9] would be worth 2.321 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 2, 8, 4, 3, 1, 5] would be worth 2.321 bits of additional information.
-An N-test using the admissible permutation [6, 9, 3, 7, 2, 5, 0, 4, 1, 8] would be worth 2.321 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 1, 8, 2, 0, 5, 4, 9] would be worth 2.322 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 5, 3, 4, 2, 6] would be worth 2.322 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 1, 8, 5, 0, 2, 7, 6] would be worth 2.323 bits of additional information.
-An N-test using the admissible permutation [3, 7, 9, 6, 8, 2, 0, 5, 4, 1] would be worth 2.323 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 5, 8, 0, 3, 6, 2] would be worth 2.324 bits of additional information.
-An N-test using the admissible permutation [4, 0, 9, 7, 8, 5, 6, 3, 2, 1] would be worth 2.324 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 5, 8, 3, 1, 4, 2] would be worth 2.324 bits of additional information.
-An N-test using the admissible permutation [0, 6, 9, 7, 8, 5, 4, 3, 2, 1] would be worth 2.324 bits of additional information.
-An N-test using the admissible permutation [9, 7, 1, 6, 8, 5, 0, 2, 4, 3] would be worth 2.324 bits of additional information.
-An N-test using the admissible permutation [7, 9, 6, 5, 3, 2, 0, 8, 4, 1] would be worth 2.325 bits of additional information.
-An N-test using the admissible permutation [4, 9, 2, 3, 8, 5, 6, 7, 0, 1] would be worth 2.325 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 8, 5, 6, 4, 2, 0] would be worth 2.325 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 6, 8, 3, 0, 5, 9, 1] would be worth 2.325 bits of additional information.
-An N-test using the admissible permutation [5, 3, 7, 6, 2, 9, 0, 8, 4, 1] would be worth 2.326 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 7, 9, 5, 0, 3, 1, 8] would be worth 2.326 bits of additional information.
-An N-test using the admissible permutation [9, 3, 7, 5, 6, 2, 0, 8, 4, 1] would be worth 2.326 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 1, 8, 3, 0, 7, 4, 6] would be worth 2.327 bits of additional information.
-An N-test using the admissible permutation [9, 7, 3, 1, 8, 5, 0, 2, 4, 6] would be worth 2.327 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 3, 8, 9, 0, 2, 4, 5] would be worth 2.327 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 5, 8, 1, 0, 4, 2] would be worth 2.327 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 4, 3, 5, 0, 8, 2, 6] would be worth 2.327 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 1, 0, 2, 7, 5] would be worth 2.329 bits of additional information.
-An N-test using the admissible permutation [5, 9, 3, 7, 2, 6, 0, 8, 4, 1] would be worth 2.329 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 7, 8, 4, 6, 3, 0, 1] would be worth 2.329 bits of additional information.
-An N-test using the admissible permutation [9, 1, 7, 0, 8, 5, 6, 2, 4, 3] would be worth 2.330 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 5, 8, 3, 0, 4, 6, 1] would be worth 2.330 bits of additional information.
-An N-test using the admissible permutation [9, 6, 4, 5, 8, 7, 0, 3, 2, 1] would be worth 2.331 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 5, 6, 0, 2, 4, 8] would be worth 2.331 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 6, 8, 3, 0, 4, 5, 1] would be worth 2.331 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 6, 9, 5, 0, 3, 1, 8] would be worth 2.332 bits of additional information.
-An N-test using the admissible permutation [9, 7, 2, 6, 8, 5, 0, 1, 4, 3] would be worth 2.332 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 3, 8, 9, 0, 1, 4, 5] would be worth 2.332 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 6, 8, 2, 0, 3, 5, 1] would be worth 2.332 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 7, 8, 2, 3, 0, 5, 1] would be worth 2.332 bits of additional information.
-An N-test using the admissible permutation [5, 2, 7, 6, 8, 3, 0, 4, 9, 1] would be worth 2.333 bits of additional information.
-An N-test using the admissible permutation [3, 7, 9, 6, 8, 5, 0, 4, 2, 1] would be worth 2.333 bits of additional information.
-An N-test using the admissible permutation [0, 1, 7, 6, 8, 5, 9, 2, 4, 3] would be worth 2.333 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 2, 0, 1, 5, 7] would be worth 2.334 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 1, 0, 5, 2, 7] would be worth 2.334 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 3, 2, 6, 0, 8, 5, 1] would be worth 2.334 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 2, 4, 0, 5, 1, 8] would be worth 2.335 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 3, 8, 7, 2, 5, 4, 1] would be worth 2.335 bits of additional information.
-An N-test using the admissible permutation [3, 9, 6, 4, 2, 5, 0, 8, 7, 1] would be worth 2.337 bits of additional information.
-An N-test using the admissible permutation [9, 1, 7, 6, 3, 5, 0, 8, 4, 2] would be worth 2.337 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 8, 2, 6, 5, 4, 0] would be worth 2.337 bits of additional information.
-An N-test using the admissible permutation [0, 6, 9, 7, 8, 5, 3, 2, 4, 1] would be worth 2.338 bits of additional information.
-An N-test using the admissible permutation [7, 9, 6, 0, 2, 5, 3, 8, 4, 1] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 5, 8, 3, 2, 0, 4, 7] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 4, 3, 2, 0, 8, 6, 1] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 1, 8, 3, 2, 0, 4, 6] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 3, 5, 8, 0, 7, 4, 2] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 3, 2, 8, 0, 4, 1, 5] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 8, 3, 4, 1, 2, 0] would be worth 2.339 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 1, 8, 5, 3, 2, 4, 7] would be worth 2.340 bits of additional information.
-An N-test using the admissible permutation [5, 0, 9, 7, 8, 2, 6, 3, 4, 1] would be worth 2.340 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 1, 8, 2, 0, 3, 6, 7] would be worth 2.340 bits of additional information.
-An N-test using the admissible permutation [7, 6, 2, 3, 9, 5, 0, 8, 4, 1] would be worth 2.343 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 8, 4, 0, 2, 9, 1] would be worth 2.343 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 4, 2, 3, 6, 5] would be worth 2.343 bits of additional information.
-An N-test using the admissible permutation [7, 9, 3, 5, 6, 2, 0, 8, 4, 1] would be worth 2.344 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 7, 8, 5, 1, 2, 4, 3] would be worth 2.344 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 3, 8, 5, 9, 4, 6, 1] would be worth 2.344 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 7, 8, 3, 2, 5, 4, 0] would be worth 2.345 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 2, 3, 5, 4, 6] would be worth 2.345 bits of additional information.
-An N-test using the admissible permutation [5, 9, 3, 0, 8, 7, 6, 2, 4, 1] would be worth 2.346 bits of additional information.
-An N-test using the admissible permutation [9, 3, 7, 0, 6, 5, 2, 8, 4, 1] would be worth 2.346 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 5, 6, 0, 3, 2, 8] would be worth 2.346 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 3, 8, 5, 6, 0, 9, 1] would be worth 2.347 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 8, 2, 6, 0, 4, 5] would be worth 2.347 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 3, 2, 6, 0, 8, 4, 5] would be worth 2.347 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 2, 0, 1, 7, 5] would be worth 2.347 bits of additional information.
-An N-test using the admissible permutation [9, 3, 7, 6, 0, 5, 2, 8, 4, 1] would be worth 2.348 bits of additional information.
-An N-test using the admissible permutation [9, 6, 4, 7, 8, 5, 2, 3, 0, 1] would be worth 2.348 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 3, 7, 5, 0, 4, 1, 8] would be worth 2.348 bits of additional information.
-An N-test using the admissible permutation [3, 9, 6, 4, 7, 5, 0, 8, 2, 1] would be worth 2.349 bits of additional information.
-An N-test using the admissible permutation [9, 2, 6, 5, 8, 3, 0, 7, 4, 1] would be worth 2.349 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 0, 6, 5, 3, 8, 4, 2] would be worth 2.350 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 1, 8, 2, 0, 3, 7, 6] would be worth 2.350 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 1, 8, 4, 6, 3, 2, 0] would be worth 2.351 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 5, 8, 2, 0, 3, 6, 1] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [5, 2, 4, 7, 8, 9, 0, 3, 6, 1] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [1, 6, 2, 5, 8, 7, 0, 3, 4, 9] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 1, 8, 5, 0, 7, 2, 6] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [5, 1, 2, 6, 8, 7, 0, 3, 4, 9] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [7, 9, 6, 3, 0, 5, 2, 8, 4, 1] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 7, 8, 3, 2, 0, 4, 5] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 0, 2, 4, 3, 1, 8] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 5, 8, 0, 9, 2, 1] would be worth 2.352 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 1, 0, 7, 2, 5] would be worth 2.353 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 4, 5, 9, 0, 3, 2, 8] would be worth 2.353 bits of additional information.
-An N-test using the admissible permutation [9, 1, 7, 3, 6, 5, 0, 8, 4, 2] would be worth 2.355 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 3, 8, 5, 9, 1, 4, 6] would be worth 2.355 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 3, 8, 4, 0, 5, 9, 1] would be worth 2.356 bits of additional information.
-An N-test using the admissible permutation [6, 5, 3, 7, 8, 1, 0, 2, 4, 9] would be worth 2.357 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 5, 8, 2, 3, 0, 7, 1] would be worth 2.357 bits of additional information.
-An N-test using the admissible permutation [1, 9, 6, 7, 3, 5, 0, 8, 4, 2] would be worth 2.357 bits of additional information.
-An N-test using the admissible permutation [3, 1, 7, 6, 9, 5, 0, 8, 4, 2] would be worth 2.357 bits of additional information.
-An N-test using the admissible permutation [0, 9, 1, 5, 8, 7, 2, 3, 4, 6] would be worth 2.357 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 6, 8, 5, 2, 3, 0, 7] would be worth 2.358 bits of additional information.
-An N-test using the admissible permutation [1, 5, 2, 6, 8, 7, 0, 3, 4, 9] would be worth 2.358 bits of additional information.
-An N-test using the admissible permutation [5, 7, 2, 1, 8, 9, 0, 3, 4, 6] would be worth 2.360 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 7, 8, 5, 2, 1, 4, 3] would be worth 2.361 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 3, 6, 1, 0, 8, 4, 2] would be worth 2.361 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 1, 8, 5, 2, 0, 4, 9] would be worth 2.361 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 0, 8, 7, 2, 3, 6, 1] would be worth 2.362 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 5, 8, 3, 2, 7, 4, 0] would be worth 2.362 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 4, 6, 2, 0, 8, 5, 1] would be worth 2.363 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 0, 2, 6, 3, 8, 4, 1] would be worth 2.363 bits of additional information.
-An N-test using the admissible permutation [5, 2, 4, 6, 8, 9, 0, 3, 7, 1] would be worth 2.364 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 4, 5, 2, 0, 3, 9, 8] would be worth 2.364 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 1, 8, 5, 4, 3, 2, 7] would be worth 2.364 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 4, 7, 5, 0, 8, 6, 1] would be worth 2.364 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 6, 8, 7, 4, 3, 5, 1] would be worth 2.364 bits of additional information.
-An N-test using the admissible permutation [7, 9, 1, 3, 2, 5, 0, 8, 4, 6] would be worth 2.365 bits of additional information.
-An N-test using the admissible permutation [1, 9, 6, 3, 7, 5, 0, 8, 4, 2] would be worth 2.366 bits of additional information.
-An N-test using the admissible permutation [3, 2, 6, 7, 8, 5, 0, 1, 4, 9] would be worth 2.366 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 0, 8, 3, 2, 5, 4, 7] would be worth 2.366 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 7, 8, 3, 0, 5, 9, 1] would be worth 2.367 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 4, 2, 3, 5, 6] would be worth 2.367 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 5, 8, 3, 9, 2, 4, 0] would be worth 2.367 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 3, 7, 6, 0, 8, 4, 1] would be worth 2.367 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 3, 8, 5, 6, 1, 4, 0] would be worth 2.368 bits of additional information.
-An N-test using the admissible permutation [4, 7, 2, 1, 8, 5, 0, 3, 9, 6] would be worth 2.368 bits of additional information.
-An N-test using the admissible permutation [9, 7, 6, 1, 8, 5, 2, 3, 4, 0] would be worth 2.368 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 5, 2, 9, 0, 3, 1, 8] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 8, 3, 4, 1, 2, 5] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [6, 5, 3, 7, 8, 2, 0, 1, 4, 9] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [1, 9, 4, 7, 8, 5, 2, 3, 0, 6] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 5, 6, 1, 0, 8, 4, 2] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 0, 8, 5, 2, 3, 6, 1] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 5, 8, 7, 4, 3, 6, 1] would be worth 2.370 bits of additional information.
-An N-test using the admissible permutation [0, 9, 1, 6, 8, 7, 2, 3, 4, 5] would be worth 2.370 bits of additional information.
-An N-test using the admissible permutation [1, 9, 3, 7, 6, 5, 0, 8, 4, 2] would be worth 2.370 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 2, 4, 3, 6, 5] would be worth 2.371 bits of additional information.
-An N-test using the admissible permutation [0, 2, 6, 7, 8, 5, 4, 3, 9, 1] would be worth 2.371 bits of additional information.
-An N-test using the admissible permutation [9, 7, 2, 6, 8, 5, 4, 3, 0, 1] would be worth 2.371 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 3, 8, 5, 9, 2, 4, 0] would be worth 2.372 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 6, 8, 1, 0, 5, 4, 9] would be worth 2.372 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 5, 1, 2, 7, 0] would be worth 2.373 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 6, 3, 1, 0, 8, 4, 2] would be worth 2.373 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 0, 3, 6, 2, 8, 4, 1] would be worth 2.373 bits of additional information.
-An N-test using the admissible permutation [3, 0, 9, 7, 8, 5, 6, 2, 4, 1] would be worth 2.374 bits of additional information.
-An N-test using the admissible permutation [0, 6, 9, 3, 8, 5, 2, 7, 4, 1] would be worth 2.374 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 7, 8, 5, 6, 4, 0, 1] would be worth 2.375 bits of additional information.
-An N-test using the admissible permutation [4, 9, 2, 0, 8, 7, 6, 3, 5, 1] would be worth 2.375 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 3, 8, 9, 0, 4, 5, 1] would be worth 2.375 bits of additional information.
-An N-test using the admissible permutation [6, 5, 2, 7, 8, 3, 0, 4, 9, 1] would be worth 2.375 bits of additional information.
-An N-test using the admissible permutation [0, 4, 9, 7, 8, 5, 2, 3, 6, 1] would be worth 2.375 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 5, 0, 6, 2, 8, 4, 1] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [6, 5, 4, 3, 8, 9, 0, 2, 7, 1] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 7, 8, 5, 3, 1, 2, 0] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 7, 8, 3, 4, 0, 5, 1] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [7, 9, 6, 0, 3, 5, 2, 8, 4, 1] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 6, 0, 5, 3, 8, 4, 2] would be worth 2.376 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 2, 3, 7, 5, 1] would be worth 2.377 bits of additional information.
-An N-test using the admissible permutation [1, 9, 2, 5, 8, 7, 6, 3, 4, 0] would be worth 2.377 bits of additional information.
-An N-test using the admissible permutation [1, 2, 4, 7, 8, 5, 0, 3, 9, 6] would be worth 2.377 bits of additional information.
-An N-test using the admissible permutation [9, 2, 4, 3, 8, 5, 0, 7, 6, 1] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 8, 2, 0, 4, 9, 1] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [5, 2, 7, 3, 8, 9, 6, 0, 4, 1] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [9, 5, 7, 1, 8, 2, 6, 3, 4, 0] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [9, 0, 7, 1, 8, 2, 6, 3, 4, 5] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 5, 2, 1, 7, 0] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 7, 3, 6, 0, 8, 4, 1] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [9, 3, 2, 7, 6, 5, 0, 8, 4, 1] would be worth 2.378 bits of additional information.
-An N-test using the admissible permutation [0, 6, 7, 1, 8, 9, 2, 3, 4, 5] would be worth 2.379 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 3, 2, 0, 4, 1, 8] would be worth 2.379 bits of additional information.
-An N-test using the admissible permutation [1, 9, 3, 6, 7, 5, 0, 8, 4, 2] would be worth 2.379 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 8, 5, 4, 2, 9, 1] would be worth 2.379 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 8, 9, 0, 4, 2, 1] would be worth 2.380 bits of additional information.
-An N-test using the admissible permutation [9, 3, 2, 6, 7, 5, 0, 8, 4, 1] would be worth 2.381 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 8, 2, 6, 3, 5, 0] would be worth 2.381 bits of additional information.
-An N-test using the admissible permutation [9, 4, 2, 7, 8, 5, 6, 3, 0, 1] would be worth 2.382 bits of additional information.
-An N-test using the admissible permutation [5, 9, 2, 3, 8, 7, 6, 0, 4, 1] would be worth 2.382 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 2, 3, 5, 7, 1] would be worth 2.383 bits of additional information.
-An N-test using the admissible permutation [9, 4, 7, 5, 8, 2, 6, 3, 0, 1] would be worth 2.383 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 4, 6, 5, 0, 8, 7, 1] would be worth 2.383 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 0, 6, 5, 1, 8, 4, 2] would be worth 2.384 bits of additional information.
-An N-test using the admissible permutation [0, 4, 9, 6, 8, 5, 2, 3, 7, 1] would be worth 2.384 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 7, 8, 3, 1, 5, 4, 0] would be worth 2.385 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 5, 8, 3, 1, 4, 2, 0] would be worth 2.386 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 5, 8, 9, 6, 3, 4, 0] would be worth 2.386 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 5, 3, 4, 9, 1] would be worth 2.386 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 5, 8, 3, 1, 0, 4, 7] would be worth 2.387 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 6, 8, 4, 0, 3, 5, 9] would be worth 2.387 bits of additional information.
-An N-test using the admissible permutation [9, 6, 4, 1, 8, 5, 0, 3, 2, 7] would be worth 2.388 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 4, 2, 8, 0, 3, 5, 9] would be worth 2.389 bits of additional information.
-An N-test using the admissible permutation [4, 7, 2, 6, 8, 5, 9, 3, 0, 1] would be worth 2.389 bits of additional information.
-An N-test using the admissible permutation [4, 9, 2, 1, 8, 5, 6, 3, 7, 0] would be worth 2.389 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 6, 8, 5, 2, 3, 4, 0] would be worth 2.389 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 0, 8, 5, 2, 3, 4, 6] would be worth 2.390 bits of additional information.
-An N-test using the admissible permutation [3, 4, 7, 1, 8, 5, 0, 2, 6, 9] would be worth 2.390 bits of additional information.
-An N-test using the admissible permutation [0, 9, 1, 6, 8, 5, 2, 7, 4, 3] would be worth 2.390 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 6, 8, 7, 1, 3, 4, 5] would be worth 2.391 bits of additional information.
-An N-test using the admissible permutation [1, 9, 2, 0, 8, 7, 6, 3, 4, 5] would be worth 2.391 bits of additional information.
-An N-test using the admissible permutation [1, 2, 4, 6, 8, 5, 0, 3, 9, 7] would be worth 2.392 bits of additional information.
-An N-test using the admissible permutation [1, 4, 7, 6, 8, 5, 2, 3, 0, 9] would be worth 2.392 bits of additional information.
-An N-test using the admissible permutation [7, 9, 3, 0, 6, 5, 2, 8, 4, 1] would be worth 2.393 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 3, 4, 2, 9, 1] would be worth 2.393 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 1, 3, 2, 4, 9] would be worth 2.393 bits of additional information.
-An N-test using the admissible permutation [0, 5, 7, 1, 8, 9, 2, 3, 4, 6] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [3, 9, 4, 6, 8, 5, 2, 7, 0, 1] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 5, 1, 0, 2, 7] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 7, 8, 3, 1, 0, 4, 5] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [9, 4, 7, 1, 8, 5, 6, 3, 2, 0] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [6, 9, 1, 0, 8, 3, 2, 7, 4, 5] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 5, 8, 7, 1, 3, 4, 6] would be worth 2.394 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 6, 0, 5, 1, 8, 4, 2] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 5, 3, 1, 2, 7] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [9, 0, 2, 1, 8, 5, 6, 3, 4, 7] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [4, 1, 7, 6, 8, 5, 2, 3, 0, 9] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [0, 4, 7, 1, 8, 5, 2, 3, 9, 6] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 7, 8, 2, 0, 5, 4, 9] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 3, 8, 5, 4, 0, 9, 1] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [6, 5, 4, 3, 8, 9, 0, 7, 2, 1] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 5, 8, 9, 6, 0, 4, 1] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [0, 6, 7, 1, 8, 2, 9, 3, 4, 5] would be worth 2.397 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 5, 8, 3, 0, 7, 9, 1] would be worth 2.398 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 7, 8, 5, 3, 2, 9, 1] would be worth 2.398 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 9, 1, 3, 4, 6] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [6, 5, 4, 3, 8, 2, 0, 7, 9, 1] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 0, 8, 5, 6, 4, 9, 1] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 3, 8, 5, 0, 4, 6, 9] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [9, 2, 1, 0, 8, 5, 6, 3, 4, 7] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 0, 8, 9, 6, 3, 4, 5] would be worth 2.399 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 5, 8, 3, 1, 7, 4, 0] would be worth 2.400 bits of additional information.
-An N-test using the admissible permutation [4, 6, 2, 1, 8, 5, 0, 3, 7, 9] would be worth 2.400 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 2, 4, 3, 5, 6] would be worth 2.400 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 3, 8, 5, 9, 1, 4, 0] would be worth 2.400 bits of additional information.
-An N-test using the admissible permutation [0, 9, 3, 6, 8, 7, 2, 5, 4, 1] would be worth 2.401 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 8, 3, 9, 2, 4, 5] would be worth 2.401 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 0, 8, 3, 1, 5, 4, 7] would be worth 2.401 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 5, 7, 6, 0, 8, 4, 1] would be worth 2.403 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 5, 8, 1, 6, 3, 4, 0] would be worth 2.403 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 0, 8, 9, 6, 5, 4, 1] would be worth 2.403 bits of additional information.
-An N-test using the admissible permutation [4, 2, 1, 6, 8, 5, 0, 3, 7, 9] would be worth 2.404 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 1, 8, 5, 6, 0, 4, 7] would be worth 2.404 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 3, 4, 2, 9, 1] would be worth 2.404 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 1, 8, 5, 4, 3, 6, 7] would be worth 2.404 bits of additional information.
-An N-test using the admissible permutation [3, 2, 4, 6, 8, 5, 0, 7, 9, 1] would be worth 2.405 bits of additional information.
-An N-test using the admissible permutation [7, 9, 3, 6, 0, 5, 2, 8, 4, 1] would be worth 2.405 bits of additional information.
-An N-test using the admissible permutation [1, 2, 6, 3, 8, 5, 0, 7, 4, 9] would be worth 2.405 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 5, 8, 3, 4, 0, 7, 1] would be worth 2.405 bits of additional information.
-An N-test using the admissible permutation [0, 1, 9, 6, 8, 5, 2, 3, 4, 7] would be worth 2.405 bits of additional information.
-An N-test using the admissible permutation [3, 6, 2, 1, 8, 5, 0, 7, 4, 9] would be worth 2.406 bits of additional information.
-An N-test using the admissible permutation [3, 9, 1, 6, 7, 5, 0, 8, 4, 2] would be worth 2.407 bits of additional information.
-An N-test using the admissible permutation [6, 0, 3, 7, 8, 5, 1, 2, 4, 9] would be worth 2.407 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 1, 8, 5, 0, 4, 2, 9] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [5, 2, 7, 0, 8, 4, 6, 3, 9, 1] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 3, 8, 5, 9, 2, 7, 1] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [1, 9, 2, 7, 8, 5, 6, 0, 4, 3] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 5, 9, 2, 0, 3, 1, 8] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [0, 2, 6, 3, 8, 5, 9, 7, 4, 1] would be worth 2.408 bits of additional information.
-An N-test using the admissible permutation [5, 6, 7, 1, 8, 4, 0, 3, 2, 9] would be worth 2.409 bits of additional information.
-An N-test using the admissible permutation [3, 9, 0, 7, 6, 5, 2, 8, 4, 1] would be worth 2.409 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 3, 8, 5, 0, 2, 9, 7] would be worth 2.409 bits of additional information.
-An N-test using the admissible permutation [3, 9, 1, 7, 6, 5, 0, 8, 4, 2] would be worth 2.411 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 9, 4, 3, 6, 1] would be worth 2.412 bits of additional information.
-An N-test using the admissible permutation [0, 9, 3, 1, 8, 5, 2, 7, 4, 6] would be worth 2.412 bits of additional information.
-An N-test using the admissible permutation [0, 1, 9, 7, 8, 5, 2, 3, 4, 6] would be worth 2.412 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 5, 8, 3, 2, 0, 9, 1] would be worth 2.412 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 3, 2, 4, 9, 1] would be worth 2.413 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 3, 8, 5, 1, 7, 2, 0] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 5, 8, 2, 0, 7, 4, 9] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [6, 9, 7, 0, 8, 3, 1, 4, 2, 5] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 0, 8, 3, 4, 5, 7, 1] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [1, 9, 2, 0, 8, 5, 6, 7, 4, 3] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 5, 8, 7, 6, 0, 4, 1] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [7, 9, 2, 0, 6, 5, 3, 8, 4, 1] would be worth 2.414 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 0, 8, 1, 6, 3, 4, 5] would be worth 2.415 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 1, 9, 3, 4, 6] would be worth 2.415 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 9, 1, 3, 4, 5] would be worth 2.418 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 7, 8, 1, 2, 3, 5, 0] would be worth 2.418 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 0, 8, 7, 6, 5, 4, 1] would be worth 2.418 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 6, 8, 5, 1, 0, 4, 9] would be worth 2.419 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 1, 3, 2, 4, 9] would be worth 2.419 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 0, 8, 3, 4, 7, 5, 1] would be worth 2.419 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 9, 3, 5, 4, 1] would be worth 2.419 bits of additional information.
-An N-test using the admissible permutation [0, 5, 7, 1, 8, 2, 9, 3, 4, 6] would be worth 2.420 bits of additional information.
-An N-test using the admissible permutation [4, 0, 7, 1, 8, 5, 2, 3, 6, 9] would be worth 2.420 bits of additional information.
-An N-test using the admissible permutation [4, 2, 1, 7, 8, 5, 0, 3, 6, 9] would be worth 2.420 bits of additional information.
-An N-test using the admissible permutation [6, 0, 1, 7, 8, 5, 3, 2, 4, 9] would be worth 2.420 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 5, 8, 4, 0, 3, 6, 9] would be worth 2.420 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 1, 9, 3, 4, 5] would be worth 2.421 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 6, 8, 7, 3, 5, 4, 1] would be worth 2.421 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 3, 8, 5, 0, 1, 6, 9] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [3, 9, 0, 6, 7, 5, 2, 8, 4, 1] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [6, 9, 2, 0, 8, 3, 1, 7, 4, 5] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 8, 2, 9, 0, 4, 1] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 6, 8, 5, 1, 7, 4, 3] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 5, 8, 9, 2, 0, 4, 1] would be worth 2.422 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 8, 2, 9, 5, 4, 1] would be worth 2.423 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 9, 4, 3, 5, 1] would be worth 2.423 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 4, 9, 3, 5, 1] would be worth 2.424 bits of additional information.
-An N-test using the admissible permutation [0, 6, 2, 1, 8, 5, 9, 3, 4, 7] would be worth 2.424 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 6, 8, 5, 3, 0, 4, 9] would be worth 2.424 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 4, 9, 3, 6, 1] would be worth 2.424 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 8, 5, 9, 4, 2, 1] would be worth 2.424 bits of additional information.
-An N-test using the admissible permutation [7, 9, 2, 6, 0, 5, 3, 8, 4, 1] would be worth 2.425 bits of additional information.
-An N-test using the admissible permutation [1, 2, 3, 6, 8, 5, 0, 7, 4, 9] would be worth 2.425 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 3, 8, 1, 2, 0, 4, 9] would be worth 2.426 bits of additional information.
-An N-test using the admissible permutation [6, 5, 2, 3, 8, 1, 0, 7, 4, 9] would be worth 2.426 bits of additional information.
-An N-test using the admissible permutation [0, 4, 7, 1, 8, 5, 9, 3, 2, 6] would be worth 2.426 bits of additional information.
-An N-test using the admissible permutation [6, 5, 1, 3, 8, 2, 0, 7, 4, 9] would be worth 2.427 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 0, 8, 4, 6, 3, 5, 1] would be worth 2.428 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 3, 8, 1, 2, 5, 4, 9] would be worth 2.428 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 2, 3, 1, 4, 9] would be worth 2.429 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 1, 8, 5, 4, 3, 7, 6] would be worth 2.429 bits of additional information.
-An N-test using the admissible permutation [9, 2, 1, 7, 8, 5, 6, 3, 4, 0] would be worth 2.429 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 8, 9, 2, 5, 4, 1] would be worth 2.430 bits of additional information.
-An N-test using the admissible permutation [5, 2, 7, 6, 8, 3, 9, 0, 4, 1] would be worth 2.431 bits of additional information.
-An N-test using the admissible permutation [6, 7, 3, 0, 8, 5, 2, 4, 9, 1] would be worth 2.431 bits of additional information.
-An N-test using the admissible permutation [3, 9, 2, 1, 8, 5, 6, 7, 4, 0] would be worth 2.433 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 3, 2, 4, 9, 1] would be worth 2.435 bits of additional information.
-An N-test using the admissible permutation [9, 5, 2, 0, 8, 7, 6, 3, 4, 1] would be worth 2.436 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 3, 8, 2, 1, 5, 4, 9] would be worth 2.436 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 3, 8, 5, 9, 7, 2, 1] would be worth 2.437 bits of additional information.
-An N-test using the admissible permutation [3, 7, 9, 6, 8, 5, 2, 0, 4, 1] would be worth 2.437 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 5, 8, 1, 2, 3, 7, 0] would be worth 2.437 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 5, 8, 3, 9, 0, 2, 1] would be worth 2.437 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 3, 8, 5, 4, 1, 2, 9] would be worth 2.438 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 7, 8, 2, 1, 3, 5, 0] would be worth 2.440 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 0, 8, 5, 1, 3, 6, 9] would be worth 2.440 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 6, 8, 1, 0, 3, 5, 9] would be worth 2.440 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 5, 3, 4, 9, 1] would be worth 2.441 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 5, 8, 1, 0, 3, 6, 9] would be worth 2.442 bits of additional information.
-An N-test using the admissible permutation [3, 2, 1, 6, 8, 5, 0, 7, 4, 9] would be worth 2.442 bits of additional information.
-An N-test using the admissible permutation [6, 0, 3, 7, 8, 5, 2, 1, 4, 9] would be worth 2.443 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 3, 8, 2, 1, 0, 4, 9] would be worth 2.443 bits of additional information.
-An N-test using the admissible permutation [9, 2, 3, 7, 8, 5, 6, 0, 4, 1] would be worth 2.443 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 3, 9, 2, 5, 1] would be worth 2.443 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 0, 8, 5, 4, 3, 6, 9] would be worth 2.444 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 0, 8, 9, 6, 3, 5, 1] would be worth 2.444 bits of additional information.
-An N-test using the admissible permutation [0, 2, 1, 6, 8, 5, 9, 3, 4, 7] would be worth 2.444 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 5, 8, 9, 3, 0, 4, 1] would be worth 2.445 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 3, 2, 5, 9, 1] would be worth 2.445 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 1, 8, 5, 3, 7, 4, 6] would be worth 2.445 bits of additional information.
-An N-test using the admissible permutation [4, 5, 7, 1, 8, 2, 0, 3, 6, 9] would be worth 2.446 bits of additional information.
-An N-test using the admissible permutation [0, 2, 1, 7, 8, 5, 9, 3, 4, 6] would be worth 2.446 bits of additional information.
-An N-test using the admissible permutation [5, 4, 7, 1, 8, 2, 0, 3, 6, 9] would be worth 2.446 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 3, 9, 5, 2, 1] would be worth 2.446 bits of additional information.
-An N-test using the admissible permutation [6, 5, 2, 7, 8, 3, 9, 0, 4, 1] would be worth 2.447 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 2, 3, 1, 4, 9] would be worth 2.447 bits of additional information.
-An N-test using the admissible permutation [4, 6, 7, 1, 8, 2, 0, 3, 5, 9] would be worth 2.448 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 3, 8, 5, 2, 7, 9, 1] would be worth 2.448 bits of additional information.
-An N-test using the admissible permutation [9, 0, 2, 5, 8, 7, 6, 3, 4, 1] would be worth 2.449 bits of additional information.
-An N-test using the admissible permutation [6, 0, 2, 7, 8, 3, 9, 5, 4, 1] would be worth 2.450 bits of additional information.
-An N-test using the admissible permutation [0, 5, 2, 6, 8, 7, 9, 3, 4, 1] would be worth 2.452 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 9, 3, 5, 4, 1] would be worth 2.452 bits of additional information.
-An N-test using the admissible permutation [0, 6, 2, 5, 8, 7, 9, 3, 4, 1] would be worth 2.453 bits of additional information.
-An N-test using the admissible permutation [9, 2, 3, 0, 8, 5, 6, 7, 4, 1] would be worth 2.453 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 3, 8, 5, 1, 4, 2, 9] would be worth 2.454 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 8, 5, 1, 0, 2, 9] would be worth 2.454 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 3, 9, 4, 2, 1] would be worth 2.455 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 5, 8, 2, 3, 0, 4, 9] would be worth 2.455 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 1, 2, 3, 5, 7] would be worth 2.455 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 1, 2, 3, 7, 5] would be worth 2.455 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 8, 5, 4, 0, 2, 9] would be worth 2.456 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 7, 8, 2, 0, 3, 9, 5] would be worth 2.457 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 3, 8, 5, 0, 1, 7, 9] would be worth 2.458 bits of additional information.
-An N-test using the admissible permutation [6, 4, 1, 3, 8, 5, 0, 2, 7, 9] would be worth 2.459 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 7, 8, 5, 2, 0, 4, 9] would be worth 2.459 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 5, 8, 9, 2, 3, 4, 0] would be worth 2.459 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 5, 3, 1, 2, 9] would be worth 2.460 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 7, 8, 9, 0, 3, 2, 5] would be worth 2.462 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 3, 9, 4, 2, 1] would be worth 2.463 bits of additional information.
-An N-test using the admissible permutation [6, 0, 2, 7, 8, 5, 3, 1, 4, 9] would be worth 2.465 bits of additional information.
-An N-test using the admissible permutation [6, 4, 3, 7, 8, 5, 0, 1, 2, 9] would be worth 2.466 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 2, 1, 3, 5, 7] would be worth 2.467 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 7, 8, 5, 2, 3, 9, 0] would be worth 2.468 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 8, 4, 0, 2, 5, 9] would be worth 2.468 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 8, 2, 3, 5, 4, 9] would be worth 2.469 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 7, 8, 9, 2, 3, 5, 1] would be worth 2.469 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 0, 8, 2, 1, 3, 7, 5] would be worth 2.470 bits of additional information.
-An N-test using the admissible permutation [6, 5, 2, 0, 8, 3, 9, 7, 4, 1] would be worth 2.471 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 3, 8, 5, 0, 4, 7, 9] would be worth 2.471 bits of additional information.
-An N-test using the admissible permutation [6, 9, 4, 5, 8, 2, 1, 3, 7, 0] would be worth 2.472 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 0, 8, 9, 2, 3, 4, 5] would be worth 2.474 bits of additional information.
-An N-test using the admissible permutation [6, 0, 1, 3, 8, 5, 2, 7, 4, 9] would be worth 2.475 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 7, 8, 5, 0, 4, 2, 9] would be worth 2.475 bits of additional information.
-An N-test using the admissible permutation [6, 5, 4, 0, 8, 9, 2, 3, 7, 1] would be worth 2.476 bits of additional information.
-An N-test using the admissible permutation [6, 0, 2, 5, 8, 3, 9, 7, 4, 1] would be worth 2.477 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 0, 8, 2, 9, 3, 4, 5] would be worth 2.478 bits of additional information.
-An N-test using the admissible permutation [6, 0, 2, 3, 8, 5, 1, 7, 4, 9] would be worth 2.480 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 7, 8, 5, 3, 0, 4, 9] would be worth 2.481 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 8, 1, 0, 2, 5, 9] would be worth 2.482 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 8, 5, 3, 4, 2, 9] would be worth 2.482 bits of additional information.
-An N-test using the admissible permutation [6, 7, 1, 5, 8, 2, 9, 3, 4, 0] would be worth 2.483 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 3, 8, 4, 0, 1, 2, 9] would be worth 2.483 bits of additional information.
-An N-test using the admissible permutation [6, 5, 1, 7, 8, 4, 0, 3, 2, 9] would be worth 2.483 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 5, 8, 9, 1, 3, 4, 0] would be worth 2.484 bits of additional information.
-An N-test using the admissible permutation [6, 1, 3, 0, 8, 5, 2, 7, 4, 9] would be worth 2.485 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 7, 8, 2, 9, 3, 5, 1] would be worth 2.486 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 5, 8, 9, 0, 3, 2, 7] would be worth 2.486 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 5, 8, 9, 2, 3, 7, 1] would be worth 2.486 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 8, 4, 0, 5, 2, 9] would be worth 2.486 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 9, 1, 3, 4, 5] would be worth 2.487 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 5, 8, 2, 0, 3, 9, 7] would be worth 2.487 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 5, 8, 1, 9, 3, 4, 0] would be worth 2.488 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 4, 9, 3, 5, 1] would be worth 2.490 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 0, 8, 5, 2, 3, 9, 7] would be worth 2.490 bits of additional information.
-An N-test using the admissible permutation [0, 2, 3, 6, 8, 5, 9, 7, 4, 1] would be worth 2.491 bits of additional information.
-An N-test using the admissible permutation [6, 5, 4, 0, 8, 2, 9, 3, 7, 1] would be worth 2.492 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 8, 1, 0, 5, 2, 9] would be worth 2.493 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 1, 9, 3, 4, 5] would be worth 2.495 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 7, 8, 5, 9, 3, 2, 0] would be worth 2.499 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 3, 8, 2, 0, 1, 5, 9] would be worth 2.504 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 0, 8, 5, 3, 7, 4, 9] would be worth 2.506 bits of additional information.
-An N-test using the admissible permutation [6, 0, 4, 5, 8, 2, 9, 3, 7, 1] would be worth 2.506 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 7, 8, 4, 0, 3, 5, 9] would be worth 2.507 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 3, 8, 1, 0, 4, 2, 9] would be worth 2.507 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 7, 8, 1, 0, 3, 5, 9] would be worth 2.508 bits of additional information.
-An N-test using the admissible permutation [6, 7, 2, 0, 8, 9, 4, 3, 5, 1] would be worth 2.508 bits of additional information.
-An N-test using the admissible permutation [6, 4, 1, 3, 8, 5, 0, 7, 2, 9] would be worth 2.510 bits of additional information.
-An N-test using the admissible permutation [6, 1, 4, 0, 8, 5, 9, 3, 2, 7] would be worth 2.514 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 3, 8, 2, 0, 4, 5, 9] would be worth 2.518 bits of additional information.
-An N-test using the admissible permutation [6, 0, 1, 7, 8, 5, 4, 3, 2, 9] would be worth 2.519 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 5, 8, 4, 0, 3, 7, 9] would be worth 2.519 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 5, 8, 1, 0, 3, 7, 9] would be worth 2.525 bits of additional information.
-An N-test using the admissible permutation [6, 4, 1, 7, 8, 2, 0, 3, 5, 9] would be worth 2.528 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 4, 1, 3, 2, 9] would be worth 2.534 bits of additional information.
-An N-test using the admissible permutation [6, 4, 1, 0, 8, 5, 2, 3, 7, 9] would be worth 2.539 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 4, 1, 3, 2, 9] would be worth 2.543 bits of additional information.
-An N-test using the admissible permutation [6, 4, 2, 0, 8, 5, 1, 3, 7, 9] would be worth 2.543 bits of additional information.
-An N-test using the admissible permutation [6, 4, 1, 5, 8, 2, 0, 3, 7, 9] would be worth 2.544 bits of additional information.
-An N-test using the admissible permutation [6, 1, 2, 0, 8, 5, 4, 3, 7, 9] would be worth 2.545 bits of additional information.
-An N-test using the admissible permutation [6, 0, 7, 5, 8, 1, 4, 3, 2, 9] would be worth 2.550 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 8, 4, 2, 3, 5, 9] would be worth 2.554 bits of additional information.
-An N-test using the admissible permutation [6, 5, 7, 0, 8, 1, 4, 3, 2, 9] would be worth 2.557 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 1, 2, 3, 5, 9] would be worth 2.567 bits of additional information.
-An N-test using the admissible permutation [6, 4, 7, 0, 8, 2, 1, 3, 5, 9] would be worth 2.590 bits of additional information.
-An N-test using the admissible permutation [6, 1, 7, 0, 8, 2, 4, 3, 5, 9] would be worth 2.594 bits of additional information.
-The solver chooses the N-test [6, 1, 7, 0, 8, 2, 4, 3, 5, 9].
-The oracle answers 3.
-The solver knows that there are 134 admissible permutations now.
+The solver randomly chooses and analyzes 149 admissible permutations:
+The N-test using the admissible permutation [5, 8, 1, 9, 4, 6, 0, 3, 7, 2] has rank [66, 35, 29, 12, 3, 2, 1, 1, 0, 0, 0].
+...
+The N-test using the admissible permutation [2, 5, 0, 9, 8, 6, 4, 1, 7, 3] has rank [41, 38, 38, 20, 6, 3, 2, 1, 0, 0, 0].
+The solver chooses the N-test [2, 5, 0, 9, 8, 6, 4, 1, 7, 3].
+The oracle answers 6.
+The solver knows that there are 6 admissible permutations now:
+[(1, 5, 0, 9, 3, 6, 4, 8, 7, 2),
+ (2, 5, 3, 9, 8, 0, 6, 1, 7, 4),
+ (2, 5, 4, 9, 1, 6, 0, 8, 7, 3),
+ (2, 6, 3, 9, 8, 0, 4, 1, 7, 5),
+ (4, 3, 0, 9, 8, 6, 2, 1, 7, 5),
+ (5, 3, 0, 9, 8, 6, 2, 1, 7, 4)]
 
 === On the morning of day 7:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.172 0.082 0.000 0.082 0.067 0.075 0.470 0.000 0.000 0.052]
- [0.090 0.037 0.149 0.015 0.082 0.052 0.045 0.149 0.000 0.381]
- [0.015 0.082 0.187 0.067 0.082 0.000 0.037 0.463 0.000 0.067]
- [0.194 0.157 0.000 0.134 0.052 0.231 0.119 0.112 0.000 0.000]
- [0.022 0.000 0.045 0.015 0.007 0.060 0.007 0.000 0.836 0.007]
- [0.000 0.082 0.187 0.119 0.030 0.373 0.000 0.052 0.060 0.097]
- [0.299 0.090 0.179 0.075 0.119 0.000 0.142 0.000 0.000 0.097]
- [0.090 0.090 0.097 0.440 0.134 0.075 0.000 0.060 0.007 0.007]
- [0.037 0.067 0.149 0.000 0.425 0.052 0.090 0.090 0.000 0.090]
- [0.082 0.313 0.007 0.052 0.000 0.082 0.090 0.075 0.097 0.201]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.661 0.409 0.000 0.409 0.355 0.383 0.997 0.000 0.000 0.296]
- [0.435 0.230 0.608 0.112 0.409 0.296 0.264 0.608 0.000 0.958]
- [0.112 0.409 0.694 0.355 0.409 0.000 0.230 0.996 0.000 0.355]
- [0.710 0.626 0.000 0.569 0.296 0.780 0.528 0.506 0.000 0.000]
- [0.155 0.000 0.264 0.112 0.063 0.326 0.063 0.000 0.644 0.063]
- [0.000 0.409 0.694 0.528 0.194 0.953 0.000 0.296 0.326 0.459]
- [0.879 0.435 0.678 0.383 0.528 0.000 0.589 0.000 0.000 0.459]
- [0.435 0.435 0.459 0.990 0.569 0.383 0.000 0.326 0.063 0.063]
- [0.230 0.355 0.608 0.000 0.984 0.296 0.435 0.435 0.000 0.435]
- [0.409 0.897 0.063 0.296 0.000 0.409 0.435 0.383 0.459 0.725]]
-The solver chooses the M-test (0, 6).
-The oracle answers 0.
-The solver knows that there are 71 admissible permutations now.
+[[0.000 0.167 0.500 0.000 0.167 0.167 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.333 0.000 0.500 0.167 0.000 0.000 0.000]
+ [0.500 0.000 0.000 0.333 0.167 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.000 0.167 0.000 0.167 0.000 0.000 0.000 0.000 0.667 0.000]
+ [0.333 0.000 0.000 0.000 0.000 0.000 0.667 0.000 0.000 0.000]
+ [0.167 0.000 0.333 0.000 0.333 0.000 0.167 0.000 0.000 0.000]
+ [0.000 0.667 0.000 0.000 0.000 0.000 0.000 0.000 0.333 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.000 0.167 0.167 0.333 0.333 0.000 0.000 0.000 0.000]]
+The solver chooses the M-test (1, 5).
+The oracle answers 1.
+The solver knows that there are 3 admissible permutations now:
+[(1, 5, 0, 9, 3, 6, 4, 8, 7, 2),
+ (2, 5, 3, 9, 8, 0, 6, 1, 7, 4),
+ (2, 5, 4, 9, 1, 6, 0, 8, 7, 3)]
 
 --- On the night of day 7:
-The solver randomly chooses and analyzes these 71 admissible permutations:
-An N-test using the admissible permutation [5, 9, 7, 6, 4, 2, 0, 3, 1, 8] would be worth 1.980 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 6, 8, 3, 0, 4, 5, 1] would be worth 2.164 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 4, 6, 2, 0, 8, 5, 1] would be worth 2.201 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 1, 8, 3, 0, 2, 5, 6] would be worth 2.209 bits of additional information.
-An N-test using the admissible permutation [9, 4, 7, 1, 8, 5, 6, 3, 2, 0] would be worth 2.236 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 6, 8, 3, 4, 2, 0, 1] would be worth 2.241 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 4, 9, 3, 6, 1] would be worth 2.245 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 1, 8, 4, 6, 3, 2, 0] would be worth 2.248 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 0, 8, 7, 2, 3, 6, 1] would be worth 2.251 bits of additional information.
-An N-test using the admissible permutation [5, 0, 9, 7, 8, 2, 6, 3, 4, 1] would be worth 2.260 bits of additional information.
-An N-test using the admissible permutation [9, 7, 2, 6, 8, 5, 4, 3, 0, 1] would be worth 2.268 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 3, 8, 5, 0, 4, 6, 9] would be worth 2.311 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 4, 2, 3, 6, 5] would be worth 2.334 bits of additional information.
-An N-test using the admissible permutation [9, 7, 6, 1, 8, 2, 0, 3, 4, 5] would be worth 2.335 bits of additional information.
-An N-test using the admissible permutation [9, 2, 1, 0, 8, 5, 6, 3, 4, 7] would be worth 2.368 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 1, 8, 2, 0, 3, 7, 6] would be worth 2.381 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 1, 8, 2, 0, 3, 6, 7] would be worth 2.382 bits of additional information.
-An N-test using the admissible permutation [3, 4, 7, 1, 8, 5, 0, 2, 6, 9] would be worth 2.383 bits of additional information.
-An N-test using the admissible permutation [4, 2, 7, 3, 8, 5, 0, 1, 6, 9] would be worth 2.384 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 6, 8, 2, 0, 3, 4, 5] would be worth 2.388 bits of additional information.
-An N-test using the admissible permutation [0, 1, 7, 6, 8, 5, 9, 2, 4, 3] would be worth 2.391 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 3, 8, 2, 6, 5, 0, 1] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 0, 8, 5, 6, 4, 2, 3] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [9, 5, 2, 0, 8, 7, 6, 3, 4, 1] would be worth 2.395 bits of additional information.
-An N-test using the admissible permutation [5, 2, 6, 7, 8, 1, 0, 3, 4, 9] would be worth 2.402 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 5, 8, 2, 0, 3, 6, 1] would be worth 2.421 bits of additional information.
-An N-test using the admissible permutation [9, 2, 7, 5, 8, 1, 6, 3, 4, 0] would be worth 2.431 bits of additional information.
-An N-test using the admissible permutation [4, 7, 9, 0, 8, 5, 2, 3, 6, 1] would be worth 2.435 bits of additional information.
-An N-test using the admissible permutation [1, 5, 2, 6, 8, 7, 0, 3, 4, 9] would be worth 2.438 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 1, 8, 5, 2, 0, 4, 9] would be worth 2.445 bits of additional information.
-An N-test using the admissible permutation [4, 9, 7, 0, 8, 5, 6, 1, 2, 3] would be worth 2.446 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 2, 1, 5, 4, 3] would be worth 2.448 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 3, 8, 2, 6, 4, 0, 1] would be worth 2.449 bits of additional information.
-An N-test using the admissible permutation [3, 6, 7, 1, 8, 5, 0, 4, 2, 9] would be worth 2.451 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 5, 8, 2, 0, 3, 4, 6] would be worth 2.452 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 5, 8, 7, 4, 3, 2, 1] would be worth 2.462 bits of additional information.
-An N-test using the admissible permutation [5, 9, 7, 0, 8, 1, 6, 2, 4, 3] would be worth 2.463 bits of additional information.
-An N-test using the admissible permutation [1, 6, 2, 5, 8, 7, 0, 3, 4, 9] would be worth 2.466 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 1, 9, 3, 4, 5] would be worth 2.468 bits of additional information.
-An N-test using the admissible permutation [1, 9, 2, 0, 8, 7, 6, 3, 4, 5] would be worth 2.469 bits of additional information.
-An N-test using the admissible permutation [0, 4, 7, 1, 8, 5, 9, 3, 2, 6] would be worth 2.477 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 5, 8, 9, 6, 3, 4, 0] would be worth 2.480 bits of additional information.
-An N-test using the admissible permutation [0, 4, 7, 1, 8, 5, 2, 3, 9, 6] would be worth 2.485 bits of additional information.
-An N-test using the admissible permutation [0, 2, 6, 7, 8, 5, 4, 3, 9, 1] would be worth 2.487 bits of additional information.
-An N-test using the admissible permutation [0, 6, 7, 1, 8, 9, 2, 3, 4, 5] would be worth 2.489 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 9, 1, 3, 4, 6] would be worth 2.493 bits of additional information.
-An N-test using the admissible permutation [4, 2, 1, 6, 8, 5, 0, 3, 7, 9] would be worth 2.493 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 5, 8, 7, 4, 3, 6, 1] would be worth 2.498 bits of additional information.
-An N-test using the admissible permutation [0, 5, 7, 1, 8, 9, 2, 3, 4, 6] would be worth 2.499 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 1, 8, 2, 3, 5, 4, 6] would be worth 2.500 bits of additional information.
-An N-test using the admissible permutation [4, 2, 1, 7, 8, 5, 0, 3, 6, 9] would be worth 2.501 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 1, 9, 3, 4, 6] would be worth 2.505 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 6, 8, 9, 1, 3, 4, 5] would be worth 2.505 bits of additional information.
-An N-test using the admissible permutation [0, 6, 9, 7, 8, 5, 4, 3, 2, 1] would be worth 2.505 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 0, 8, 5, 6, 4, 9, 1] would be worth 2.506 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 5, 4, 1, 2, 3] would be worth 2.520 bits of additional information.
-An N-test using the admissible permutation [1, 2, 7, 6, 8, 5, 3, 0, 4, 9] would be worth 2.524 bits of additional information.
-An N-test using the admissible permutation [4, 6, 2, 1, 8, 5, 0, 3, 7, 9] would be worth 2.534 bits of additional information.
-An N-test using the admissible permutation [1, 7, 9, 0, 8, 5, 2, 3, 4, 6] would be worth 2.534 bits of additional information.
-An N-test using the admissible permutation [0, 1, 9, 6, 8, 5, 2, 3, 4, 7] would be worth 2.536 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 1, 8, 5, 4, 3, 6, 7] would be worth 2.537 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 0, 8, 9, 6, 5, 4, 1] would be worth 2.549 bits of additional information.
-An N-test using the admissible permutation [1, 9, 7, 5, 8, 2, 6, 0, 4, 3] would be worth 2.553 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 5, 8, 2, 6, 4, 0, 1] would be worth 2.562 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 1, 8, 5, 4, 3, 7, 6] would be worth 2.575 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 6, 8, 5, 1, 0, 4, 9] would be worth 2.576 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 1, 8, 5, 4, 3, 2, 7] would be worth 2.579 bits of additional information.
-An N-test using the admissible permutation [3, 2, 7, 6, 8, 1, 0, 5, 4, 9] would be worth 2.595 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 8, 2, 6, 0, 4, 5] would be worth 2.615 bits of additional information.
-An N-test using the admissible permutation [3, 9, 7, 1, 8, 2, 6, 5, 4, 0] would be worth 2.652 bits of additional information.
-An N-test using the admissible permutation [0, 1, 9, 7, 8, 5, 2, 3, 4, 6] would be worth 2.660 bits of additional information.
-The solver chooses the N-test [0, 1, 9, 7, 8, 5, 2, 3, 4, 6].
-The oracle answers 3.
-The solver knows that there are 21 admissible permutations now:
-[(0, 2, 7, 5, 8, 4, 9, 3, 6, 1),
- (0, 9, 2, 5, 8, 7, 4, 3, 6, 1),
- (0, 9, 6, 5, 8, 7, 4, 3, 2, 1),
- (0, 9, 7, 6, 8, 2, 1, 5, 4, 3),
- (0, 9, 7, 6, 8, 5, 4, 1, 2, 3),
- (1, 2, 7, 5, 8, 9, 6, 3, 4, 0),
- (1, 2, 7, 6, 8, 5, 3, 0, 4, 9),
- (1, 5, 2, 6, 8, 7, 0, 3, 4, 9),
- (1, 6, 2, 5, 8, 7, 0, 3, 4, 9),
- (1, 9, 2, 0, 8, 7, 6, 3, 4, 5),
- (3, 2, 7, 6, 8, 5, 1, 0, 4, 9),
- (4, 2, 1, 6, 8, 5, 0, 3, 7, 9),
- (4, 6, 2, 1, 8, 5, 0, 3, 7, 9),
- (4, 7, 9, 5, 8, 2, 0, 3, 6, 1),
- (5, 9, 4, 0, 8, 7, 2, 3, 6, 1),
- (5, 9, 4, 1, 8, 2, 0, 3, 7, 6),
- (9, 2, 7, 5, 8, 1, 6, 3, 4, 0),
- (9, 4, 7, 1, 8, 5, 6, 3, 2, 0),
- (9, 5, 2, 0, 8, 7, 6, 3, 4, 1),
- (9, 7, 2, 6, 8, 5, 4, 3, 0, 1),
- (9, 7, 6, 1, 8, 2, 0, 3, 4, 5)]
+The solver randomly chooses and analyzes 3 admissible permutations:
+The N-test using the admissible permutation [1, 5, 0, 9, 3, 6, 4, 8, 7, 2] has rank [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0].
+...
+The N-test using the admissible permutation [2, 5, 4, 9, 1, 6, 0, 8, 7, 3] has rank [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0].
+The solver chooses the N-test [2, 5, 4, 9, 1, 6, 0, 8, 7, 3].
+The oracle answers 5.
+The solver knows that there is 1 admissible permutation now:
+[(1, 5, 0, 9, 3, 6, 4, 8, 7, 2)]
 
 === On the morning of day 8:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.238 0.238 0.000 0.048 0.143 0.095 0.000 0.000 0.000 0.238]
- [0.000 0.000 0.286 0.000 0.048 0.095 0.095 0.143 0.000 0.333]
- [0.000 0.048 0.333 0.000 0.095 0.000 0.095 0.381 0.000 0.048]
- [0.143 0.190 0.000 0.000 0.000 0.333 0.333 0.000 0.000 0.000]
+[[0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000]
+ [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000]
  [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000]
- [0.000 0.048 0.190 0.000 0.048 0.333 0.000 0.333 0.000 0.048]
- [0.333 0.095 0.048 0.048 0.190 0.000 0.238 0.000 0.000 0.048]
- [0.095 0.048 0.000 0.810 0.000 0.048 0.000 0.000 0.000 0.000]
- [0.048 0.000 0.143 0.000 0.476 0.000 0.190 0.143 0.000 0.000]
- [0.143 0.333 0.000 0.095 0.000 0.095 0.048 0.000 0.000 0.286]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.792 0.792 0.000 0.276 0.592 0.454 0.000 0.000 0.000 0.792]
- [0.000 0.000 0.863 0.000 0.276 0.454 0.454 0.592 0.000 0.918]
- [0.000 0.276 0.918 0.000 0.454 0.000 0.454 0.959 0.000 0.276]
- [0.592 0.702 0.000 0.000 0.000 0.918 0.918 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 -0.000 0.000]
- [0.000 0.276 0.702 0.000 0.276 0.918 0.000 0.918 0.000 0.276]
- [0.918 0.454 0.276 0.276 0.702 0.000 0.792 0.000 0.000 0.276]
- [0.454 0.276 0.000 0.702 0.000 0.276 0.000 0.000 0.000 0.000]
- [0.276 0.000 0.592 0.000 0.998 0.000 0.702 0.592 0.000 0.000]
- [0.592 0.918 0.000 0.454 0.000 0.454 0.276 0.000 0.000 0.863]]
-The solver chooses the M-test (8, 4).
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]]
+The solver chooses the M-test (0, 0).
 The oracle answers 0.
-The solver knows that there are 11 admissible permutations now:
-[(0, 2, 7, 5, 8, 4, 9, 3, 6, 1),
- (0, 9, 2, 5, 8, 7, 4, 3, 6, 1),
- (0, 9, 6, 5, 8, 7, 4, 3, 2, 1),
- (0, 9, 7, 6, 8, 5, 4, 1, 2, 3),
- (4, 2, 1, 6, 8, 5, 0, 3, 7, 9),
- (4, 6, 2, 1, 8, 5, 0, 3, 7, 9),
- (4, 7, 9, 5, 8, 2, 0, 3, 6, 1),
- (5, 9, 4, 0, 8, 7, 2, 3, 6, 1),
- (5, 9, 4, 1, 8, 2, 0, 3, 7, 6),
- (9, 4, 7, 1, 8, 5, 6, 3, 2, 0),
- (9, 7, 2, 6, 8, 5, 4, 3, 0, 1)]
+The solver knows that there is 1 admissible permutation now:
+[(1, 5, 0, 9, 3, 6, 4, 8, 7, 2)]
 
 --- On the night of day 8:
-The solver randomly chooses and analyzes these 11 admissible permutations:
-An N-test using the admissible permutation [4, 7, 9, 5, 8, 2, 0, 3, 6, 1] would be worth 1.868 bits of additional information.
-An N-test using the admissible permutation [9, 4, 7, 1, 8, 5, 6, 3, 2, 0] would be worth 1.868 bits of additional information.
-An N-test using the admissible permutation [9, 7, 2, 6, 8, 5, 4, 3, 0, 1] would be worth 1.868 bits of additional information.
-An N-test using the admissible permutation [4, 2, 1, 6, 8, 5, 0, 3, 7, 9] would be worth 2.163 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 1, 8, 2, 0, 3, 7, 6] would be worth 2.231 bits of additional information.
-An N-test using the admissible permutation [4, 6, 2, 1, 8, 5, 0, 3, 7, 9] would be worth 2.300 bits of additional information.
-An N-test using the admissible permutation [5, 9, 4, 0, 8, 7, 2, 3, 6, 1] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [0, 2, 7, 5, 8, 4, 9, 3, 6, 1] would be worth 2.369 bits of additional information.
-An N-test using the admissible permutation [0, 9, 7, 6, 8, 5, 4, 1, 2, 3] would be worth 2.413 bits of additional information.
-An N-test using the admissible permutation [0, 9, 6, 5, 8, 7, 4, 3, 2, 1] would be worth 2.482 bits of additional information.
-An N-test using the admissible permutation [0, 9, 2, 5, 8, 7, 4, 3, 6, 1] would be worth 2.732 bits of additional information.
-The solver chooses the N-test [0, 9, 2, 5, 8, 7, 4, 3, 6, 1].
-The oracle answers 3.
-The solver knows that there are 2 admissible permutations now:
-[(4, 6, 2, 1, 8, 5, 0, 3, 7, 9), (5, 9, 4, 1, 8, 2, 0, 3, 7, 6)]
+The solver chooses the N-test [1, 5, 0, 9, 3, 6, 4, 8, 7, 2].
+The oracle answers 10.
+The solver has won the game!
+
+=== END OF THE GAME ===
+
+
+The solver won game # 1 in 8 days.
+The solver won game # 2 in 7 days.
+The solver won game # 3 in 7 days.
+The solver won game # 4 in 8 days.
+The solver won game # 5 in 9 days.
+The solver won game # 6 in 8 days.
+The solver lost game # 7.
+The solver won game # 8 in 9 days.
+The solver won game # 9 in 9 days.
+The solver won game # 10 in 8 days.
+
+The solver won 9 out of 10 test games, or 90.00% of them. On average, a victory took 8.11 days.
+
+The solver won game # 11 in 9 days.
+The solver won game # 12 in 8 days.
+The solver won game # 13 in 9 days.
+The solver won game # 14 in 8 days.
+The solver won game # 15 in 9 days.
+The solver won game # 16 in 9 days.
+The solver won game # 17 in 7 days.
+The solver won game # 18 in 9 days.
+The solver won game # 19 in 6 days.
+The solver won game # 20 in 8 days.
+
+The solver won 19 out of 20 test games, or 95.00% of them. On average, a victory took 8.16 days.
+
+The solver won game # 21 in 8 days.
+The solver won game # 22 in 8 days.
+The solver won game # 23 in 9 days.
+The solver won game # 24 in 9 days.
+The solver won game # 25 in 8 days.
+The solver won game # 26 in 8 days.
+The solver won game # 27 in 9 days.
+The solver won game # 28 in 8 days.
+The solver won game # 29 in 9 days.
+The solver won game # 30 in 8 days.
+
+The solver won 29 out of 30 test games, or 96.67% of them. On average, a victory took 8.24 days.
+
+The solver won game # 31 in 7 days.
+The solver won game # 32 in 8 days.
+The solver won game # 33 in 9 days.
+The solver won game # 34 in 9 days.
+The solver won game # 35 in 8 days.
+The solver won game # 36 in 8 days.
+The solver won game # 37 in 7 days.
+The solver won game # 38 in 9 days.
+The solver won game # 39 in 8 days.
+The solver won game # 40 in 8 days.
+
+The solver won 39 out of 40 test games, or 97.50% of them. On average, a victory took 8.21 days.
+
+The solver won game # 41 in 10 days.
+The solver won game # 42 in 6 days.
+The solver won game # 43 in 9 days.
+The solver won game # 44 in 8 days.
+The solver won game # 45 in 9 days.
+The solver won game # 46 in 7 days.
+The solver won game # 47 in 7 days.
+The solver won game # 48 in 8 days.
+The solver won game # 49 in 9 days.
+The solver won game # 50 in 9 days.
+
+The solver won 49 out of 50 test games, or 98.00% of them. On average, a victory took 8.20 days.
+
+The solver won game # 51 in 6 days.
+The solver won game # 52 in 9 days.
+The solver won game # 53 in 5 days.
+The solver won game # 54 in 8 days.
+The solver won game # 55 in 6 days.
+The solver won game # 56 in 9 days.
+The solver won game # 57 in 3 days.
+The solver won game # 58 in 9 days.
+The solver won game # 59 in 9 days.
+The solver won game # 60 in 9 days.
+
+The solver won 59 out of 60 test games, or 98.33% of them. On average, a victory took 8.05 days.
+
+The solver won game # 61 in 8 days.
+The solver won game # 62 in 8 days.
+The solver won game # 63 in 8 days.
+The solver won game # 64 in 7 days.
+The solver won game # 65 in 7 days.
+The solver won game # 66 in 8 days.
+The solver won game # 67 in 7 days.
+The solver won game # 68 in 8 days.
+The solver won game # 69 in 6 days.
+The solver won game # 70 in 8 days.
+
+The solver won 69 out of 70 test games, or 98.57% of them. On average, a victory took 7.97 days.
+
+The solver won game # 71 in 8 days.
+The solver won game # 72 in 9 days.
+The solver won game # 73 in 8 days.
+The solver won game # 74 in 7 days.
+The solver won game # 75 in 8 days.
+The solver won game # 76 in 8 days.
+The solver won game # 77 in 9 days.
+The solver won game # 78 in 7 days.
+The solver won game # 79 in 8 days.
+The solver won game # 80 in 9 days.
+
+The solver won 79 out of 80 test games, or 98.75% of them. On average, a victory took 7.99 days.
+
+The solver won game # 81 in 8 days.
+The solver won game # 82 in 8 days.
+The solver won game # 83 in 10 days.
+The solver won game # 84 in 9 days.
+The solver won game # 85 in 8 days.
+The solver won game # 86 in 10 days.
+The solver won game # 87 in 8 days.
+The solver won game # 88 in 7 days.
+The solver won game # 89 in 7 days.
+The solver won game # 90 in 8 days.
+
+The solver won 89 out of 90 test games, or 98.89% of them. On average, a victory took 8.02 days.
+
+The solver won game # 91 in 8 days.
+The solver won game # 92 in 8 days.
+The solver won game # 93 in 8 days.
+The solver won game # 94 in 7 days.
+The solver won game # 95 in 7 days.
+The solver won game # 96 in 7 days.
+The solver won game # 97 in 8 days.
+The solver won game # 98 in 9 days.
+The solver won game # 99 in 7 days.
+The solver won game # 100 in 7 days.
+
+The solver won 99 out of 100 test games, or 99.00% of them. On average, a victory took 7.98 days.
+
+Nr. of games won in 1 days: 0
+Nr. of games won in 2 days: 0
+Nr. of games won in 3 days: 1
+Nr. of games won in 4 days: 0
+Nr. of games won in 5 days: 1
+Nr. of games won in 6 days: 5
+Nr. of games won in 7 days: 19
+Nr. of games won in 8 days: 41
+Nr. of games won in 9 days: 29
+Nr. of games won in 10 days: 3
+
+time = 2021-07-11 15:35:23.868255
+========================================================================================================================
+--- Ranking possible tests by descending test frequencies ---
+------------------------------------------------------------------------------
+Collecting stats over 100 games, of which the first is fully shown:
+------------------------------------------------------------------------------
+
+=== START OF THE GAME ===
+The oracle has randomly chosen this solution:
+[5, 4, 0, 7, 8, 6, 9, 3, 1, 2]
+The solver has 10 days to guess it.
+The solver knows that there are 3628800 admissible permutations now.
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]
+ [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]]
+
+=== On the morning of day 1:
+The solver chooses the M-test (4, 1).
+The oracle answers 0.
+The solver knows that there are 3265920 admissible permutations now.
+
+--- On the night of day 1:
+The solver chooses the N-test [3, 6, 1, 2, 4, 0, 5, 8, 7, 9].
+The oracle answers 0.
+The solver knows that there are 1186632 admissible permutations now.
+
+=== On the morning of day 2:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.109 0.125 0.109 0.000 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.109 0.125 0.109 0.109 0.111 0.109 0.000 0.109 0.109 0.109]
+ [0.111 0.000 0.111 0.111 0.112 0.111 0.111 0.111 0.111 0.111]
+ [0.109 0.125 0.000 0.109 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.125 0.000 0.125 0.125 0.000 0.125 0.125 0.125 0.125 0.125]
+ [0.000 0.125 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.109 0.125 0.109 0.109 0.111 0.000 0.109 0.109 0.109 0.109]
+ [0.109 0.125 0.109 0.109 0.111 0.109 0.109 0.109 0.000 0.109]
+ [0.109 0.125 0.109 0.109 0.111 0.109 0.109 0.000 0.109 0.109]
+ [0.109 0.125 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.000]]
+The solver chooses the M-test (1, 1).
+The oracle answers 0.
+The solver knows that there are 1038303 admissible permutations now.
+
+--- On the night of day 2:
+The solver chooses the N-test [8, 9, 2, 1, 5, 7, 6, 0, 3, 4].
+The oracle answers 0.
+The solver knows that there are 329904 admissible permutations now.
+
+=== On the morning of day 3:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.117 0.167 0.119 0.000 0.120 0.120 0.120 0.117 0.000 0.120]
+ [0.142 0.000 0.143 0.142 0.145 0.145 0.000 0.142 0.142 0.000]
+ [0.124 0.000 0.000 0.124 0.126 0.126 0.126 0.124 0.124 0.126]
+ [0.124 0.000 0.000 0.124 0.126 0.126 0.126 0.124 0.124 0.126]
+ [0.142 0.000 0.143 0.142 0.000 0.000 0.145 0.142 0.142 0.145]
+ [0.000 0.167 0.119 0.117 0.120 0.120 0.120 0.000 0.117 0.120]
+ [0.118 0.167 0.120 0.118 0.121 0.000 0.000 0.118 0.118 0.121]
+ [0.000 0.167 0.119 0.117 0.120 0.120 0.120 0.117 0.000 0.120]
+ [0.117 0.167 0.119 0.000 0.120 0.120 0.120 0.000 0.117 0.120]
+ [0.118 0.167 0.120 0.118 0.000 0.121 0.121 0.118 0.118 0.000]]
+The solver chooses the M-test (5, 1).
+The oracle answers 0.
+The solver knows that there are 274920 admissible permutations now.
+
+--- On the night of day 3:
+The solver randomly chooses and analyzes 3 admissible permutations:
+The N-test using the admissible permutation [1, 8, 7, 0, 2, 6, 9, 5, 4, 3] has rank [96660, 72168, 64576, 28706, 9564, 2550, 571, 100, 24, 1, 0].
+...
+The N-test using the admissible permutation [1, 8, 3, 6, 0, 5, 9, 4, 2, 7] has rank [96528, 72152, 64568, 28756, 9635, 2560, 597, 96, 27, 1, 0].
+The solver chooses the N-test [1, 8, 3, 6, 0, 5, 9, 4, 2, 7].
+The oracle answers 1.
+The solver knows that there are 96528 admissible permutations now.
+
+=== On the morning of day 4:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.120 0.163 0.119 0.000 0.119 0.120 0.120 0.119 0.000 0.119]
+ [0.150 0.000 0.148 0.146 0.150 0.150 0.000 0.150 0.107 0.000]
+ [0.131 0.000 0.000 0.091 0.130 0.131 0.130 0.130 0.127 0.130]
+ [0.131 0.000 0.000 0.127 0.130 0.131 0.093 0.130 0.128 0.130]
+ [0.109 0.000 0.148 0.146 0.000 0.000 0.150 0.150 0.146 0.150]
+ [0.000 0.000 0.148 0.146 0.150 0.110 0.150 0.000 0.146 0.151]
+ [0.120 0.209 0.118 0.115 0.119 0.000 0.000 0.120 0.116 0.082]
+ [0.000 0.209 0.118 0.114 0.082 0.119 0.119 0.119 0.000 0.119]
+ [0.119 0.209 0.081 0.000 0.119 0.119 0.119 0.000 0.115 0.119]
+ [0.120 0.209 0.119 0.115 0.000 0.120 0.119 0.082 0.116 0.000]]
+The solver chooses the M-test (7, 1).
+The oracle answers 0.
+The solver knows that there are 76309 admissible permutations now.
+
+--- On the night of day 4:
+The solver randomly chooses and analyzes 13 admissible permutations:
+The N-test using the admissible permutation [9, 5, 6, 4, 7, 8, 0, 3, 2, 1] has rank [26569, 18822, 18137, 8691, 2988, 840, 208, 42, 11, 1, 0].
+...
+The N-test using the admissible permutation [1, 3, 8, 9, 7, 4, 0, 2, 6, 5] has rank [26062, 19304, 18100, 8504, 3098, 930, 247, 46, 17, 1, 0].
+The solver chooses the N-test [1, 3, 8, 9, 7, 4, 0, 2, 6, 5].
+The oracle answers 0.
+The solver knows that there are 19304 admissible permutations now.
+
+=== On the morning of day 5:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.148 0.000 0.142 0.000 0.148 0.140 0.138 0.145 0.000 0.139]
+ [0.178 0.000 0.178 0.000 0.178 0.166 0.000 0.174 0.125 0.000]
+ [0.152 0.000 0.000 0.104 0.153 0.145 0.147 0.150 0.000 0.148]
+ [0.151 0.000 0.000 0.148 0.150 0.143 0.105 0.149 0.153 0.000]
+ [0.133 0.000 0.176 0.173 0.000 0.000 0.167 0.000 0.179 0.172]
+ [0.000 0.000 0.177 0.175 0.000 0.126 0.169 0.000 0.179 0.174]
+ [0.000 0.334 0.115 0.114 0.116 0.000 0.000 0.113 0.120 0.087]
+ [0.000 0.000 0.000 0.171 0.137 0.174 0.167 0.180 0.000 0.171]
+ [0.118 0.332 0.094 0.000 0.116 0.107 0.000 0.000 0.123 0.110]
+ [0.120 0.334 0.117 0.115 0.000 0.000 0.106 0.088 0.120 0.000]]
+The solver chooses the M-test (6, 1).
+The oracle answers 0.
+The solver knows that there are 12848 admissible permutations now.
+
+--- On the night of day 5:
+The solver randomly chooses and analyzes 77 admissible permutations:
+The N-test using the admissible permutation [2, 8, 4, 5, 6, 9, 3, 7, 1, 0] has rank [3905, 3581, 2179, 1817, 907, 329, 94, 27, 8, 1, 0].
+...
+The N-test using the admissible permutation [5, 7, 6, 3, 2, 9, 8, 4, 1, 0] has rank [3752, 3650, 2176, 1835, 981, 312, 108, 24, 9, 1, 0].
+The solver chooses the N-test [5, 7, 6, 3, 2, 9, 8, 4, 1, 0].
+The oracle answers 2.
+The solver knows that there are 3650 admissible permutations now.
+
+=== On the morning of day 6:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.160 0.000 0.140 0.000 0.150 0.147 0.133 0.130 0.000 0.140]
+ [0.192 0.000 0.166 0.000 0.179 0.170 0.000 0.178 0.115 0.000]
+ [0.162 0.000 0.000 0.094 0.153 0.149 0.159 0.136 0.000 0.147]
+ [0.160 0.000 0.000 0.153 0.150 0.147 0.103 0.138 0.149 0.000]
+ [0.156 0.000 0.184 0.161 0.000 0.000 0.162 0.000 0.175 0.162]
+ [0.000 0.000 0.166 0.173 0.000 0.139 0.175 0.000 0.178 0.170]
+ [0.000 0.000 0.176 0.158 0.183 0.000 0.000 0.163 0.189 0.131]
+ [0.000 0.000 0.000 0.160 0.123 0.191 0.167 0.175 0.000 0.185]
+ [0.078 0.603 0.058 0.000 0.063 0.057 0.000 0.000 0.075 0.065]
+ [0.093 0.397 0.110 0.101 0.000 0.000 0.100 0.081 0.118 0.000]]
+The solver chooses the M-test (8, 1).
+The oracle answers 1.
+The solver knows that there are 2200 admissible permutations now.
+
+--- On the night of day 6:
+The solver randomly chooses and analyzes 454 admissible permutations:
+The N-test using the admissible permutation [6, 0, 9, 4, 2, 8, 3, 5, 1, 7] has rank [784, 542, 475, 272, 76, 35, 13, 2, 1, 0, 0].
+...
+The N-test using the admissible permutation [4, 5, 9, 3, 0, 6, 2, 7, 1, 8] has rank [690, 543, 529, 282, 105, 38, 8, 4, 1, 0, 0].
+The solver chooses the N-test [4, 5, 9, 3, 0, 6, 2, 7, 1, 8].
+The oracle answers 2.
+The solver knows that there are 690 admissible permutations now.
+
+=== On the morning of day 7:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.170 0.000 0.162 0.000 0.126 0.107 0.136 0.130 0.000 0.168]
+ [0.209 0.000 0.196 0.000 0.216 0.136 0.000 0.114 0.129 0.000]
+ [0.183 0.000 0.000 0.103 0.178 0.183 0.096 0.151 0.000 0.107]
+ [0.174 0.000 0.000 0.042 0.170 0.177 0.116 0.142 0.180 0.000]
+ [0.078 0.000 0.138 0.184 0.000 0.000 0.175 0.000 0.225 0.200]
+ [0.000 0.000 0.207 0.174 0.000 0.161 0.132 0.000 0.204 0.122]
+ [0.000 0.000 0.114 0.165 0.235 0.000 0.000 0.186 0.119 0.181]
+ [0.000 0.000 0.000 0.170 0.075 0.236 0.177 0.120 0.000 0.222]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.187 0.000 0.183 0.162 0.000 0.000 0.168 0.157 0.143 0.000]]
+The solver chooses the M-test (7, 5).
+The oracle answers 0.
+The solver knows that there are 527 admissible permutations now.
+
+--- On the night of day 7:
+The solver randomly chooses and analyzes 527 admissible permutations:
+The N-test using the admissible permutation [2, 8, 0, 5, 6, 9, 4, 7, 1, 3] has rank [196, 132, 108, 57, 21, 9, 2, 1, 1, 0, 0].
+...
+The N-test using the admissible permutation [2, 8, 5, 7, 9, 6, 4, 3, 1, 0] has rank [146, 134, 124, 75, 31, 10, 3, 3, 1, 0, 0].
+The solver chooses the N-test [2, 8, 5, 7, 9, 6, 4, 3, 1, 0].
+The oracle answers 4.
+The solver knows that there are 75 admissible permutations now.
+
+=== On the morning of day 8:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.120 0.000 0.347 0.000 0.080 0.080 0.107 0.147 0.000 0.120]
+ [0.200 0.000 0.187 0.000 0.147 0.187 0.000 0.053 0.227 0.000]
+ [0.093 0.000 0.000 0.120 0.107 0.387 0.107 0.120 0.000 0.067]
+ [0.107 0.000 0.000 0.027 0.107 0.200 0.093 0.280 0.187 0.000]
+ [0.080 0.000 0.067 0.147 0.000 0.000 0.133 0.000 0.253 0.320]
+ [0.000 0.000 0.213 0.147 0.000 0.147 0.227 0.000 0.160 0.107]
+ [0.000 0.000 0.053 0.107 0.480 0.000 0.000 0.120 0.080 0.160]
+ [0.000 0.000 0.000 0.333 0.080 0.000 0.173 0.187 0.000 0.227]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.400 0.000 0.133 0.120 0.000 0.000 0.160 0.093 0.093 0.000]]
+The solver chooses the M-test (6, 4).
+The oracle answers 0.
+The solver knows that there are 39 admissible permutations now.
+
+--- On the night of day 8:
+The solver randomly chooses and analyzes 39 admissible permutations:
+The N-test using the admissible permutation [7, 0, 5, 8, 9, 6, 3, 4, 1, 2] has rank [16, 10, 4, 4, 2, 1, 1, 1, 0, 0, 0].
+...
+The N-test using the admissible permutation [9, 0, 5, 7, 8, 6, 3, 4, 1, 2] has rank [9, 9, 8, 6, 3, 2, 1, 1, 0, 0, 0].
+The solver chooses the N-test [9, 0, 5, 7, 8, 6, 3, 4, 1, 2].
+The oracle answers 5.
+The solver knows that there are 3 admissible permutations now:
+[(0, 7, 5, 4, 8, 6, 9, 3, 1, 2),
+ (5, 4, 0, 7, 8, 6, 9, 3, 1, 2),
+ (6, 0, 5, 7, 9, 8, 2, 4, 1, 3)]
 
 === On the morning of day 9:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.000 0.000 0.000 0.500 0.500 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.500 0.000 0.000 0.500]
- [0.000 0.000 0.500 0.000 0.500 0.000 0.000 0.000 0.000 0.000]
+[[0.333 0.000 0.000 0.000 0.000 0.333 0.333 0.000 0.000 0.000]
+ [0.333 0.000 0.000 0.000 0.333 0.000 0.000 0.333 0.000 0.000]
+ [0.333 0.000 0.000 0.000 0.000 0.667 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.333 0.000 0.000 0.667 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.667 0.333]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.667 0.000 0.333 0.000]
+ [0.000 0.000 0.333 0.000 0.000 0.000 0.000 0.000 0.000 0.667]
+ [0.000 0.000 0.000 0.667 0.333 0.000 0.000 0.000 0.000 0.000]
  [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000]
- [0.000 0.000 0.500 0.000 0.000 0.500 0.000 0.000 0.000 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.500 0.000 0.000 0.500]]
-Therefore, using each couple for an M-test would be worth as many bits of additional information:
-[[0.000 0.000 0.000 0.000 1.000 1.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 1.000]
- [0.000 0.000 1.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 1.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 1.000]]
-The solver chooses the M-test (5, 5).
-The oracle answers 1.
+ [0.000 0.000 0.667 0.333 0.000 0.000 0.000 0.000 0.000 0.000]]
+The solver chooses the M-test (2, 5).
+The oracle answers 0.
 The solver knows that there is 1 admissible permutation now:
-[(4, 6, 2, 1, 8, 5, 0, 3, 7, 9)]
+[(5, 4, 0, 7, 8, 6, 9, 3, 1, 2)]
 
 --- On the night of day 9:
-The solver chooses the N-test [4, 6, 2, 1, 8, 5, 0, 3, 7, 9].
+The solver chooses the N-test [5, 4, 0, 7, 8, 6, 9, 3, 1, 2].
 The oracle answers 10.
 The solver has won the game!
 
@@ -1040,131 +589,146 @@ The solver has won the game!
 
 
 The solver won game # 1 in 9 days.
-The solver won game # 2 in 9 days.
+The solver won game # 2 in 7 days.
 The solver won game # 3 in 9 days.
-The solver won game # 4 in 9 days.
-The solver won game # 5 in 6 days.
-The solver won game # 6 in 8 days.
-The solver won game # 7 in 9 days.
+The solver won game # 4 in 8 days.
+The solver won game # 5 in 9 days.
+The solver won game # 6 in 9 days.
+The solver won game # 7 in 6 days.
 The solver won game # 8 in 8 days.
 The solver won game # 9 in 8 days.
-The solver won game # 10 in 8 days.
+The solver won game # 10 in 9 days.
 
-The solver won 10 out of 10 test games, i.e. 100.00% of them. On average, a victory took 8.30 days.
+The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 8.20 days.
 
-The solver won game # 11 in 7 days.
-The solver won game # 12 in 9 days.
-The solver won game # 13 in 8 days.
-The solver won game # 14 in 9 days.
-The solver won game # 15 in 8 days.
+The solver won game # 11 in 8 days.
+The solver won game # 12 in 6 days.
+The solver won game # 13 in 7 days.
+The solver won game # 14 in 8 days.
+The solver won game # 15 in 6 days.
 The solver won game # 16 in 9 days.
-The solver won game # 17 in 7 days.
-The solver won game # 18 in 8 days.
+The solver won game # 17 in 9 days.
+The solver won game # 18 in 10 days.
 The solver won game # 19 in 8 days.
 The solver won game # 20 in 8 days.
 
-The solver won 20 out of 20 test games, i.e. 100.00% of them. On average, a victory took 8.20 days.
+The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 8.05 days.
 
-The solver won game # 21 in 8 days.
+The solver won game # 21 in 6 days.
 The solver won game # 22 in 8 days.
-The solver won game # 23 in 9 days.
-The solver won game # 24 in 8 days.
-The solver won game # 25 in 8 days.
-The solver won game # 26 in 8 days.
-The solver won game # 27 in 5 days.
+The solver won game # 23 in 7 days.
+The solver won game # 24 in 9 days.
+The solver won game # 25 in 9 days.
+The solver won game # 26 in 7 days.
+The solver won game # 27 in 9 days.
 The solver won game # 28 in 9 days.
 The solver won game # 29 in 7 days.
 The solver won game # 30 in 6 days.
 
-The solver won 30 out of 30 test games, i.e. 100.00% of them. On average, a victory took 8.00 days.
+The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 7.93 days.
 
-The solver won game # 31 in 7 days.
-The solver won game # 32 in 9 days.
-The solver won game # 33 in 8 days.
-The solver won game # 34 in 7 days.
-The solver won game # 35 in 8 days.
-The solver won game # 36 in 7 days.
-The solver won game # 37 in 7 days.
-The solver won game # 38 in 9 days.
-The solver won game # 39 in 8 days.
-The solver won game # 40 in 8 days.
+The solver won game # 31 in 9 days.
+The solver won game # 32 in 10 days.
+The solver won game # 33 in 9 days.
+The solver won game # 34 in 9 days.
+The solver won game # 35 in 10 days.
+The solver won game # 36 in 8 days.
+The solver won game # 37 in 9 days.
+The solver won game # 38 in 8 days.
+The solver won game # 39 in 9 days.
+The solver won game # 40 in 9 days.
 
-The solver won 40 out of 40 test games, i.e. 100.00% of them. On average, a victory took 7.95 days.
+The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 8.20 days.
 
-The solver won game # 41 in 8 days.
-The solver won game # 42 in 7 days.
-The solver won game # 43 in 6 days.
+The solver won game # 41 in 9 days.
+The solver won game # 42 in 9 days.
+The solver won game # 43 in 8 days.
 The solver won game # 44 in 8 days.
 The solver won game # 45 in 9 days.
-The solver won game # 46 in 9 days.
-The solver won game # 47 in 8 days.
+The solver won game # 46 in 6 days.
+The solver won game # 47 in 7 days.
 The solver won game # 48 in 8 days.
-The solver won game # 49 in 8 days.
-The solver won game # 50 in 5 days.
+The solver won game # 49 in 9 days.
+The solver won game # 50 in 8 days.
 
-The solver won 50 out of 50 test games, i.e. 100.00% of them. On average, a victory took 7.88 days.
+The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 8.18 days.
 
-The solver won game # 51 in 8 days.
-The solver won game # 52 in 6 days.
-The solver won game # 53 in 8 days.
-The solver won game # 54 in 8 days.
-The solver won game # 55 in 9 days.
-The solver won game # 56 in 7 days.
+The solver won game # 51 in 9 days.
+The solver won game # 52 in 8 days.
+The solver won game # 53 in 9 days.
+The solver won game # 54 in 10 days.
+The solver won game # 55 in 8 days.
+The solver won game # 56 in 10 days.
 The solver won game # 57 in 8 days.
-The solver won game # 58 in 10 days.
-The solver won game # 59 in 7 days.
-The solver won game # 60 in 8 days.
+The solver won game # 58 in 7 days.
+The solver won game # 59 in 9 days.
+The solver won game # 60 in 9 days.
 
-The solver won 60 out of 60 test games, i.e. 100.00% of them. On average, a victory took 7.88 days.
+The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 8.27 days.
 
-The solver won game # 61 in 9 days.
-The solver won game # 62 in 7 days.
+The solver won game # 61 in 10 days.
+The solver won game # 62 in 10 days.
 The solver won game # 63 in 10 days.
-The solver won game # 64 in 9 days.
-The solver won game # 65 in 10 days.
-The solver won game # 66 in 9 days.
-The solver won game # 67 in 7 days.
-The solver won game # 68 in 7 days.
-The solver won game # 69 in 7 days.
-The solver won game # 70 in 8 days.
+The solver won game # 64 in 8 days.
+The solver won game # 65 in 8 days.
+The solver won game # 66 in 7 days.
+The solver won game # 67 in 9 days.
+The solver won game # 68 in 8 days.
+The solver won game # 69 in 9 days.
+The solver won game # 70 in 9 days.
 
-The solver won 70 out of 70 test games, i.e. 100.00% of them. On average, a victory took 7.94 days.
+The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 8.34 days.
 
-The solver won game # 71 in 9 days.
-The solver won game # 72 in 7 days.
-The solver won game # 73 in 8 days.
-The solver won game # 74 in 7 days.
-The solver won game # 75 in 8 days.
-The solver won game # 76 in 10 days.
-The solver won game # 77 in 8 days.
-The solver won game # 78 in 7 days.
-The solver won game # 79 in 9 days.
-The solver won game # 80 in 8 days.
+The solver won game # 71 in 6 days.
+The solver won game # 72 in 8 days.
+The solver won game # 73 in 9 days.
+The solver won game # 74 in 8 days.
+The solver won game # 75 in 7 days.
+The solver won game # 76 in 8 days.
+The solver won game # 77 in 9 days.
+The solver won game # 78 in 8 days.
+The solver won game # 79 in 8 days.
+The solver won game # 80 in 9 days.
 
-The solver won 80 out of 80 test games, i.e. 100.00% of them. On average, a victory took 7.96 days.
+The solver won 80 out of 80 test games, or 100.00% of them. On average, a victory took 8.30 days.
 
-The solver won game # 81 in 9 days.
+The solver won game # 81 in 8 days.
 The solver won game # 82 in 8 days.
 The solver won game # 83 in 7 days.
 The solver won game # 84 in 8 days.
 The solver won game # 85 in 7 days.
-The solver won game # 86 in 8 days.
-The solver won game # 87 in 6 days.
-The solver won game # 88 in 7 days.
-The solver won game # 89 in 6 days.
-The solver won game # 90 in 7 days.
+The solver won game # 86 in 9 days.
+The solver won game # 87 in 8 days.
+The solver won game # 88 in 6 days.
+The solver won game # 89 in 9 days.
+The solver won game # 90 in 8 days.
 
-The solver won 90 out of 90 test games, i.e. 100.00% of them. On average, a victory took 7.89 days.
+The solver won 90 out of 90 test games, or 100.00% of them. On average, a victory took 8.24 days.
 
-The solver won game # 91 in 9 days.
-The solver won game # 92 in 7 days.
+The solver won game # 91 in 7 days.
+The solver won game # 92 in 6 days.
 The solver won game # 93 in 9 days.
 The solver won game # 94 in 8 days.
-The solver won game # 95 in 8 days.
+The solver won game # 95 in 6 days.
 The solver won game # 96 in 9 days.
-The solver won game # 97 in 8 days.
+The solver won game # 97 in 9 days.
 The solver won game # 98 in 8 days.
 The solver won game # 99 in 9 days.
-The solver won game # 100 in 8 days.
+The solver won game # 100 in 9 days.
 
-The solver won 100 out of 100 test games, i.e. 100.00% of them. On average, a victory took 7.93 days.
+The solver won 100 out of 100 test games, or 100.00% of them. On average, a victory took 8.22 days.
+
+Nr. of games won in 1 days: 0
+Nr. of games won in 2 days: 0
+Nr. of games won in 3 days: 0
+Nr. of games won in 4 days: 0
+Nr. of games won in 5 days: 0
+Nr. of games won in 6 days: 10
+Nr. of games won in 7 days: 12
+Nr. of games won in 8 days: 32
+Nr. of games won in 9 days: 38
+Nr. of games won in 10 days: 8
+
+time = 2021-07-11 17:06:04.571250
+
+Process finished with exit code 0

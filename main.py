@@ -1,15 +1,17 @@
+from datetime import datetime
 from game_oracle import GameOracle
-from game_solver import GameSolver
+from game_solver import GameSolver, entropy_delta
 
 
 n_couples = 10  # number of perfect matches alpha-beta to be identified = number of days available
 n_games = 100  # number of games to be played in order to collect stats
 
 
-def play_game(show_process):
+def play_game(show_process, freqs2rank=None):
     """
     play the information theory game underlying "Are You the One?", 1st season
     :param show_process: if True, illustrate the game and the solver's reasoning, too
+    :param freqs2rank: function used to rank tests; if None, then the solver's default ranking function is used
     :return: (was the game won?: boolean, nr. of days elapsed)
     """
     oracle = GameOracle(n_couples)
@@ -64,24 +66,45 @@ def play_game(show_process):
     return game_won, day + 1
 
 
-print()
-print('------------------------------------------------------------------------------')
-print(f"Collecting stats over {n_games} games, of which the first is fully shown:")
-print('------------------------------------------------------------------------------')
-n_games_won = 0
-n_days_distrib = {d: 0 for d in range(1, n_couples + 1)}
-for game_nr in range(1, n_games + 1):
-    game_won, n_days = play_game(show_process=True if game_nr == 1 else False)
-    if game_won:
-        print(f'The solver won game # {game_nr} in {n_days} days.')
-        n_games_won += 1
-        n_days_distrib[n_days] += 1
-    else:
-        print(f'The solver lost game # {game_nr}.')
-    if not (game_nr % 10):
-        print()
-        print(f'The solver won {n_games_won} out of {game_nr} test games, or '
-              f'{n_games_won / game_nr * 100:.2f}% of them. '
-              f'On average, a victory took '
-              f'{sum([n_days * freq for n_days, freq in n_days_distrib.items()]) / n_games_won:.2f} days.')
-        print()
+def collect_stats(n_games, freqs2rank=None):
+    """
+    play the information theory game underlying "Are You the One?", 1st season
+    :param show_process: if True, illustrate the game and the solver's reasoning, too
+    :param freqs2rank: function used to rank tests; if None, then the solver's default ranking function is used
+    :return: nothing; print stats in the output
+    """
+    print('------------------------------------------------------------------------------')
+    print(f"Collecting stats over {n_games} games, of which the first is fully shown:")
+    print('------------------------------------------------------------------------------')
+    n_games_won = 0
+    n_days_distrib = {d: 0 for d in range(1, n_couples + 1)}
+    for game_nr in range(1, n_games + 1):
+        game_won, n_days = play_game(show_process=True if game_nr == 1 else False)
+        if game_won:
+            print(f'The solver won game # {game_nr} in {n_days} days.')
+            n_games_won += 1
+            n_days_distrib[n_days] += 1
+        else:
+            print(f'The solver lost game # {game_nr}.')
+        if not (game_nr % 10):
+            print()
+            print(f'The solver won {n_games_won} out of {game_nr} test games, or '
+                  f'{n_games_won / game_nr * 100:.2f}% of them. '
+                  f'On average, a victory took '
+                  f'{sum([n_days * freq for n_days, freq in n_days_distrib.items()]) / n_games_won:.2f} days.')
+            print()
+    for n_days, freq in sorted(n_days_distrib.items()):
+        print(f'Nr. of games won in {n_days} days: {freq}')
+    print()
+
+
+if __name__ == '__main__':
+    print(f'time = {datetime.now()}')
+    print('=' * 120)
+    print(f'--- Ranking possible tests by entropy ---')
+    collect_stats(n_games=100, freqs2rank=entropy_delta)
+    print(f'time = {datetime.now()}')
+    print('=' * 120)
+    print(f'--- Ranking possible tests by descending test frequencies ---')
+    collect_stats(n_games=100, freqs2rank=None)
+    print(f'time = {datetime.now()}')
