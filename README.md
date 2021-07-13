@@ -33,6 +33,7 @@ Both implemented variants of the solver performed more or less equally:
 - Over 100 test games, the frequency vector-ranking solver worked slightly better than the entropy-ranking solver:
     - the frequency vector-ranking solver won 99 games taking 7.93 days on average
     - the entropy-ranking solver won 98 games taking 8.11 days on average
+
 For more details, please see the test outputs.
 
 ACKNOWLEDGEMENTS
