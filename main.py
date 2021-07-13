@@ -15,7 +15,7 @@ def play_game(show_process, freqs2rank=None):
     :return: (was the game won?: boolean, nr. of days elapsed)
     """
     oracle = GameOracle(n_couples)
-    solver = GameSolver(n_couples, show_optimization=show_process)
+    solver = GameSolver(n_couples, freqs2rank=freqs2rank, show_optimization=show_process)
     if show_process:
         print()
         print('=== START OF THE GAME ===')
@@ -79,7 +79,7 @@ def collect_stats(n_games, freqs2rank=None):
     n_games_won = 0
     n_days_distrib = {d: 0 for d in range(1, n_couples + 1)}
     for game_nr in range(1, n_games + 1):
-        game_won, n_days = play_game(show_process=True if game_nr == 1 else False)
+        game_won, n_days = play_game(show_process=True if game_nr == 1 else False, freqs2rank=freqs2rank)
         if game_won:
             print(f'The solver won game # {game_nr} in {n_days} days.')
             n_games_won += 1
@@ -101,10 +101,10 @@ def collect_stats(n_games, freqs2rank=None):
 if __name__ == '__main__':
     print(f'time = {datetime.now()}')
     print('=' * 120)
-    print(f'--- Ranking possible tests by entropy ---')
-    collect_stats(n_games=100, freqs2rank=entropy_delta)
+    print(f'--- Ranking possible tests by descending test frequencies ---')
+    collect_stats(n_games=n_games, freqs2rank=None)
     print(f'time = {datetime.now()}')
     print('=' * 120)
-    print(f'--- Ranking possible tests by descending test frequencies ---')
-    collect_stats(n_games=100, freqs2rank=None)
+    print(f'--- Ranking possible tests by entropy ---')
+    collect_stats(n_games=n_games, freqs2rank=entropy_delta)
     print(f'time = {datetime.now()}')

@@ -20,7 +20,7 @@ def entropy_delta(freqs, n_total=None):
     if n_total is None:
         n_total = sum(freqs)
     freqs = freqs / n_total
-    return sum(freqs * np.log2(freqs))
+    return sum([freq * math.log2(freq) for freq in freqs if freq > 0.0])
 
 
 class GameSolver:
@@ -54,14 +54,14 @@ class GameSolver:
         self._day = 0
         self._time = 0  # 0 = morning, 1 = night
         self._moment = 0  # 0 = before testing, 1 = after testing
-        # calculating unreachable upper bounds
+        # calculating upper bounds
         self.m_test_rank_ubound = self.freqs2rank(
-            np.array([self.max_admissible_permutations] * 2),
-            2 * self.max_admissible_permutations
+            np.array([self.max_admissible_permutations, 0]),
+            self.max_admissible_permutations
         )
         self.n_test_rank_ubound = self.freqs2rank(
-            np.array([self.max_admissible_permutations] * (n + 1)),
-            self.max_admissible_permutations * (n + 1)
+            np.array([self.max_admissible_permutations] + [0] * (n)),
+            self.max_admissible_permutations
         )
 
     def get_couple_probabilities(self):
@@ -135,7 +135,7 @@ class GameSolver:
             candidate_permutations = self.admissible_permutations
         candidate_permutations = {cp: None for cp in candidate_permutations}
         min_rank = self.n_test_rank_ubound
-        candidate_test = None
+        candidate_tests = []
         initial_frequencies = np.zeros((self.n + 1), dtype=int)
         for candidate_permutation in candidate_permutations:
             test_frequencies = initial_frequencies.copy()
@@ -148,8 +148,10 @@ class GameSolver:
             rank = self.freqs2rank(test_frequencies, self.n_admissible_permutations)
             candidate_permutations[candidate_permutation] = rank
             if rank < min_rank:
-                candidate_test = candidate_permutation
+                candidate_tests = [candidate_permutation]
                 min_rank = rank
+            elif rank == min_rank:
+                candidate_tests.append(candidate_permutation)
         if self.show_optimization:
             print(f'The solver randomly chooses and analyzes {len(candidate_permutations)} '
                   f'admissible permutation{"s" if len(candidate_permutations) > 1 else ""}:')
@@ -160,7 +162,7 @@ class GameSolver:
                 print('...')
                 print(f'The N-test using the admissible permutation {list(sorted_candidates[0][0])} '
                       f'has rank {sorted_candidates[0][1]}.')
-        return candidate_test
+        return random.choice(candidate_tests)
 
     def assess_n_test(self, betas, result):
         """

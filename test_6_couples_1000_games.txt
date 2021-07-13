@@ -1,0 +1,2863 @@
+/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/Documents/GitHub/ayto/main.py
+time = 2021-07-12 18:50:36.638051
+========================================================================================================================
+--- Ranking possible tests by descending test frequencies ---
+------------------------------------------------------------------------------
+Collecting stats over 1000 games, of which the first is fully shown:
+------------------------------------------------------------------------------
+
+=== START OF THE GAME ===
+The oracle has randomly chosen this solution:
+[5, 2, 1, 0, 3, 4]
+The solver has 6 days to guess it.
+The solver knows that there are 720 admissible permutations now.
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]]
+
+=== On the morning of day 1:
+The solver chooses the M-test (1, 3).
+The oracle answers 0.
+The solver knows that there are 600 admissible permutations now.
+
+--- On the night of day 1:
+The solver randomly chooses and analyzes 600 admissible permutations:
+The N-test using the admissible permutation [4, 2, 3, 1, 0, 5] has rank [220, 212, 117, 36, 14, 1, 0].
+...
+The N-test using the admissible permutation [3, 4, 1, 0, 2, 5] has rank [220, 212, 117, 36, 14, 1, 0].
+The solver chooses the N-test [3, 0, 1, 5, 2, 4].
+The oracle answers 2.
+The solver knows that there are 117 admissible permutations now.
+
+=== On the morning of day 2:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.103 0.128 0.128 0.385 0.128 0.128]
+ [0.385 0.154 0.154 0.000 0.154 0.154]
+ [0.128 0.308 0.137 0.154 0.137 0.137]
+ [0.128 0.137 0.137 0.154 0.137 0.308]
+ [0.128 0.137 0.308 0.154 0.137 0.137]
+ [0.128 0.137 0.137 0.154 0.308 0.137]]
+The solver chooses the M-test (0, 3).
+The oracle answers 0.
+The solver knows that there are 72 admissible permutations now.
+
+--- On the night of day 2:
+The solver randomly chooses and analyzes 72 admissible permutations:
+The N-test using the admissible permutation [5, 0, 2, 3, 1, 4] has rank [25, 23, 14, 5, 4, 1, 0].
+...
+The N-test using the admissible permutation [0, 2, 3, 5, 1, 4] has rank [21, 21, 19, 9, 1, 1, 0].
+The solver chooses the N-test [0, 2, 1, 3, 5, 4].
+The oracle answers 3.
+The solver knows that there are 9 admissible permutations now:
+[(0, 1, 5, 3, 2, 4),
+ (0, 2, 1, 5, 4, 3),
+ (0, 2, 3, 5, 1, 4),
+ (0, 4, 1, 3, 2, 5),
+ (0, 5, 1, 2, 3, 4),
+ (1, 0, 2, 3, 5, 4),
+ (2, 5, 1, 3, 0, 4),
+ (4, 0, 1, 3, 5, 2),
+ (5, 2, 1, 0, 3, 4)]
+
+=== On the morning of day 3:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.556 0.111 0.111 0.000 0.111 0.111]
+ [0.222 0.111 0.333 0.000 0.111 0.222]
+ [0.000 0.667 0.111 0.111 0.000 0.111]
+ [0.111 0.000 0.111 0.556 0.000 0.222]
+ [0.111 0.111 0.222 0.222 0.111 0.222]
+ [0.000 0.000 0.111 0.111 0.667 0.111]]
+The solver chooses the M-test (3, 3).
+The oracle answers 0.
+The solver knows that there are 4 admissible permutations now:
+[(0, 2, 1, 5, 4, 3), (0, 2, 3, 5, 1, 4), (0, 5, 1, 2, 3, 4), (5, 2, 1, 0, 3, 4)]
+
+--- On the night of day 3:
+The solver randomly chooses and analyzes 4 admissible permutations:
+The N-test using the admissible permutation [0, 2, 1, 5, 4, 3] has rank [2, 1, 1, 0, 0, 0, 0].
+...
+The N-test using the admissible permutation [0, 2, 3, 5, 1, 4] has rank [2, 1, 1, 0, 0, 0, 0].
+The solver chooses the N-test [0, 5, 1, 2, 3, 4].
+The oracle answers 3.
+The solver knows that there is 1 admissible permutation now:
+[(5, 2, 1, 0, 3, 4)]
+
+=== On the morning of day 4:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.000 1.000 0.000 0.000 0.000 0.000]
+ [1.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 1.000 0.000]]
+The solver chooses the M-test (0, 4).
+The oracle answers 0.
+The solver knows that there is 1 admissible permutation now:
+[(5, 2, 1, 0, 3, 4)]
+
+--- On the night of day 4:
+The solver chooses the N-test [5, 2, 1, 0, 3, 4].
+The oracle answers 6.
+The solver has won the game!
+
+=== END OF THE GAME ===
+
+
+The solver won game # 1 in 4 days.
+The solver won game # 2 in 3 days.
+The solver won game # 3 in 3 days.
+The solver won game # 4 in 3 days.
+The solver won game # 5 in 4 days.
+The solver won game # 6 in 4 days.
+The solver won game # 7 in 4 days.
+The solver won game # 8 in 4 days.
+The solver won game # 9 in 4 days.
+The solver won game # 10 in 4 days.
+
+The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 3.70 days.
+
+The solver won game # 11 in 4 days.
+The solver won game # 12 in 4 days.
+The solver won game # 13 in 4 days.
+The solver won game # 14 in 4 days.
+The solver won game # 15 in 3 days.
+The solver won game # 16 in 5 days.
+The solver won game # 17 in 3 days.
+The solver won game # 18 in 3 days.
+The solver won game # 19 in 3 days.
+The solver won game # 20 in 5 days.
+
+The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 3.75 days.
+
+The solver won game # 21 in 5 days.
+The solver won game # 22 in 4 days.
+The solver won game # 23 in 4 days.
+The solver won game # 24 in 3 days.
+The solver won game # 25 in 4 days.
+The solver won game # 26 in 4 days.
+The solver won game # 27 in 5 days.
+The solver won game # 28 in 4 days.
+The solver won game # 29 in 3 days.
+The solver won game # 30 in 5 days.
+
+The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 3.87 days.
+
+The solver won game # 31 in 4 days.
+The solver won game # 32 in 4 days.
+The solver won game # 33 in 5 days.
+The solver won game # 34 in 5 days.
+The solver won game # 35 in 4 days.
+The solver won game # 36 in 5 days.
+The solver won game # 37 in 5 days.
+The solver won game # 38 in 3 days.
+The solver won game # 39 in 4 days.
+The solver won game # 40 in 5 days.
+
+The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 4.00 days.
+
+The solver won game # 41 in 4 days.
+The solver won game # 42 in 3 days.
+The solver won game # 43 in 3 days.
+The solver won game # 44 in 3 days.
+The solver won game # 45 in 4 days.
+The solver won game # 46 in 5 days.
+The solver won game # 47 in 4 days.
+The solver won game # 48 in 4 days.
+The solver won game # 49 in 4 days.
+The solver won game # 50 in 4 days.
+
+The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 3.96 days.
+
+The solver won game # 51 in 5 days.
+The solver won game # 52 in 5 days.
+The solver won game # 53 in 4 days.
+The solver won game # 54 in 5 days.
+The solver won game # 55 in 5 days.
+The solver won game # 56 in 3 days.
+The solver won game # 57 in 3 days.
+The solver won game # 58 in 5 days.
+The solver won game # 59 in 3 days.
+The solver won game # 60 in 5 days.
+
+The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 4.02 days.
+
+The solver won game # 61 in 4 days.
+The solver won game # 62 in 4 days.
+The solver won game # 63 in 4 days.
+The solver won game # 64 in 5 days.
+The solver won game # 65 in 3 days.
+The solver won game # 66 in 3 days.
+The solver won game # 67 in 4 days.
+The solver won game # 68 in 4 days.
+The solver won game # 69 in 4 days.
+The solver won game # 70 in 4 days.
+
+The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 4.00 days.
+
+The solver won game # 71 in 2 days.
+The solver won game # 72 in 4 days.
+The solver won game # 73 in 5 days.
+The solver won game # 74 in 3 days.
+The solver won game # 75 in 4 days.
+The solver won game # 76 in 4 days.
+The solver won game # 77 in 4 days.
+The solver won game # 78 in 4 days.
+The solver won game # 79 in 4 days.
+The solver won game # 80 in 4 days.
+
+The solver won 80 out of 80 test games, or 100.00% of them. On average, a victory took 3.98 days.
+
+The solver won game # 81 in 4 days.
+The solver won game # 82 in 4 days.
+The solver won game # 83 in 4 days.
+The solver won game # 84 in 5 days.
+The solver won game # 85 in 4 days.
+The solver won game # 86 in 4 days.
+The solver won game # 87 in 4 days.
+The solver won game # 88 in 5 days.
+The solver won game # 89 in 4 days.
+The solver won game # 90 in 4 days.
+
+The solver won 90 out of 90 test games, or 100.00% of them. On average, a victory took 4.00 days.
+
+The solver won game # 91 in 4 days.
+The solver won game # 92 in 4 days.
+The solver won game # 93 in 5 days.
+The solver won game # 94 in 4 days.
+The solver won game # 95 in 4 days.
+The solver won game # 96 in 4 days.
+The solver won game # 97 in 4 days.
+The solver won game # 98 in 4 days.
+The solver won game # 99 in 2 days.
+The solver won game # 100 in 3 days.
+
+The solver won 100 out of 100 test games, or 100.00% of them. On average, a victory took 3.98 days.
+
+The solver won game # 101 in 5 days.
+The solver won game # 102 in 4 days.
+The solver won game # 103 in 4 days.
+The solver won game # 104 in 5 days.
+The solver won game # 105 in 5 days.
+The solver won game # 106 in 4 days.
+The solver won game # 107 in 4 days.
+The solver won game # 108 in 4 days.
+The solver won game # 109 in 5 days.
+The solver won game # 110 in 4 days.
+
+The solver won 110 out of 110 test games, or 100.00% of them. On average, a victory took 4.02 days.
+
+The solver won game # 111 in 4 days.
+The solver won game # 112 in 4 days.
+The solver won game # 113 in 4 days.
+The solver won game # 114 in 4 days.
+The solver won game # 115 in 2 days.
+The solver won game # 116 in 4 days.
+The solver won game # 117 in 5 days.
+The solver won game # 118 in 3 days.
+The solver won game # 119 in 4 days.
+The solver won game # 120 in 5 days.
+
+The solver won 120 out of 120 test games, or 100.00% of them. On average, a victory took 4.01 days.
+
+The solver won game # 121 in 3 days.
+The solver won game # 122 in 5 days.
+The solver won game # 123 in 4 days.
+The solver won game # 124 in 4 days.
+The solver won game # 125 in 5 days.
+The solver won game # 126 in 5 days.
+The solver won game # 127 in 3 days.
+The solver won game # 128 in 4 days.
+The solver won game # 129 in 5 days.
+The solver won game # 130 in 5 days.
+
+The solver won 130 out of 130 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 131 in 5 days.
+The solver won game # 132 in 3 days.
+The solver won game # 133 in 4 days.
+The solver won game # 134 in 4 days.
+The solver won game # 135 in 4 days.
+The solver won game # 136 in 5 days.
+The solver won game # 137 in 5 days.
+The solver won game # 138 in 4 days.
+The solver won game # 139 in 3 days.
+The solver won game # 140 in 5 days.
+
+The solver won 140 out of 140 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 141 in 3 days.
+The solver won game # 142 in 4 days.
+The solver won game # 143 in 5 days.
+The solver won game # 144 in 5 days.
+The solver won game # 145 in 4 days.
+The solver won game # 146 in 3 days.
+The solver won game # 147 in 5 days.
+The solver won game # 148 in 4 days.
+The solver won game # 149 in 4 days.
+The solver won game # 150 in 4 days.
+
+The solver won 150 out of 150 test games, or 100.00% of them. On average, a victory took 4.05 days.
+
+The solver won game # 151 in 3 days.
+The solver won game # 152 in 4 days.
+The solver won game # 153 in 3 days.
+The solver won game # 154 in 3 days.
+The solver won game # 155 in 5 days.
+The solver won game # 156 in 4 days.
+The solver won game # 157 in 4 days.
+The solver won game # 158 in 4 days.
+The solver won game # 159 in 3 days.
+The solver won game # 160 in 3 days.
+
+The solver won 160 out of 160 test games, or 100.00% of them. On average, a victory took 4.02 days.
+
+The solver won game # 161 in 5 days.
+The solver won game # 162 in 4 days.
+The solver won game # 163 in 4 days.
+The solver won game # 164 in 5 days.
+The solver won game # 165 in 4 days.
+The solver won game # 166 in 3 days.
+The solver won game # 167 in 4 days.
+The solver won game # 168 in 3 days.
+The solver won game # 169 in 4 days.
+The solver won game # 170 in 3 days.
+
+The solver won 170 out of 170 test games, or 100.00% of them. On average, a victory took 4.01 days.
+
+The solver won game # 171 in 4 days.
+The solver won game # 172 in 5 days.
+The solver won game # 173 in 4 days.
+The solver won game # 174 in 3 days.
+The solver won game # 175 in 4 days.
+The solver won game # 176 in 5 days.
+The solver won game # 177 in 3 days.
+The solver won game # 178 in 5 days.
+The solver won game # 179 in 4 days.
+The solver won game # 180 in 3 days.
+
+The solver won 180 out of 180 test games, or 100.00% of them. On average, a victory took 4.01 days.
+
+The solver won game # 181 in 5 days.
+The solver won game # 182 in 4 days.
+The solver won game # 183 in 3 days.
+The solver won game # 184 in 5 days.
+The solver won game # 185 in 5 days.
+The solver won game # 186 in 4 days.
+The solver won game # 187 in 3 days.
+The solver won game # 188 in 4 days.
+The solver won game # 189 in 4 days.
+The solver won game # 190 in 4 days.
+
+The solver won 190 out of 190 test games, or 100.00% of them. On average, a victory took 4.02 days.
+
+The solver won game # 191 in 4 days.
+The solver won game # 192 in 5 days.
+The solver won game # 193 in 3 days.
+The solver won game # 194 in 5 days.
+The solver won game # 195 in 3 days.
+The solver won game # 196 in 4 days.
+The solver won game # 197 in 3 days.
+The solver won game # 198 in 3 days.
+The solver won game # 199 in 5 days.
+The solver won game # 200 in 4 days.
+
+The solver won 200 out of 200 test games, or 100.00% of them. On average, a victory took 4.01 days.
+
+The solver won game # 201 in 4 days.
+The solver won game # 202 in 3 days.
+The solver won game # 203 in 4 days.
+The solver won game # 204 in 5 days.
+The solver won game # 205 in 5 days.
+The solver won game # 206 in 4 days.
+The solver won game # 207 in 4 days.
+The solver won game # 208 in 4 days.
+The solver won game # 209 in 4 days.
+The solver won game # 210 in 4 days.
+
+The solver won 210 out of 210 test games, or 100.00% of them. On average, a victory took 4.01 days.
+
+The solver won game # 211 in 4 days.
+The solver won game # 212 in 3 days.
+The solver won game # 213 in 4 days.
+The solver won game # 214 in 4 days.
+The solver won game # 215 in 5 days.
+The solver won game # 216 in 4 days.
+The solver won game # 217 in 5 days.
+The solver won game # 218 in 4 days.
+The solver won game # 219 in 4 days.
+The solver won game # 220 in 4 days.
+
+The solver won 220 out of 220 test games, or 100.00% of them. On average, a victory took 4.02 days.
+
+The solver won game # 221 in 4 days.
+The solver won game # 222 in 5 days.
+The solver won game # 223 in 3 days.
+The solver won game # 224 in 5 days.
+The solver won game # 225 in 3 days.
+The solver won game # 226 in 5 days.
+The solver won game # 227 in 4 days.
+The solver won game # 228 in 4 days.
+The solver won game # 229 in 5 days.
+The solver won game # 230 in 4 days.
+
+The solver won 230 out of 230 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 231 in 5 days.
+The solver won game # 232 in 4 days.
+The solver won game # 233 in 4 days.
+The solver won game # 234 in 3 days.
+The solver won game # 235 in 4 days.
+The solver won game # 236 in 4 days.
+The solver won game # 237 in 4 days.
+The solver won game # 238 in 5 days.
+The solver won game # 239 in 5 days.
+The solver won game # 240 in 5 days.
+
+The solver won 240 out of 240 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 241 in 3 days.
+The solver won game # 242 in 5 days.
+The solver won game # 243 in 4 days.
+The solver won game # 244 in 5 days.
+The solver won game # 245 in 4 days.
+The solver won game # 246 in 3 days.
+The solver won game # 247 in 4 days.
+The solver won game # 248 in 4 days.
+The solver won game # 249 in 5 days.
+The solver won game # 250 in 4 days.
+
+The solver won 250 out of 250 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 251 in 4 days.
+The solver won game # 252 in 5 days.
+The solver won game # 253 in 5 days.
+The solver won game # 254 in 5 days.
+The solver won game # 255 in 4 days.
+The solver won game # 256 in 4 days.
+The solver won game # 257 in 4 days.
+The solver won game # 258 in 4 days.
+The solver won game # 259 in 4 days.
+The solver won game # 260 in 3 days.
+
+The solver won 260 out of 260 test games, or 100.00% of them. On average, a victory took 4.05 days.
+
+The solver won game # 261 in 5 days.
+The solver won game # 262 in 3 days.
+The solver won game # 263 in 4 days.
+The solver won game # 264 in 5 days.
+The solver won game # 265 in 4 days.
+The solver won game # 266 in 3 days.
+The solver won game # 267 in 3 days.
+The solver won game # 268 in 3 days.
+The solver won game # 269 in 4 days.
+The solver won game # 270 in 5 days.
+
+The solver won 270 out of 270 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 271 in 5 days.
+The solver won game # 272 in 4 days.
+The solver won game # 273 in 4 days.
+The solver won game # 274 in 4 days.
+The solver won game # 275 in 4 days.
+The solver won game # 276 in 4 days.
+The solver won game # 277 in 4 days.
+The solver won game # 278 in 4 days.
+The solver won game # 279 in 5 days.
+The solver won game # 280 in 5 days.
+
+The solver won 280 out of 280 test games, or 100.00% of them. On average, a victory took 4.05 days.
+
+The solver won game # 281 in 3 days.
+The solver won game # 282 in 5 days.
+The solver won game # 283 in 3 days.
+The solver won game # 284 in 3 days.
+The solver won game # 285 in 4 days.
+The solver won game # 286 in 4 days.
+The solver won game # 287 in 5 days.
+The solver won game # 288 in 4 days.
+The solver won game # 289 in 3 days.
+The solver won game # 290 in 4 days.
+
+The solver won 290 out of 290 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 291 in 5 days.
+The solver won game # 292 in 4 days.
+The solver won game # 293 in 4 days.
+The solver won game # 294 in 4 days.
+The solver won game # 295 in 4 days.
+The solver won game # 296 in 1 days.
+The solver won game # 297 in 4 days.
+The solver won game # 298 in 1 days.
+The solver won game # 299 in 4 days.
+The solver won game # 300 in 5 days.
+
+The solver won 300 out of 300 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 301 in 2 days.
+The solver won game # 302 in 4 days.
+The solver won game # 303 in 3 days.
+The solver won game # 304 in 5 days.
+The solver won game # 305 in 4 days.
+The solver won game # 306 in 4 days.
+The solver won game # 307 in 4 days.
+The solver won game # 308 in 4 days.
+The solver won game # 309 in 5 days.
+The solver won game # 310 in 5 days.
+
+The solver won 310 out of 310 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 311 in 4 days.
+The solver won game # 312 in 5 days.
+The solver won game # 313 in 4 days.
+The solver won game # 314 in 5 days.
+The solver won game # 315 in 5 days.
+The solver won game # 316 in 4 days.
+The solver won game # 317 in 3 days.
+The solver won game # 318 in 4 days.
+The solver won game # 319 in 4 days.
+The solver won game # 320 in 4 days.
+
+The solver won 320 out of 320 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 321 in 4 days.
+The solver won game # 322 in 4 days.
+The solver won game # 323 in 4 days.
+The solver won game # 324 in 3 days.
+The solver won game # 325 in 3 days.
+The solver won game # 326 in 4 days.
+The solver won game # 327 in 5 days.
+The solver won game # 328 in 5 days.
+The solver won game # 329 in 4 days.
+The solver won game # 330 in 4 days.
+
+The solver won 330 out of 330 test games, or 100.00% of them. On average, a victory took 4.03 days.
+
+The solver won game # 331 in 5 days.
+The solver won game # 332 in 5 days.
+The solver won game # 333 in 4 days.
+The solver won game # 334 in 5 days.
+The solver won game # 335 in 4 days.
+The solver won game # 336 in 4 days.
+The solver won game # 337 in 5 days.
+The solver won game # 338 in 2 days.
+The solver won game # 339 in 5 days.
+The solver won game # 340 in 5 days.
+
+The solver won 340 out of 340 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 341 in 4 days.
+The solver won game # 342 in 4 days.
+The solver won game # 343 in 5 days.
+The solver won game # 344 in 4 days.
+The solver won game # 345 in 4 days.
+The solver won game # 346 in 4 days.
+The solver won game # 347 in 5 days.
+The solver won game # 348 in 4 days.
+The solver won game # 349 in 2 days.
+The solver won game # 350 in 5 days.
+
+The solver won 350 out of 350 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 351 in 5 days.
+The solver won game # 352 in 4 days.
+The solver won game # 353 in 4 days.
+The solver won game # 354 in 4 days.
+The solver won game # 355 in 2 days.
+The solver won game # 356 in 4 days.
+The solver won game # 357 in 2 days.
+The solver won game # 358 in 4 days.
+The solver won game # 359 in 5 days.
+The solver won game # 360 in 4 days.
+
+The solver won 360 out of 360 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 361 in 4 days.
+The solver won game # 362 in 5 days.
+The solver won game # 363 in 3 days.
+The solver won game # 364 in 4 days.
+The solver won game # 365 in 4 days.
+The solver won game # 366 in 4 days.
+The solver won game # 367 in 5 days.
+The solver won game # 368 in 5 days.
+The solver won game # 369 in 4 days.
+The solver won game # 370 in 5 days.
+
+The solver won 370 out of 370 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 371 in 5 days.
+The solver won game # 372 in 3 days.
+The solver won game # 373 in 4 days.
+The solver won game # 374 in 5 days.
+The solver won game # 375 in 3 days.
+The solver won game # 376 in 5 days.
+The solver won game # 377 in 4 days.
+The solver won game # 378 in 5 days.
+The solver won game # 379 in 3 days.
+The solver won game # 380 in 4 days.
+
+The solver won 380 out of 380 test games, or 100.00% of them. On average, a victory took 4.04 days.
+
+The solver won game # 381 in 3 days.
+The solver won game # 382 in 5 days.
+The solver won game # 383 in 4 days.
+The solver won game # 384 in 4 days.
+The solver won game # 385 in 4 days.
+The solver won game # 386 in 4 days.
+The solver won game # 387 in 5 days.
+The solver won game # 388 in 5 days.
+The solver won game # 389 in 5 days.
+The solver won game # 390 in 4 days.
+
+The solver won 390 out of 390 test games, or 100.00% of them. On average, a victory took 4.05 days.
+
+The solver won game # 391 in 4 days.
+The solver won game # 392 in 5 days.
+The solver won game # 393 in 5 days.
+The solver won game # 394 in 3 days.
+The solver won game # 395 in 2 days.
+The solver won game # 396 in 5 days.
+The solver won game # 397 in 3 days.
+The solver won game # 398 in 5 days.
+The solver won game # 399 in 6 days.
+The solver won game # 400 in 4 days.
+
+The solver won 400 out of 400 test games, or 100.00% of them. On average, a victory took 4.05 days.
+
+The solver won game # 401 in 5 days.
+The solver won game # 402 in 3 days.
+The solver won game # 403 in 5 days.
+The solver won game # 404 in 5 days.
+The solver won game # 405 in 5 days.
+The solver won game # 406 in 4 days.
+The solver won game # 407 in 5 days.
+The solver won game # 408 in 3 days.
+The solver won game # 409 in 4 days.
+The solver won game # 410 in 3 days.
+
+The solver won 410 out of 410 test games, or 100.00% of them. On average, a victory took 4.06 days.
+
+The solver won game # 411 in 4 days.
+The solver won game # 412 in 5 days.
+The solver won game # 413 in 3 days.
+The solver won game # 414 in 4 days.
+The solver won game # 415 in 5 days.
+The solver won game # 416 in 4 days.
+The solver won game # 417 in 5 days.
+The solver won game # 418 in 4 days.
+The solver won game # 419 in 4 days.
+The solver won game # 420 in 4 days.
+
+The solver won 420 out of 420 test games, or 100.00% of them. On average, a victory took 4.06 days.
+
+The solver won game # 421 in 4 days.
+The solver won game # 422 in 5 days.
+The solver won game # 423 in 4 days.
+The solver won game # 424 in 4 days.
+The solver won game # 425 in 4 days.
+The solver won game # 426 in 5 days.
+The solver won game # 427 in 5 days.
+The solver won game # 428 in 4 days.
+The solver won game # 429 in 5 days.
+The solver won game # 430 in 4 days.
+
+The solver won 430 out of 430 test games, or 100.00% of them. On average, a victory took 4.07 days.
+
+The solver won game # 431 in 5 days.
+The solver won game # 432 in 5 days.
+The solver won game # 433 in 3 days.
+The solver won game # 434 in 5 days.
+The solver won game # 435 in 5 days.
+The solver won game # 436 in 3 days.
+The solver won game # 437 in 5 days.
+The solver won game # 438 in 3 days.
+The solver won game # 439 in 4 days.
+The solver won game # 440 in 4 days.
+
+The solver won 440 out of 440 test games, or 100.00% of them. On average, a victory took 4.07 days.
+
+The solver won game # 441 in 4 days.
+The solver won game # 442 in 5 days.
+The solver won game # 443 in 5 days.
+The solver won game # 444 in 3 days.
+The solver won game # 445 in 3 days.
+The solver won game # 446 in 5 days.
+The solver won game # 447 in 4 days.
+The solver won game # 448 in 4 days.
+The solver won game # 449 in 4 days.
+The solver won game # 450 in 5 days.
+
+The solver won 450 out of 450 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 451 in 5 days.
+The solver won game # 452 in 4 days.
+The solver won game # 453 in 5 days.
+The solver won game # 454 in 4 days.
+The solver won game # 455 in 4 days.
+The solver won game # 456 in 5 days.
+The solver won game # 457 in 4 days.
+The solver won game # 458 in 4 days.
+The solver won game # 459 in 5 days.
+The solver won game # 460 in 5 days.
+
+The solver won 460 out of 460 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 461 in 4 days.
+The solver won game # 462 in 4 days.
+The solver won game # 463 in 5 days.
+The solver won game # 464 in 3 days.
+The solver won game # 465 in 5 days.
+The solver won game # 466 in 4 days.
+The solver won game # 467 in 5 days.
+The solver won game # 468 in 4 days.
+The solver won game # 469 in 4 days.
+The solver won game # 470 in 3 days.
+
+The solver won 470 out of 470 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 471 in 3 days.
+The solver won game # 472 in 3 days.
+The solver won game # 473 in 4 days.
+The solver won game # 474 in 4 days.
+The solver won game # 475 in 4 days.
+The solver won game # 476 in 4 days.
+The solver won game # 477 in 4 days.
+The solver won game # 478 in 4 days.
+The solver won game # 479 in 4 days.
+The solver won game # 480 in 4 days.
+
+The solver won 480 out of 480 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 481 in 4 days.
+The solver won game # 482 in 4 days.
+The solver won game # 483 in 4 days.
+The solver won game # 484 in 4 days.
+The solver won game # 485 in 3 days.
+The solver won game # 486 in 4 days.
+The solver won game # 487 in 4 days.
+The solver won game # 488 in 4 days.
+The solver won game # 489 in 4 days.
+The solver won game # 490 in 4 days.
+
+The solver won 490 out of 490 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 491 in 4 days.
+The solver won game # 492 in 4 days.
+The solver won game # 493 in 5 days.
+The solver won game # 494 in 4 days.
+The solver won game # 495 in 4 days.
+The solver won game # 496 in 5 days.
+The solver won game # 497 in 5 days.
+The solver won game # 498 in 4 days.
+The solver won game # 499 in 4 days.
+The solver won game # 500 in 4 days.
+
+The solver won 500 out of 500 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 501 in 4 days.
+The solver won game # 502 in 4 days.
+The solver won game # 503 in 4 days.
+The solver won game # 504 in 4 days.
+The solver won game # 505 in 4 days.
+The solver won game # 506 in 4 days.
+The solver won game # 507 in 5 days.
+The solver won game # 508 in 4 days.
+The solver won game # 509 in 5 days.
+The solver won game # 510 in 4 days.
+
+The solver won 510 out of 510 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 511 in 5 days.
+The solver won game # 512 in 2 days.
+The solver won game # 513 in 5 days.
+The solver won game # 514 in 3 days.
+The solver won game # 515 in 3 days.
+The solver won game # 516 in 3 days.
+The solver won game # 517 in 5 days.
+The solver won game # 518 in 5 days.
+The solver won game # 519 in 5 days.
+The solver won game # 520 in 4 days.
+
+The solver won 520 out of 520 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 521 in 5 days.
+The solver won game # 522 in 4 days.
+The solver won game # 523 in 5 days.
+The solver won game # 524 in 4 days.
+The solver won game # 525 in 5 days.
+The solver won game # 526 in 5 days.
+The solver won game # 527 in 4 days.
+The solver won game # 528 in 5 days.
+The solver won game # 529 in 5 days.
+The solver won game # 530 in 5 days.
+
+The solver won 530 out of 530 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 531 in 4 days.
+The solver won game # 532 in 5 days.
+The solver won game # 533 in 5 days.
+The solver won game # 534 in 3 days.
+The solver won game # 535 in 4 days.
+The solver won game # 536 in 3 days.
+The solver won game # 537 in 4 days.
+The solver won game # 538 in 3 days.
+The solver won game # 539 in 5 days.
+The solver won game # 540 in 5 days.
+
+The solver won 540 out of 540 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 541 in 5 days.
+The solver won game # 542 in 4 days.
+The solver won game # 543 in 5 days.
+The solver won game # 544 in 4 days.
+The solver won game # 545 in 3 days.
+The solver won game # 546 in 3 days.
+The solver won game # 547 in 4 days.
+The solver won game # 548 in 5 days.
+The solver won game # 549 in 4 days.
+The solver won game # 550 in 4 days.
+
+The solver won 550 out of 550 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 551 in 4 days.
+The solver won game # 552 in 5 days.
+The solver won game # 553 in 4 days.
+The solver won game # 554 in 4 days.
+The solver won game # 555 in 4 days.
+The solver won game # 556 in 4 days.
+The solver won game # 557 in 4 days.
+The solver won game # 558 in 5 days.
+The solver won game # 559 in 4 days.
+The solver won game # 560 in 5 days.
+
+The solver won 560 out of 560 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 561 in 4 days.
+The solver won game # 562 in 4 days.
+The solver won game # 563 in 4 days.
+The solver won game # 564 in 2 days.
+The solver won game # 565 in 4 days.
+The solver won game # 566 in 3 days.
+The solver won game # 567 in 5 days.
+The solver won game # 568 in 4 days.
+The solver won game # 569 in 5 days.
+The solver won game # 570 in 4 days.
+
+The solver won 570 out of 570 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 571 in 5 days.
+The solver won game # 572 in 4 days.
+The solver won game # 573 in 5 days.
+The solver won game # 574 in 5 days.
+The solver won game # 575 in 4 days.
+The solver won game # 576 in 3 days.
+The solver won game # 577 in 4 days.
+The solver won game # 578 in 2 days.
+The solver won game # 579 in 5 days.
+The solver won game # 580 in 4 days.
+
+The solver won 580 out of 580 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 581 in 4 days.
+The solver won game # 582 in 4 days.
+The solver won game # 583 in 5 days.
+The solver won game # 584 in 3 days.
+The solver won game # 585 in 4 days.
+The solver won game # 586 in 5 days.
+The solver won game # 587 in 4 days.
+The solver won game # 588 in 5 days.
+The solver won game # 589 in 4 days.
+The solver won game # 590 in 4 days.
+
+The solver won 590 out of 590 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 591 in 5 days.
+The solver won game # 592 in 2 days.
+The solver won game # 593 in 5 days.
+The solver won game # 594 in 4 days.
+The solver won game # 595 in 4 days.
+The solver won game # 596 in 5 days.
+The solver won game # 597 in 3 days.
+The solver won game # 598 in 4 days.
+The solver won game # 599 in 3 days.
+The solver won game # 600 in 4 days.
+
+The solver won 600 out of 600 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 601 in 5 days.
+The solver won game # 602 in 4 days.
+The solver won game # 603 in 5 days.
+The solver won game # 604 in 5 days.
+The solver won game # 605 in 4 days.
+The solver won game # 606 in 4 days.
+The solver won game # 607 in 5 days.
+The solver won game # 608 in 5 days.
+The solver won game # 609 in 5 days.
+The solver won game # 610 in 4 days.
+
+The solver won 610 out of 610 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 611 in 3 days.
+The solver won game # 612 in 5 days.
+The solver won game # 613 in 5 days.
+The solver won game # 614 in 4 days.
+The solver won game # 615 in 4 days.
+The solver won game # 616 in 4 days.
+The solver won game # 617 in 3 days.
+The solver won game # 618 in 4 days.
+The solver won game # 619 in 4 days.
+The solver won game # 620 in 4 days.
+
+The solver won 620 out of 620 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 621 in 4 days.
+The solver won game # 622 in 3 days.
+The solver won game # 623 in 4 days.
+The solver won game # 624 in 2 days.
+The solver won game # 625 in 4 days.
+The solver won game # 626 in 4 days.
+The solver won game # 627 in 4 days.
+The solver won game # 628 in 5 days.
+The solver won game # 629 in 4 days.
+The solver won game # 630 in 4 days.
+
+The solver won 630 out of 630 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 631 in 3 days.
+The solver won game # 632 in 4 days.
+The solver won game # 633 in 4 days.
+The solver won game # 634 in 4 days.
+The solver won game # 635 in 4 days.
+The solver won game # 636 in 4 days.
+The solver won game # 637 in 4 days.
+The solver won game # 638 in 3 days.
+The solver won game # 639 in 4 days.
+The solver won game # 640 in 4 days.
+
+The solver won 640 out of 640 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 641 in 4 days.
+The solver won game # 642 in 4 days.
+The solver won game # 643 in 4 days.
+The solver won game # 644 in 3 days.
+The solver won game # 645 in 4 days.
+The solver won game # 646 in 3 days.
+The solver won game # 647 in 5 days.
+The solver won game # 648 in 4 days.
+The solver won game # 649 in 3 days.
+The solver won game # 650 in 4 days.
+
+The solver won 650 out of 650 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 651 in 3 days.
+The solver won game # 652 in 4 days.
+The solver won game # 653 in 3 days.
+The solver won game # 654 in 5 days.
+The solver won game # 655 in 4 days.
+The solver won game # 656 in 4 days.
+The solver won game # 657 in 5 days.
+The solver won game # 658 in 3 days.
+The solver won game # 659 in 5 days.
+The solver won game # 660 in 5 days.
+
+The solver won 660 out of 660 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 661 in 4 days.
+The solver won game # 662 in 4 days.
+The solver won game # 663 in 3 days.
+The solver won game # 664 in 4 days.
+The solver won game # 665 in 3 days.
+The solver won game # 666 in 3 days.
+The solver won game # 667 in 4 days.
+The solver won game # 668 in 4 days.
+The solver won game # 669 in 5 days.
+The solver won game # 670 in 5 days.
+
+The solver won 670 out of 670 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 671 in 2 days.
+The solver won game # 672 in 4 days.
+The solver won game # 673 in 4 days.
+The solver won game # 674 in 5 days.
+The solver won game # 675 in 4 days.
+The solver won game # 676 in 5 days.
+The solver won game # 677 in 5 days.
+The solver won game # 678 in 4 days.
+The solver won game # 679 in 5 days.
+The solver won game # 680 in 4 days.
+
+The solver won 680 out of 680 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 681 in 4 days.
+The solver won game # 682 in 5 days.
+The solver won game # 683 in 3 days.
+The solver won game # 684 in 3 days.
+The solver won game # 685 in 4 days.
+The solver won game # 686 in 4 days.
+The solver won game # 687 in 4 days.
+The solver won game # 688 in 4 days.
+The solver won game # 689 in 3 days.
+The solver won game # 690 in 5 days.
+
+The solver won 690 out of 690 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 691 in 5 days.
+The solver won game # 692 in 5 days.
+The solver won game # 693 in 4 days.
+The solver won game # 694 in 4 days.
+The solver won game # 695 in 4 days.
+The solver won game # 696 in 4 days.
+The solver won game # 697 in 5 days.
+The solver won game # 698 in 4 days.
+The solver won game # 699 in 5 days.
+The solver won game # 700 in 4 days.
+
+The solver won 700 out of 700 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 701 in 3 days.
+The solver won game # 702 in 4 days.
+The solver won game # 703 in 4 days.
+The solver won game # 704 in 4 days.
+The solver won game # 705 in 3 days.
+The solver won game # 706 in 5 days.
+The solver won game # 707 in 4 days.
+The solver won game # 708 in 4 days.
+The solver won game # 709 in 5 days.
+The solver won game # 710 in 5 days.
+
+The solver won 710 out of 710 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 711 in 3 days.
+The solver won game # 712 in 4 days.
+The solver won game # 713 in 4 days.
+The solver won game # 714 in 4 days.
+The solver won game # 715 in 4 days.
+The solver won game # 716 in 4 days.
+The solver won game # 717 in 4 days.
+The solver won game # 718 in 4 days.
+The solver won game # 719 in 4 days.
+The solver won game # 720 in 4 days.
+
+The solver won 720 out of 720 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 721 in 4 days.
+The solver won game # 722 in 4 days.
+The solver won game # 723 in 4 days.
+The solver won game # 724 in 4 days.
+The solver won game # 725 in 4 days.
+The solver won game # 726 in 4 days.
+The solver won game # 727 in 4 days.
+The solver won game # 728 in 4 days.
+The solver won game # 729 in 4 days.
+The solver won game # 730 in 4 days.
+
+The solver won 730 out of 730 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 731 in 4 days.
+The solver won game # 732 in 4 days.
+The solver won game # 733 in 4 days.
+The solver won game # 734 in 4 days.
+The solver won game # 735 in 4 days.
+The solver won game # 736 in 3 days.
+The solver won game # 737 in 4 days.
+The solver won game # 738 in 5 days.
+The solver won game # 739 in 1 days.
+The solver won game # 740 in 3 days.
+
+The solver won 740 out of 740 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 741 in 3 days.
+The solver won game # 742 in 4 days.
+The solver won game # 743 in 4 days.
+The solver won game # 744 in 3 days.
+The solver won game # 745 in 4 days.
+The solver won game # 746 in 5 days.
+The solver won game # 747 in 4 days.
+The solver won game # 748 in 5 days.
+The solver won game # 749 in 5 days.
+The solver won game # 750 in 3 days.
+
+The solver won 750 out of 750 test games, or 100.00% of them. On average, a victory took 4.07 days.
+
+The solver won game # 751 in 5 days.
+The solver won game # 752 in 5 days.
+The solver won game # 753 in 4 days.
+The solver won game # 754 in 4 days.
+The solver won game # 755 in 5 days.
+The solver won game # 756 in 4 days.
+The solver won game # 757 in 3 days.
+The solver won game # 758 in 5 days.
+The solver won game # 759 in 4 days.
+The solver won game # 760 in 4 days.
+
+The solver won 760 out of 760 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 761 in 5 days.
+The solver won game # 762 in 5 days.
+The solver won game # 763 in 4 days.
+The solver won game # 764 in 4 days.
+The solver won game # 765 in 4 days.
+The solver won game # 766 in 4 days.
+The solver won game # 767 in 4 days.
+The solver won game # 768 in 4 days.
+The solver won game # 769 in 3 days.
+The solver won game # 770 in 4 days.
+
+The solver won 770 out of 770 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 771 in 4 days.
+The solver won game # 772 in 4 days.
+The solver won game # 773 in 3 days.
+The solver won game # 774 in 5 days.
+The solver won game # 775 in 4 days.
+The solver won game # 776 in 5 days.
+The solver won game # 777 in 4 days.
+The solver won game # 778 in 4 days.
+The solver won game # 779 in 5 days.
+The solver won game # 780 in 5 days.
+
+The solver won 780 out of 780 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 781 in 4 days.
+The solver won game # 782 in 4 days.
+The solver won game # 783 in 4 days.
+The solver won game # 784 in 3 days.
+The solver won game # 785 in 5 days.
+The solver won game # 786 in 4 days.
+The solver won game # 787 in 5 days.
+The solver won game # 788 in 5 days.
+The solver won game # 789 in 4 days.
+The solver won game # 790 in 4 days.
+
+The solver won 790 out of 790 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 791 in 5 days.
+The solver won game # 792 in 4 days.
+The solver won game # 793 in 5 days.
+The solver won game # 794 in 4 days.
+The solver won game # 795 in 4 days.
+The solver won game # 796 in 4 days.
+The solver won game # 797 in 3 days.
+The solver won game # 798 in 3 days.
+The solver won game # 799 in 5 days.
+The solver won game # 800 in 5 days.
+
+The solver won 800 out of 800 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 801 in 4 days.
+The solver won game # 802 in 2 days.
+The solver won game # 803 in 4 days.
+The solver won game # 804 in 3 days.
+The solver won game # 805 in 4 days.
+The solver won game # 806 in 4 days.
+The solver won game # 807 in 5 days.
+The solver won game # 808 in 4 days.
+The solver won game # 809 in 5 days.
+The solver won game # 810 in 4 days.
+
+The solver won 810 out of 810 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 811 in 5 days.
+The solver won game # 812 in 5 days.
+The solver won game # 813 in 4 days.
+The solver won game # 814 in 4 days.
+The solver won game # 815 in 3 days.
+The solver won game # 816 in 3 days.
+The solver won game # 817 in 4 days.
+The solver won game # 818 in 4 days.
+The solver won game # 819 in 5 days.
+The solver won game # 820 in 5 days.
+
+The solver won 820 out of 820 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 821 in 3 days.
+The solver won game # 822 in 5 days.
+The solver won game # 823 in 4 days.
+The solver won game # 824 in 4 days.
+The solver won game # 825 in 4 days.
+The solver won game # 826 in 4 days.
+The solver won game # 827 in 5 days.
+The solver won game # 828 in 5 days.
+The solver won game # 829 in 5 days.
+The solver won game # 830 in 3 days.
+
+The solver won 830 out of 830 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 831 in 4 days.
+The solver won game # 832 in 5 days.
+The solver won game # 833 in 4 days.
+The solver won game # 834 in 4 days.
+The solver won game # 835 in 4 days.
+The solver won game # 836 in 3 days.
+The solver won game # 837 in 3 days.
+The solver won game # 838 in 4 days.
+The solver won game # 839 in 5 days.
+The solver won game # 840 in 4 days.
+
+The solver won 840 out of 840 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 841 in 3 days.
+The solver won game # 842 in 4 days.
+The solver won game # 843 in 4 days.
+The solver won game # 844 in 3 days.
+The solver won game # 845 in 4 days.
+The solver won game # 846 in 4 days.
+The solver won game # 847 in 3 days.
+The solver won game # 848 in 4 days.
+The solver won game # 849 in 4 days.
+The solver won game # 850 in 5 days.
+
+The solver won 850 out of 850 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 851 in 4 days.
+The solver won game # 852 in 5 days.
+The solver won game # 853 in 4 days.
+The solver won game # 854 in 4 days.
+The solver won game # 855 in 4 days.
+The solver won game # 856 in 4 days.
+The solver won game # 857 in 4 days.
+The solver won game # 858 in 5 days.
+The solver won game # 859 in 4 days.
+The solver won game # 860 in 5 days.
+
+The solver won 860 out of 860 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 861 in 4 days.
+The solver won game # 862 in 4 days.
+The solver won game # 863 in 5 days.
+The solver won game # 864 in 5 days.
+The solver won game # 865 in 4 days.
+The solver won game # 866 in 4 days.
+The solver won game # 867 in 4 days.
+The solver won game # 868 in 5 days.
+The solver won game # 869 in 3 days.
+The solver won game # 870 in 4 days.
+
+The solver won 870 out of 870 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 871 in 4 days.
+The solver won game # 872 in 4 days.
+The solver won game # 873 in 3 days.
+The solver won game # 874 in 5 days.
+The solver won game # 875 in 5 days.
+The solver won game # 876 in 5 days.
+The solver won game # 877 in 4 days.
+The solver won game # 878 in 4 days.
+The solver won game # 879 in 4 days.
+The solver won game # 880 in 4 days.
+
+The solver won 880 out of 880 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 881 in 3 days.
+The solver won game # 882 in 5 days.
+The solver won game # 883 in 5 days.
+The solver won game # 884 in 3 days.
+The solver won game # 885 in 4 days.
+The solver won game # 886 in 5 days.
+The solver won game # 887 in 4 days.
+The solver won game # 888 in 3 days.
+The solver won game # 889 in 5 days.
+The solver won game # 890 in 4 days.
+
+The solver won 890 out of 890 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 891 in 4 days.
+The solver won game # 892 in 3 days.
+The solver won game # 893 in 4 days.
+The solver won game # 894 in 4 days.
+The solver won game # 895 in 4 days.
+The solver won game # 896 in 5 days.
+The solver won game # 897 in 4 days.
+The solver won game # 898 in 3 days.
+The solver won game # 899 in 3 days.
+The solver won game # 900 in 4 days.
+
+The solver won 900 out of 900 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 901 in 5 days.
+The solver won game # 902 in 2 days.
+The solver won game # 903 in 5 days.
+The solver won game # 904 in 2 days.
+The solver won game # 905 in 5 days.
+The solver won game # 906 in 4 days.
+The solver won game # 907 in 5 days.
+The solver won game # 908 in 4 days.
+The solver won game # 909 in 5 days.
+The solver won game # 910 in 4 days.
+
+The solver won 910 out of 910 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 911 in 4 days.
+The solver won game # 912 in 5 days.
+The solver won game # 913 in 4 days.
+The solver won game # 914 in 4 days.
+The solver won game # 915 in 4 days.
+The solver won game # 916 in 5 days.
+The solver won game # 917 in 4 days.
+The solver won game # 918 in 4 days.
+The solver won game # 919 in 4 days.
+The solver won game # 920 in 5 days.
+
+The solver won 920 out of 920 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 921 in 4 days.
+The solver won game # 922 in 3 days.
+The solver won game # 923 in 5 days.
+The solver won game # 924 in 4 days.
+The solver won game # 925 in 4 days.
+The solver won game # 926 in 3 days.
+The solver won game # 927 in 4 days.
+The solver won game # 928 in 3 days.
+The solver won game # 929 in 4 days.
+The solver won game # 930 in 5 days.
+
+The solver won 930 out of 930 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 931 in 3 days.
+The solver won game # 932 in 4 days.
+The solver won game # 933 in 4 days.
+The solver won game # 934 in 4 days.
+The solver won game # 935 in 4 days.
+The solver won game # 936 in 4 days.
+The solver won game # 937 in 5 days.
+The solver won game # 938 in 4 days.
+The solver won game # 939 in 5 days.
+The solver won game # 940 in 5 days.
+
+The solver won 940 out of 940 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 941 in 4 days.
+The solver won game # 942 in 3 days.
+The solver won game # 943 in 5 days.
+The solver won game # 944 in 5 days.
+The solver won game # 945 in 4 days.
+The solver won game # 946 in 5 days.
+The solver won game # 947 in 3 days.
+The solver won game # 948 in 4 days.
+The solver won game # 949 in 4 days.
+The solver won game # 950 in 4 days.
+
+The solver won 950 out of 950 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 951 in 4 days.
+The solver won game # 952 in 3 days.
+The solver won game # 953 in 4 days.
+The solver won game # 954 in 5 days.
+The solver won game # 955 in 4 days.
+The solver won game # 956 in 3 days.
+The solver won game # 957 in 4 days.
+The solver won game # 958 in 4 days.
+The solver won game # 959 in 4 days.
+The solver won game # 960 in 4 days.
+
+The solver won 960 out of 960 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 961 in 3 days.
+The solver won game # 962 in 4 days.
+The solver won game # 963 in 4 days.
+The solver won game # 964 in 3 days.
+The solver won game # 965 in 5 days.
+The solver won game # 966 in 4 days.
+The solver won game # 967 in 5 days.
+The solver won game # 968 in 5 days.
+The solver won game # 969 in 5 days.
+The solver won game # 970 in 4 days.
+
+The solver won 970 out of 970 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 971 in 5 days.
+The solver won game # 972 in 3 days.
+The solver won game # 973 in 4 days.
+The solver won game # 974 in 3 days.
+The solver won game # 975 in 5 days.
+The solver won game # 976 in 5 days.
+The solver won game # 977 in 5 days.
+The solver won game # 978 in 5 days.
+The solver won game # 979 in 5 days.
+The solver won game # 980 in 4 days.
+
+The solver won 980 out of 980 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 981 in 4 days.
+The solver won game # 982 in 4 days.
+The solver won game # 983 in 4 days.
+The solver won game # 984 in 3 days.
+The solver won game # 985 in 3 days.
+The solver won game # 986 in 5 days.
+The solver won game # 987 in 5 days.
+The solver won game # 988 in 5 days.
+The solver won game # 989 in 4 days.
+The solver won game # 990 in 4 days.
+
+The solver won 990 out of 990 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 991 in 5 days.
+The solver won game # 992 in 4 days.
+The solver won game # 993 in 4 days.
+The solver won game # 994 in 4 days.
+The solver won game # 995 in 5 days.
+The solver won game # 996 in 4 days.
+The solver won game # 997 in 4 days.
+The solver won game # 998 in 4 days.
+The solver won game # 999 in 4 days.
+The solver won game # 1000 in 4 days.
+
+The solver won 1000 out of 1000 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+Nr. of games won in 1 days: 3
+Nr. of games won in 2 days: 18
+Nr. of games won in 3 days: 161
+Nr. of games won in 4 days: 525
+Nr. of games won in 5 days: 292
+Nr. of games won in 6 days: 1
+
+time = 2021-07-12 18:58:35.867755
+========================================================================================================================
+--- Ranking possible tests by entropy ---
+------------------------------------------------------------------------------
+Collecting stats over 1000 games, of which the first is fully shown:
+------------------------------------------------------------------------------
+
+=== START OF THE GAME ===
+The oracle has randomly chosen this solution:
+[3, 0, 5, 4, 2, 1]
+The solver has 6 days to guess it.
+The solver knows that there are 720 admissible permutations now.
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]
+ [0.167 0.167 0.167 0.167 0.167 0.167]]
+
+=== On the morning of day 1:
+The solver chooses the M-test (5, 4).
+The oracle answers 0.
+The solver knows that there are 600 admissible permutations now.
+
+--- On the night of day 1:
+The solver randomly chooses and analyzes 600 admissible permutations:
+The N-test using the admissible permutation [4, 2, 3, 1, 0, 5] has rank -1.906366666337862.
+...
+The N-test using the admissible permutation [3, 4, 1, 0, 2, 5] has rank -1.906366666337862.
+The solver chooses the N-test [3, 0, 4, 1, 5, 2].
+The oracle answers 2.
+The solver knows that there are 117 admissible permutations now.
+
+=== On the morning of day 2:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.137 0.137 0.128 0.308 0.154 0.137]
+ [0.308 0.137 0.128 0.137 0.154 0.137]
+ [0.128 0.128 0.103 0.128 0.385 0.128]
+ [0.137 0.308 0.128 0.137 0.154 0.137]
+ [0.137 0.137 0.128 0.137 0.154 0.308]
+ [0.154 0.154 0.385 0.154 0.000 0.154]]
+The solver chooses the M-test (5, 2).
+The oracle answers 0.
+The solver knows that there are 72 admissible permutations now.
+
+--- On the night of day 2:
+The solver randomly chooses and analyzes 72 admissible permutations:
+The N-test using the admissible permutation [4, 0, 2, 1, 3, 5] has rank -2.0905183413712445.
+...
+The N-test using the admissible permutation [3, 4, 5, 1, 2, 0] has rank -2.122635952632088.
+The solver chooses the N-test [3, 2, 0, 1, 4, 5].
+The oracle answers 1.
+The solver knows that there are 22 admissible permutations now:
+[(0, 2, 4, 3, 5, 1),
+ (0, 4, 2, 1, 5, 3),
+ (0, 5, 4, 1, 2, 3),
+ (1, 0, 4, 2, 3, 5),
+ (1, 0, 4, 3, 2, 5),
+ (1, 2, 4, 0, 5, 3),
+ (1, 2, 4, 3, 5, 0),
+ (2, 0, 4, 3, 1, 5),
+ (2, 4, 3, 1, 5, 0),
+ (2, 5, 4, 1, 0, 3),
+ (2, 5, 4, 1, 3, 0),
+ (3, 0, 5, 4, 2, 1),
+ (3, 1, 2, 4, 5, 0),
+ (3, 1, 4, 5, 2, 0),
+ (3, 4, 1, 2, 5, 0),
+ (3, 4, 2, 0, 5, 1),
+ (3, 5, 4, 0, 2, 1),
+ (3, 5, 4, 2, 0, 1),
+ (3, 5, 4, 2, 1, 0),
+ (4, 0, 5, 1, 2, 3),
+ (4, 3, 2, 1, 5, 0),
+ (5, 3, 4, 1, 2, 0)]
+
+=== On the morning of day 3:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.136 0.182 0.182 0.364 0.091 0.045]
+ [0.227 0.091 0.136 0.091 0.182 0.273]
+ [0.000 0.045 0.182 0.045 0.636 0.091]
+ [0.136 0.364 0.182 0.182 0.091 0.045]
+ [0.091 0.091 0.318 0.091 0.000 0.409]
+ [0.409 0.227 0.000 0.227 0.000 0.136]]
+The solver chooses the M-test (5, 0).
+The oracle answers 0.
+The solver knows that there are 13 admissible permutations now:
+[(0, 2, 4, 3, 5, 1),
+ (0, 4, 2, 1, 5, 3),
+ (0, 5, 4, 1, 2, 3),
+ (1, 0, 4, 2, 3, 5),
+ (1, 0, 4, 3, 2, 5),
+ (1, 2, 4, 0, 5, 3),
+ (2, 0, 4, 3, 1, 5),
+ (2, 5, 4, 1, 0, 3),
+ (3, 0, 5, 4, 2, 1),
+ (3, 4, 2, 0, 5, 1),
+ (3, 5, 4, 0, 2, 1),
+ (3, 5, 4, 2, 0, 1),
+ (4, 0, 5, 1, 2, 3)]
+
+--- On the night of day 3:
+The solver randomly chooses and analyzes 13 admissible permutations:
+The N-test using the admissible permutation [3, 4, 2, 0, 5, 1] has rank -1.7381493331928664.
+...
+The N-test using the admissible permutation [0, 5, 4, 1, 2, 3] has rank -2.353533948577482.
+The solver chooses the N-test [3, 5, 4, 0, 2, 1].
+The oracle answers 3.
+The solver knows that there are 3 admissible permutations now:
+[(0, 5, 4, 1, 2, 3), (3, 0, 5, 4, 2, 1), (3, 4, 2, 0, 5, 1)]
+
+=== On the morning of day 4:
+Based on the admissible permutations, the solver knows that these are the couple probabilities:
+[[0.333 0.000 0.000 0.667 0.000 0.000]
+ [0.333 0.000 0.000 0.000 0.333 0.333]
+ [0.000 0.000 0.333 0.000 0.333 0.333]
+ [0.333 0.333 0.000 0.000 0.333 0.000]
+ [0.000 0.000 0.667 0.000 0.000 0.333]
+ [0.000 0.667 0.000 0.333 0.000 0.000]]
+The solver chooses the M-test (1, 5).
+The oracle answers 0.
+The solver knows that there are 2 admissible permutations now:
+[(3, 0, 5, 4, 2, 1), (3, 4, 2, 0, 5, 1)]
+
+--- On the night of day 4:
+The solver randomly chooses and analyzes 2 admissible permutations:
+The N-test using the admissible permutation [3, 4, 2, 0, 5, 1] has rank -1.0.
+...
+The N-test using the admissible permutation [3, 0, 5, 4, 2, 1] has rank -1.0.
+The solver chooses the N-test [3, 0, 5, 4, 2, 1].
+The oracle answers 6.
+The solver has won the game!
+
+=== END OF THE GAME ===
+
+
+The solver won game # 1 in 4 days.
+The solver won game # 2 in 4 days.
+The solver won game # 3 in 4 days.
+The solver won game # 4 in 5 days.
+The solver won game # 5 in 4 days.
+The solver won game # 6 in 4 days.
+The solver won game # 7 in 5 days.
+The solver won game # 8 in 4 days.
+The solver won game # 9 in 5 days.
+The solver won game # 10 in 5 days.
+
+The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 4.40 days.
+
+The solver won game # 11 in 4 days.
+The solver won game # 12 in 4 days.
+The solver won game # 13 in 3 days.
+The solver won game # 14 in 4 days.
+The solver won game # 15 in 4 days.
+The solver won game # 16 in 4 days.
+The solver won game # 17 in 4 days.
+The solver won game # 18 in 3 days.
+The solver won game # 19 in 5 days.
+The solver won game # 20 in 5 days.
+
+The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 4.20 days.
+
+The solver won game # 21 in 5 days.
+The solver won game # 22 in 4 days.
+The solver won game # 23 in 4 days.
+The solver won game # 24 in 5 days.
+The solver won game # 25 in 5 days.
+The solver won game # 26 in 4 days.
+The solver won game # 27 in 4 days.
+The solver won game # 28 in 2 days.
+The solver won game # 29 in 4 days.
+The solver won game # 30 in 5 days.
+
+The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 4.20 days.
+
+The solver won game # 31 in 4 days.
+The solver won game # 32 in 4 days.
+The solver won game # 33 in 4 days.
+The solver won game # 34 in 5 days.
+The solver won game # 35 in 5 days.
+The solver won game # 36 in 5 days.
+The solver won game # 37 in 5 days.
+The solver won game # 38 in 5 days.
+The solver won game # 39 in 3 days.
+The solver won game # 40 in 5 days.
+
+The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 4.28 days.
+
+The solver won game # 41 in 2 days.
+The solver won game # 42 in 3 days.
+The solver won game # 43 in 2 days.
+The solver won game # 44 in 4 days.
+The solver won game # 45 in 5 days.
+The solver won game # 46 in 4 days.
+The solver won game # 47 in 4 days.
+The solver won game # 48 in 5 days.
+The solver won game # 49 in 4 days.
+The solver won game # 50 in 4 days.
+
+The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 4.16 days.
+
+The solver won game # 51 in 3 days.
+The solver won game # 52 in 4 days.
+The solver won game # 53 in 4 days.
+The solver won game # 54 in 4 days.
+The solver won game # 55 in 5 days.
+The solver won game # 56 in 4 days.
+The solver won game # 57 in 5 days.
+The solver won game # 58 in 5 days.
+The solver won game # 59 in 4 days.
+The solver won game # 60 in 4 days.
+
+The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 4.17 days.
+
+The solver won game # 61 in 3 days.
+The solver won game # 62 in 3 days.
+The solver won game # 63 in 5 days.
+The solver won game # 64 in 2 days.
+The solver won game # 65 in 3 days.
+The solver won game # 66 in 4 days.
+The solver won game # 67 in 4 days.
+The solver won game # 68 in 5 days.
+The solver won game # 69 in 5 days.
+The solver won game # 70 in 4 days.
+
+The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 71 in 3 days.
+The solver won game # 72 in 4 days.
+The solver won game # 73 in 4 days.
+The solver won game # 74 in 4 days.
+The solver won game # 75 in 4 days.
+The solver won game # 76 in 4 days.
+The solver won game # 77 in 3 days.
+The solver won game # 78 in 5 days.
+The solver won game # 79 in 5 days.
+The solver won game # 80 in 4 days.
+
+The solver won 80 out of 80 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 81 in 4 days.
+The solver won game # 82 in 4 days.
+The solver won game # 83 in 4 days.
+The solver won game # 84 in 4 days.
+The solver won game # 85 in 4 days.
+The solver won game # 86 in 4 days.
+The solver won game # 87 in 4 days.
+The solver won game # 88 in 5 days.
+The solver won game # 89 in 4 days.
+The solver won game # 90 in 4 days.
+
+The solver won 90 out of 90 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 91 in 5 days.
+The solver won game # 92 in 3 days.
+The solver won game # 93 in 4 days.
+The solver won game # 94 in 4 days.
+The solver won game # 95 in 5 days.
+The solver won game # 96 in 3 days.
+The solver won game # 97 in 5 days.
+The solver won game # 98 in 3 days.
+The solver won game # 99 in 5 days.
+The solver won game # 100 in 5 days.
+
+The solver won 100 out of 100 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 101 in 3 days.
+The solver won game # 102 in 4 days.
+The solver won game # 103 in 3 days.
+The solver won game # 104 in 4 days.
+The solver won game # 105 in 4 days.
+The solver won game # 106 in 5 days.
+The solver won game # 107 in 3 days.
+The solver won game # 108 in 5 days.
+The solver won game # 109 in 5 days.
+The solver won game # 110 in 4 days.
+
+The solver won 110 out of 110 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 111 in 3 days.
+The solver won game # 112 in 5 days.
+The solver won game # 113 in 5 days.
+The solver won game # 114 in 3 days.
+The solver won game # 115 in 4 days.
+The solver won game # 116 in 4 days.
+The solver won game # 117 in 4 days.
+The solver won game # 118 in 4 days.
+The solver won game # 119 in 4 days.
+The solver won game # 120 in 5 days.
+
+The solver won 120 out of 120 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 121 in 5 days.
+The solver won game # 122 in 4 days.
+The solver won game # 123 in 4 days.
+The solver won game # 124 in 4 days.
+The solver won game # 125 in 4 days.
+The solver won game # 126 in 2 days.
+The solver won game # 127 in 4 days.
+The solver won game # 128 in 5 days.
+The solver won game # 129 in 3 days.
+The solver won game # 130 in 5 days.
+
+The solver won 130 out of 130 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 131 in 4 days.
+The solver won game # 132 in 4 days.
+The solver won game # 133 in 5 days.
+The solver won game # 134 in 5 days.
+The solver won game # 135 in 4 days.
+The solver won game # 136 in 4 days.
+The solver won game # 137 in 5 days.
+The solver won game # 138 in 3 days.
+The solver won game # 139 in 5 days.
+The solver won game # 140 in 5 days.
+
+The solver won 140 out of 140 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 141 in 4 days.
+The solver won game # 142 in 4 days.
+The solver won game # 143 in 3 days.
+The solver won game # 144 in 3 days.
+The solver won game # 145 in 5 days.
+The solver won game # 146 in 4 days.
+The solver won game # 147 in 4 days.
+The solver won game # 148 in 5 days.
+The solver won game # 149 in 4 days.
+The solver won game # 150 in 5 days.
+
+The solver won 150 out of 150 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 151 in 4 days.
+The solver won game # 152 in 4 days.
+The solver won game # 153 in 3 days.
+The solver won game # 154 in 5 days.
+The solver won game # 155 in 4 days.
+The solver won game # 156 in 2 days.
+The solver won game # 157 in 4 days.
+The solver won game # 158 in 4 days.
+The solver won game # 159 in 4 days.
+The solver won game # 160 in 5 days.
+
+The solver won 160 out of 160 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 161 in 3 days.
+The solver won game # 162 in 5 days.
+The solver won game # 163 in 5 days.
+The solver won game # 164 in 5 days.
+The solver won game # 165 in 5 days.
+The solver won game # 166 in 4 days.
+The solver won game # 167 in 3 days.
+The solver won game # 168 in 3 days.
+The solver won game # 169 in 4 days.
+The solver won game # 170 in 3 days.
+
+The solver won 170 out of 170 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 171 in 5 days.
+The solver won game # 172 in 5 days.
+The solver won game # 173 in 3 days.
+The solver won game # 174 in 2 days.
+The solver won game # 175 in 4 days.
+The solver won game # 176 in 4 days.
+The solver won game # 177 in 5 days.
+The solver won game # 178 in 4 days.
+The solver won game # 179 in 4 days.
+The solver won game # 180 in 4 days.
+
+The solver won 180 out of 180 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 181 in 4 days.
+The solver won game # 182 in 4 days.
+The solver won game # 183 in 5 days.
+The solver won game # 184 in 5 days.
+The solver won game # 185 in 4 days.
+The solver won game # 186 in 4 days.
+The solver won game # 187 in 4 days.
+The solver won game # 188 in 3 days.
+The solver won game # 189 in 5 days.
+The solver won game # 190 in 3 days.
+
+The solver won 190 out of 190 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 191 in 5 days.
+The solver won game # 192 in 4 days.
+The solver won game # 193 in 4 days.
+The solver won game # 194 in 5 days.
+The solver won game # 195 in 5 days.
+The solver won game # 196 in 4 days.
+The solver won game # 197 in 5 days.
+The solver won game # 198 in 2 days.
+The solver won game # 199 in 5 days.
+The solver won game # 200 in 4 days.
+
+The solver won 200 out of 200 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 201 in 3 days.
+The solver won game # 202 in 4 days.
+The solver won game # 203 in 4 days.
+The solver won game # 204 in 5 days.
+The solver won game # 205 in 5 days.
+The solver won game # 206 in 5 days.
+The solver won game # 207 in 4 days.
+The solver won game # 208 in 4 days.
+The solver won game # 209 in 5 days.
+The solver won game # 210 in 5 days.
+
+The solver won 210 out of 210 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 211 in 5 days.
+The solver won game # 212 in 4 days.
+The solver won game # 213 in 3 days.
+The solver won game # 214 in 4 days.
+The solver won game # 215 in 3 days.
+The solver won game # 216 in 4 days.
+The solver won game # 217 in 4 days.
+The solver won game # 218 in 3 days.
+The solver won game # 219 in 5 days.
+The solver won game # 220 in 4 days.
+
+The solver won 220 out of 220 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 221 in 4 days.
+The solver won game # 222 in 3 days.
+The solver won game # 223 in 5 days.
+The solver won game # 224 in 5 days.
+The solver won game # 225 in 4 days.
+The solver won game # 226 in 4 days.
+The solver won game # 227 in 4 days.
+The solver won game # 228 in 4 days.
+The solver won game # 229 in 3 days.
+The solver won game # 230 in 4 days.
+
+The solver won 230 out of 230 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 231 in 3 days.
+The solver won game # 232 in 4 days.
+The solver won game # 233 in 5 days.
+The solver won game # 234 in 4 days.
+The solver won game # 235 in 3 days.
+The solver won game # 236 in 5 days.
+The solver won game # 237 in 5 days.
+The solver won game # 238 in 4 days.
+The solver won game # 239 in 5 days.
+The solver won game # 240 in 4 days.
+
+The solver won 240 out of 240 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 241 in 3 days.
+The solver won game # 242 in 4 days.
+The solver won game # 243 in 3 days.
+The solver won game # 244 in 2 days.
+The solver won game # 245 in 5 days.
+The solver won game # 246 in 5 days.
+The solver won game # 247 in 5 days.
+The solver won game # 248 in 5 days.
+The solver won game # 249 in 4 days.
+The solver won game # 250 in 5 days.
+
+The solver won 250 out of 250 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 251 in 4 days.
+The solver won game # 252 in 5 days.
+The solver won game # 253 in 4 days.
+The solver won game # 254 in 4 days.
+The solver won game # 255 in 3 days.
+The solver won game # 256 in 5 days.
+The solver won game # 257 in 5 days.
+The solver won game # 258 in 4 days.
+The solver won game # 259 in 4 days.
+The solver won game # 260 in 4 days.
+
+The solver won 260 out of 260 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 261 in 5 days.
+The solver won game # 262 in 5 days.
+The solver won game # 263 in 5 days.
+The solver won game # 264 in 5 days.
+The solver won game # 265 in 5 days.
+The solver won game # 266 in 5 days.
+The solver won game # 267 in 2 days.
+The solver won game # 268 in 4 days.
+The solver won game # 269 in 4 days.
+The solver won game # 270 in 3 days.
+
+The solver won 270 out of 270 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 271 in 5 days.
+The solver won game # 272 in 5 days.
+The solver won game # 273 in 4 days.
+The solver won game # 274 in 5 days.
+The solver won game # 275 in 4 days.
+The solver won game # 276 in 5 days.
+The solver won game # 277 in 4 days.
+The solver won game # 278 in 4 days.
+The solver won game # 279 in 3 days.
+The solver won game # 280 in 5 days.
+
+The solver won 280 out of 280 test games, or 100.00% of them. On average, a victory took 4.12 days.
+
+The solver won game # 281 in 4 days.
+The solver won game # 282 in 4 days.
+The solver won game # 283 in 4 days.
+The solver won game # 284 in 4 days.
+The solver won game # 285 in 3 days.
+The solver won game # 286 in 4 days.
+The solver won game # 287 in 4 days.
+The solver won game # 288 in 3 days.
+The solver won game # 289 in 5 days.
+The solver won game # 290 in 4 days.
+
+The solver won 290 out of 290 test games, or 100.00% of them. On average, a victory took 4.12 days.
+
+The solver won game # 291 in 5 days.
+The solver won game # 292 in 5 days.
+The solver won game # 293 in 4 days.
+The solver won game # 294 in 5 days.
+The solver won game # 295 in 4 days.
+The solver won game # 296 in 5 days.
+The solver won game # 297 in 5 days.
+The solver won game # 298 in 5 days.
+The solver won game # 299 in 3 days.
+The solver won game # 300 in 4 days.
+
+The solver won 300 out of 300 test games, or 100.00% of them. On average, a victory took 4.13 days.
+
+The solver won game # 301 in 3 days.
+The solver won game # 302 in 4 days.
+The solver won game # 303 in 4 days.
+The solver won game # 304 in 4 days.
+The solver won game # 305 in 5 days.
+The solver won game # 306 in 3 days.
+The solver won game # 307 in 1 days.
+The solver won game # 308 in 4 days.
+The solver won game # 309 in 4 days.
+The solver won game # 310 in 4 days.
+
+The solver won 310 out of 310 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 311 in 4 days.
+The solver won game # 312 in 5 days.
+The solver won game # 313 in 4 days.
+The solver won game # 314 in 3 days.
+The solver won game # 315 in 4 days.
+The solver won game # 316 in 4 days.
+The solver won game # 317 in 3 days.
+The solver won game # 318 in 4 days.
+The solver won game # 319 in 4 days.
+The solver won game # 320 in 4 days.
+
+The solver won 320 out of 320 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 321 in 5 days.
+The solver won game # 322 in 4 days.
+The solver won game # 323 in 5 days.
+The solver won game # 324 in 4 days.
+The solver won game # 325 in 3 days.
+The solver won game # 326 in 4 days.
+The solver won game # 327 in 4 days.
+The solver won game # 328 in 2 days.
+The solver won game # 329 in 5 days.
+The solver won game # 330 in 5 days.
+
+The solver won 330 out of 330 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 331 in 5 days.
+The solver won game # 332 in 4 days.
+The solver won game # 333 in 4 days.
+The solver won game # 334 in 5 days.
+The solver won game # 335 in 4 days.
+The solver won game # 336 in 3 days.
+The solver won game # 337 in 5 days.
+The solver won game # 338 in 3 days.
+The solver won game # 339 in 3 days.
+The solver won game # 340 in 5 days.
+
+The solver won 340 out of 340 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 341 in 4 days.
+The solver won game # 342 in 5 days.
+The solver won game # 343 in 3 days.
+The solver won game # 344 in 4 days.
+The solver won game # 345 in 3 days.
+The solver won game # 346 in 2 days.
+The solver won game # 347 in 4 days.
+The solver won game # 348 in 4 days.
+The solver won game # 349 in 3 days.
+The solver won game # 350 in 4 days.
+
+The solver won 350 out of 350 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 351 in 4 days.
+The solver won game # 352 in 3 days.
+The solver won game # 353 in 4 days.
+The solver won game # 354 in 4 days.
+The solver won game # 355 in 4 days.
+The solver won game # 356 in 4 days.
+The solver won game # 357 in 5 days.
+The solver won game # 358 in 4 days.
+The solver won game # 359 in 5 days.
+The solver won game # 360 in 3 days.
+
+The solver won 360 out of 360 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 361 in 5 days.
+The solver won game # 362 in 4 days.
+The solver won game # 363 in 4 days.
+The solver won game # 364 in 5 days.
+The solver won game # 365 in 4 days.
+The solver won game # 366 in 5 days.
+The solver won game # 367 in 4 days.
+The solver won game # 368 in 5 days.
+The solver won game # 369 in 1 days.
+The solver won game # 370 in 4 days.
+
+The solver won 370 out of 370 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 371 in 3 days.
+The solver won game # 372 in 5 days.
+The solver won game # 373 in 4 days.
+The solver won game # 374 in 5 days.
+The solver won game # 375 in 3 days.
+The solver won game # 376 in 4 days.
+The solver won game # 377 in 5 days.
+The solver won game # 378 in 4 days.
+The solver won game # 379 in 5 days.
+The solver won game # 380 in 2 days.
+
+The solver won 380 out of 380 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 381 in 5 days.
+The solver won game # 382 in 4 days.
+The solver won game # 383 in 4 days.
+The solver won game # 384 in 4 days.
+The solver won game # 385 in 4 days.
+The solver won game # 386 in 4 days.
+The solver won game # 387 in 4 days.
+The solver won game # 388 in 4 days.
+The solver won game # 389 in 4 days.
+The solver won game # 390 in 4 days.
+
+The solver won 390 out of 390 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 391 in 4 days.
+The solver won game # 392 in 4 days.
+The solver won game # 393 in 4 days.
+The solver won game # 394 in 4 days.
+The solver won game # 395 in 5 days.
+The solver won game # 396 in 3 days.
+The solver won game # 397 in 5 days.
+The solver won game # 398 in 4 days.
+The solver won game # 399 in 4 days.
+The solver won game # 400 in 4 days.
+
+The solver won 400 out of 400 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 401 in 6 days.
+The solver won game # 402 in 5 days.
+The solver won game # 403 in 5 days.
+The solver won game # 404 in 4 days.
+The solver won game # 405 in 4 days.
+The solver won game # 406 in 5 days.
+The solver won game # 407 in 5 days.
+The solver won game # 408 in 4 days.
+The solver won game # 409 in 4 days.
+The solver won game # 410 in 4 days.
+
+The solver won 410 out of 410 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 411 in 4 days.
+The solver won game # 412 in 3 days.
+The solver won game # 413 in 4 days.
+The solver won game # 414 in 5 days.
+The solver won game # 415 in 4 days.
+The solver won game # 416 in 4 days.
+The solver won game # 417 in 4 days.
+The solver won game # 418 in 4 days.
+The solver won game # 419 in 3 days.
+The solver won game # 420 in 3 days.
+
+The solver won 420 out of 420 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 421 in 5 days.
+The solver won game # 422 in 4 days.
+The solver won game # 423 in 6 days.
+The solver won game # 424 in 4 days.
+The solver won game # 425 in 5 days.
+The solver won game # 426 in 4 days.
+The solver won game # 427 in 4 days.
+The solver won game # 428 in 5 days.
+The solver won game # 429 in 4 days.
+The solver won game # 430 in 4 days.
+
+The solver won 430 out of 430 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 431 in 4 days.
+The solver won game # 432 in 3 days.
+The solver won game # 433 in 4 days.
+The solver won game # 434 in 5 days.
+The solver won game # 435 in 3 days.
+The solver won game # 436 in 5 days.
+The solver won game # 437 in 5 days.
+The solver won game # 438 in 4 days.
+The solver won game # 439 in 4 days.
+The solver won game # 440 in 5 days.
+
+The solver won 440 out of 440 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 441 in 5 days.
+The solver won game # 442 in 5 days.
+The solver won game # 443 in 3 days.
+The solver won game # 444 in 5 days.
+The solver won game # 445 in 3 days.
+The solver won game # 446 in 4 days.
+The solver won game # 447 in 5 days.
+The solver won game # 448 in 4 days.
+The solver won game # 449 in 4 days.
+The solver won game # 450 in 4 days.
+
+The solver won 450 out of 450 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 451 in 5 days.
+The solver won game # 452 in 3 days.
+The solver won game # 453 in 4 days.
+The solver won game # 454 in 5 days.
+The solver won game # 455 in 4 days.
+The solver won game # 456 in 4 days.
+The solver won game # 457 in 5 days.
+The solver won game # 458 in 4 days.
+The solver won game # 459 in 5 days.
+The solver won game # 460 in 4 days.
+
+The solver won 460 out of 460 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 461 in 4 days.
+The solver won game # 462 in 5 days.
+The solver won game # 463 in 4 days.
+The solver won game # 464 in 4 days.
+The solver won game # 465 in 3 days.
+The solver won game # 466 in 4 days.
+The solver won game # 467 in 5 days.
+The solver won game # 468 in 3 days.
+The solver won game # 469 in 5 days.
+The solver won game # 470 in 3 days.
+
+The solver won 470 out of 470 test games, or 100.00% of them. On average, a victory took 4.11 days.
+
+The solver won game # 471 in 4 days.
+The solver won game # 472 in 4 days.
+The solver won game # 473 in 4 days.
+The solver won game # 474 in 4 days.
+The solver won game # 475 in 3 days.
+The solver won game # 476 in 4 days.
+The solver won game # 477 in 4 days.
+The solver won game # 478 in 4 days.
+The solver won game # 479 in 4 days.
+The solver won game # 480 in 4 days.
+
+The solver won 480 out of 480 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 481 in 4 days.
+The solver won game # 482 in 4 days.
+The solver won game # 483 in 4 days.
+The solver won game # 484 in 3 days.
+The solver won game # 485 in 2 days.
+The solver won game # 486 in 3 days.
+The solver won game # 487 in 5 days.
+The solver won game # 488 in 3 days.
+The solver won game # 489 in 4 days.
+The solver won game # 490 in 4 days.
+
+The solver won 490 out of 490 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 491 in 5 days.
+The solver won game # 492 in 4 days.
+The solver won game # 493 in 4 days.
+The solver won game # 494 in 5 days.
+The solver won game # 495 in 5 days.
+The solver won game # 496 in 2 days.
+The solver won game # 497 in 4 days.
+The solver won game # 498 in 4 days.
+The solver won game # 499 in 4 days.
+The solver won game # 500 in 4 days.
+
+The solver won 500 out of 500 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 501 in 4 days.
+The solver won game # 502 in 5 days.
+The solver won game # 503 in 4 days.
+The solver won game # 504 in 3 days.
+The solver won game # 505 in 4 days.
+The solver won game # 506 in 4 days.
+The solver won game # 507 in 4 days.
+The solver won game # 508 in 3 days.
+The solver won game # 509 in 4 days.
+The solver won game # 510 in 5 days.
+
+The solver won 510 out of 510 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 511 in 4 days.
+The solver won game # 512 in 5 days.
+The solver won game # 513 in 3 days.
+The solver won game # 514 in 5 days.
+The solver won game # 515 in 4 days.
+The solver won game # 516 in 5 days.
+The solver won game # 517 in 4 days.
+The solver won game # 518 in 5 days.
+The solver won game # 519 in 4 days.
+The solver won game # 520 in 3 days.
+
+The solver won 520 out of 520 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 521 in 4 days.
+The solver won game # 522 in 3 days.
+The solver won game # 523 in 5 days.
+The solver won game # 524 in 4 days.
+The solver won game # 525 in 4 days.
+The solver won game # 526 in 4 days.
+The solver won game # 527 in 4 days.
+The solver won game # 528 in 4 days.
+The solver won game # 529 in 5 days.
+The solver won game # 530 in 6 days.
+
+The solver won 530 out of 530 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 531 in 4 days.
+The solver won game # 532 in 4 days.
+The solver won game # 533 in 5 days.
+The solver won game # 534 in 5 days.
+The solver won game # 535 in 4 days.
+The solver won game # 536 in 4 days.
+The solver won game # 537 in 4 days.
+The solver won game # 538 in 4 days.
+The solver won game # 539 in 4 days.
+The solver won game # 540 in 4 days.
+
+The solver won 540 out of 540 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 541 in 4 days.
+The solver won game # 542 in 5 days.
+The solver won game # 543 in 4 days.
+The solver won game # 544 in 2 days.
+The solver won game # 545 in 3 days.
+The solver won game # 546 in 3 days.
+The solver won game # 547 in 5 days.
+The solver won game # 548 in 4 days.
+The solver won game # 549 in 5 days.
+The solver won game # 550 in 5 days.
+
+The solver won 550 out of 550 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 551 in 4 days.
+The solver won game # 552 in 5 days.
+The solver won game # 553 in 3 days.
+The solver won game # 554 in 3 days.
+The solver won game # 555 in 4 days.
+The solver won game # 556 in 4 days.
+The solver won game # 557 in 4 days.
+The solver won game # 558 in 4 days.
+The solver won game # 559 in 5 days.
+The solver won game # 560 in 5 days.
+
+The solver won 560 out of 560 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 561 in 5 days.
+The solver won game # 562 in 4 days.
+The solver won game # 563 in 5 days.
+The solver won game # 564 in 3 days.
+The solver won game # 565 in 4 days.
+The solver won game # 566 in 4 days.
+The solver won game # 567 in 5 days.
+The solver won game # 568 in 4 days.
+The solver won game # 569 in 3 days.
+The solver won game # 570 in 3 days.
+
+The solver won 570 out of 570 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 571 in 5 days.
+The solver won game # 572 in 2 days.
+The solver won game # 573 in 4 days.
+The solver won game # 574 in 4 days.
+The solver won game # 575 in 4 days.
+The solver won game # 576 in 2 days.
+The solver won game # 577 in 5 days.
+The solver won game # 578 in 4 days.
+The solver won game # 579 in 5 days.
+The solver won game # 580 in 3 days.
+
+The solver won 580 out of 580 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 581 in 4 days.
+The solver won game # 582 in 3 days.
+The solver won game # 583 in 5 days.
+The solver won game # 584 in 4 days.
+The solver won game # 585 in 4 days.
+The solver won game # 586 in 5 days.
+The solver won game # 587 in 4 days.
+The solver won game # 588 in 5 days.
+The solver won game # 589 in 3 days.
+The solver won game # 590 in 4 days.
+
+The solver won 590 out of 590 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 591 in 3 days.
+The solver won game # 592 in 3 days.
+The solver won game # 593 in 5 days.
+The solver won game # 594 in 4 days.
+The solver won game # 595 in 5 days.
+The solver won game # 596 in 4 days.
+The solver won game # 597 in 4 days.
+The solver won game # 598 in 5 days.
+The solver won game # 599 in 5 days.
+The solver won game # 600 in 3 days.
+
+The solver won 600 out of 600 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 601 in 4 days.
+The solver won game # 602 in 5 days.
+The solver won game # 603 in 5 days.
+The solver won game # 604 in 4 days.
+The solver won game # 605 in 5 days.
+The solver won game # 606 in 4 days.
+The solver won game # 607 in 4 days.
+The solver won game # 608 in 4 days.
+The solver won game # 609 in 3 days.
+The solver won game # 610 in 5 days.
+
+The solver won 610 out of 610 test games, or 100.00% of them. On average, a victory took 4.10 days.
+
+The solver won game # 611 in 3 days.
+The solver won game # 612 in 5 days.
+The solver won game # 613 in 4 days.
+The solver won game # 614 in 3 days.
+The solver won game # 615 in 4 days.
+The solver won game # 616 in 3 days.
+The solver won game # 617 in 3 days.
+The solver won game # 618 in 4 days.
+The solver won game # 619 in 4 days.
+The solver won game # 620 in 3 days.
+
+The solver won 620 out of 620 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 621 in 4 days.
+The solver won game # 622 in 5 days.
+The solver won game # 623 in 4 days.
+The solver won game # 624 in 4 days.
+The solver won game # 625 in 2 days.
+The solver won game # 626 in 3 days.
+The solver won game # 627 in 4 days.
+The solver won game # 628 in 3 days.
+The solver won game # 629 in 5 days.
+The solver won game # 630 in 5 days.
+
+The solver won 630 out of 630 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 631 in 4 days.
+The solver won game # 632 in 4 days.
+The solver won game # 633 in 4 days.
+The solver won game # 634 in 4 days.
+The solver won game # 635 in 4 days.
+The solver won game # 636 in 5 days.
+The solver won game # 637 in 4 days.
+The solver won game # 638 in 5 days.
+The solver won game # 639 in 4 days.
+The solver won game # 640 in 4 days.
+
+The solver won 640 out of 640 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 641 in 4 days.
+The solver won game # 642 in 4 days.
+The solver won game # 643 in 5 days.
+The solver won game # 644 in 5 days.
+The solver won game # 645 in 5 days.
+The solver won game # 646 in 4 days.
+The solver won game # 647 in 3 days.
+The solver won game # 648 in 4 days.
+The solver won game # 649 in 4 days.
+The solver won game # 650 in 4 days.
+
+The solver won 650 out of 650 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 651 in 5 days.
+The solver won game # 652 in 5 days.
+The solver won game # 653 in 4 days.
+The solver won game # 654 in 3 days.
+The solver won game # 655 in 4 days.
+The solver won game # 656 in 5 days.
+The solver won game # 657 in 4 days.
+The solver won game # 658 in 4 days.
+The solver won game # 659 in 3 days.
+The solver won game # 660 in 5 days.
+
+The solver won 660 out of 660 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 661 in 5 days.
+The solver won game # 662 in 5 days.
+The solver won game # 663 in 5 days.
+The solver won game # 664 in 5 days.
+The solver won game # 665 in 4 days.
+The solver won game # 666 in 3 days.
+The solver won game # 667 in 4 days.
+The solver won game # 668 in 4 days.
+The solver won game # 669 in 3 days.
+The solver won game # 670 in 5 days.
+
+The solver won 670 out of 670 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 671 in 4 days.
+The solver won game # 672 in 4 days.
+The solver won game # 673 in 3 days.
+The solver won game # 674 in 5 days.
+The solver won game # 675 in 4 days.
+The solver won game # 676 in 4 days.
+The solver won game # 677 in 5 days.
+The solver won game # 678 in 5 days.
+The solver won game # 679 in 5 days.
+The solver won game # 680 in 3 days.
+
+The solver won 680 out of 680 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 681 in 5 days.
+The solver won game # 682 in 3 days.
+The solver won game # 683 in 4 days.
+The solver won game # 684 in 4 days.
+The solver won game # 685 in 4 days.
+The solver won game # 686 in 4 days.
+The solver won game # 687 in 3 days.
+The solver won game # 688 in 3 days.
+The solver won game # 689 in 4 days.
+The solver won game # 690 in 3 days.
+
+The solver won 690 out of 690 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 691 in 4 days.
+The solver won game # 692 in 5 days.
+The solver won game # 693 in 3 days.
+The solver won game # 694 in 5 days.
+The solver won game # 695 in 4 days.
+The solver won game # 696 in 4 days.
+The solver won game # 697 in 4 days.
+The solver won game # 698 in 5 days.
+The solver won game # 699 in 4 days.
+The solver won game # 700 in 4 days.
+
+The solver won 700 out of 700 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 701 in 4 days.
+The solver won game # 702 in 3 days.
+The solver won game # 703 in 5 days.
+The solver won game # 704 in 5 days.
+The solver won game # 705 in 4 days.
+The solver won game # 706 in 4 days.
+The solver won game # 707 in 2 days.
+The solver won game # 708 in 4 days.
+The solver won game # 709 in 4 days.
+The solver won game # 710 in 4 days.
+
+The solver won 710 out of 710 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 711 in 3 days.
+The solver won game # 712 in 3 days.
+The solver won game # 713 in 3 days.
+The solver won game # 714 in 5 days.
+The solver won game # 715 in 4 days.
+The solver won game # 716 in 2 days.
+The solver won game # 717 in 5 days.
+The solver won game # 718 in 4 days.
+The solver won game # 719 in 4 days.
+The solver won game # 720 in 4 days.
+
+The solver won 720 out of 720 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 721 in 5 days.
+The solver won game # 722 in 4 days.
+The solver won game # 723 in 3 days.
+The solver won game # 724 in 3 days.
+The solver won game # 725 in 5 days.
+The solver won game # 726 in 4 days.
+The solver won game # 727 in 5 days.
+The solver won game # 728 in 4 days.
+The solver won game # 729 in 5 days.
+The solver won game # 730 in 5 days.
+
+The solver won 730 out of 730 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 731 in 5 days.
+The solver won game # 732 in 5 days.
+The solver won game # 733 in 4 days.
+The solver won game # 734 in 4 days.
+The solver won game # 735 in 3 days.
+The solver won game # 736 in 3 days.
+The solver won game # 737 in 4 days.
+The solver won game # 738 in 4 days.
+The solver won game # 739 in 4 days.
+The solver won game # 740 in 3 days.
+
+The solver won 740 out of 740 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 741 in 4 days.
+The solver won game # 742 in 5 days.
+The solver won game # 743 in 3 days.
+The solver won game # 744 in 4 days.
+The solver won game # 745 in 4 days.
+The solver won game # 746 in 2 days.
+The solver won game # 747 in 5 days.
+The solver won game # 748 in 3 days.
+The solver won game # 749 in 5 days.
+The solver won game # 750 in 5 days.
+
+The solver won 750 out of 750 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 751 in 4 days.
+The solver won game # 752 in 5 days.
+The solver won game # 753 in 5 days.
+The solver won game # 754 in 4 days.
+The solver won game # 755 in 3 days.
+The solver won game # 756 in 4 days.
+The solver won game # 757 in 5 days.
+The solver won game # 758 in 4 days.
+The solver won game # 759 in 5 days.
+The solver won game # 760 in 5 days.
+
+The solver won 760 out of 760 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 761 in 2 days.
+The solver won game # 762 in 5 days.
+The solver won game # 763 in 5 days.
+The solver won game # 764 in 3 days.
+The solver won game # 765 in 5 days.
+The solver won game # 766 in 4 days.
+The solver won game # 767 in 3 days.
+The solver won game # 768 in 3 days.
+The solver won game # 769 in 4 days.
+The solver won game # 770 in 5 days.
+
+The solver won 770 out of 770 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 771 in 4 days.
+The solver won game # 772 in 4 days.
+The solver won game # 773 in 4 days.
+The solver won game # 774 in 4 days.
+The solver won game # 775 in 3 days.
+The solver won game # 776 in 4 days.
+The solver won game # 777 in 4 days.
+The solver won game # 778 in 5 days.
+The solver won game # 779 in 4 days.
+The solver won game # 780 in 3 days.
+
+The solver won 780 out of 780 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 781 in 5 days.
+The solver won game # 782 in 4 days.
+The solver won game # 783 in 4 days.
+The solver won game # 784 in 4 days.
+The solver won game # 785 in 5 days.
+The solver won game # 786 in 3 days.
+The solver won game # 787 in 2 days.
+The solver won game # 788 in 5 days.
+The solver won game # 789 in 4 days.
+The solver won game # 790 in 3 days.
+
+The solver won 790 out of 790 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 791 in 4 days.
+The solver won game # 792 in 4 days.
+The solver won game # 793 in 4 days.
+The solver won game # 794 in 4 days.
+The solver won game # 795 in 4 days.
+The solver won game # 796 in 4 days.
+The solver won game # 797 in 4 days.
+The solver won game # 798 in 3 days.
+The solver won game # 799 in 4 days.
+The solver won game # 800 in 5 days.
+
+The solver won 800 out of 800 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 801 in 5 days.
+The solver won game # 802 in 4 days.
+The solver won game # 803 in 5 days.
+The solver won game # 804 in 5 days.
+The solver won game # 805 in 4 days.
+The solver won game # 806 in 4 days.
+The solver won game # 807 in 2 days.
+The solver won game # 808 in 4 days.
+The solver won game # 809 in 3 days.
+The solver won game # 810 in 4 days.
+
+The solver won 810 out of 810 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 811 in 4 days.
+The solver won game # 812 in 4 days.
+The solver won game # 813 in 2 days.
+The solver won game # 814 in 5 days.
+The solver won game # 815 in 4 days.
+The solver won game # 816 in 4 days.
+The solver won game # 817 in 4 days.
+The solver won game # 818 in 5 days.
+The solver won game # 819 in 4 days.
+The solver won game # 820 in 4 days.
+
+The solver won 820 out of 820 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 821 in 5 days.
+The solver won game # 822 in 5 days.
+The solver won game # 823 in 5 days.
+The solver won game # 824 in 4 days.
+The solver won game # 825 in 4 days.
+The solver won game # 826 in 4 days.
+The solver won game # 827 in 5 days.
+The solver won game # 828 in 5 days.
+The solver won game # 829 in 4 days.
+The solver won game # 830 in 4 days.
+
+The solver won 830 out of 830 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 831 in 4 days.
+The solver won game # 832 in 5 days.
+The solver won game # 833 in 4 days.
+The solver won game # 834 in 3 days.
+The solver won game # 835 in 4 days.
+The solver won game # 836 in 4 days.
+The solver won game # 837 in 4 days.
+The solver won game # 838 in 5 days.
+The solver won game # 839 in 3 days.
+The solver won game # 840 in 4 days.
+
+The solver won 840 out of 840 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 841 in 3 days.
+The solver won game # 842 in 5 days.
+The solver won game # 843 in 4 days.
+The solver won game # 844 in 5 days.
+The solver won game # 845 in 5 days.
+The solver won game # 846 in 4 days.
+The solver won game # 847 in 3 days.
+The solver won game # 848 in 3 days.
+The solver won game # 849 in 4 days.
+The solver won game # 850 in 3 days.
+
+The solver won 850 out of 850 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 851 in 3 days.
+The solver won game # 852 in 4 days.
+The solver won game # 853 in 4 days.
+The solver won game # 854 in 5 days.
+The solver won game # 855 in 5 days.
+The solver won game # 856 in 4 days.
+The solver won game # 857 in 4 days.
+The solver won game # 858 in 4 days.
+The solver won game # 859 in 4 days.
+The solver won game # 860 in 4 days.
+
+The solver won 860 out of 860 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 861 in 4 days.
+The solver won game # 862 in 4 days.
+The solver won game # 863 in 4 days.
+The solver won game # 864 in 4 days.
+The solver won game # 865 in 5 days.
+The solver won game # 866 in 4 days.
+The solver won game # 867 in 5 days.
+The solver won game # 868 in 5 days.
+The solver won game # 869 in 4 days.
+The solver won game # 870 in 4 days.
+
+The solver won 870 out of 870 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 871 in 5 days.
+The solver won game # 872 in 5 days.
+The solver won game # 873 in 3 days.
+The solver won game # 874 in 4 days.
+The solver won game # 875 in 4 days.
+The solver won game # 876 in 4 days.
+The solver won game # 877 in 4 days.
+The solver won game # 878 in 4 days.
+The solver won game # 879 in 3 days.
+The solver won game # 880 in 5 days.
+
+The solver won 880 out of 880 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 881 in 4 days.
+The solver won game # 882 in 5 days.
+The solver won game # 883 in 4 days.
+The solver won game # 884 in 4 days.
+The solver won game # 885 in 3 days.
+The solver won game # 886 in 4 days.
+The solver won game # 887 in 4 days.
+The solver won game # 888 in 5 days.
+The solver won game # 889 in 4 days.
+The solver won game # 890 in 4 days.
+
+The solver won 890 out of 890 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 891 in 5 days.
+The solver won game # 892 in 4 days.
+The solver won game # 893 in 4 days.
+The solver won game # 894 in 4 days.
+The solver won game # 895 in 4 days.
+The solver won game # 896 in 4 days.
+The solver won game # 897 in 5 days.
+The solver won game # 898 in 4 days.
+The solver won game # 899 in 3 days.
+The solver won game # 900 in 3 days.
+
+The solver won 900 out of 900 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 901 in 4 days.
+The solver won game # 902 in 5 days.
+The solver won game # 903 in 5 days.
+The solver won game # 904 in 4 days.
+The solver won game # 905 in 4 days.
+The solver won game # 906 in 4 days.
+The solver won game # 907 in 5 days.
+The solver won game # 908 in 5 days.
+The solver won game # 909 in 3 days.
+The solver won game # 910 in 4 days.
+
+The solver won 910 out of 910 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 911 in 4 days.
+The solver won game # 912 in 4 days.
+The solver won game # 913 in 4 days.
+The solver won game # 914 in 4 days.
+The solver won game # 915 in 5 days.
+The solver won game # 916 in 5 days.
+The solver won game # 917 in 5 days.
+The solver won game # 918 in 4 days.
+The solver won game # 919 in 4 days.
+The solver won game # 920 in 4 days.
+
+The solver won 920 out of 920 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 921 in 4 days.
+The solver won game # 922 in 4 days.
+The solver won game # 923 in 4 days.
+The solver won game # 924 in 4 days.
+The solver won game # 925 in 4 days.
+The solver won game # 926 in 3 days.
+The solver won game # 927 in 4 days.
+The solver won game # 928 in 4 days.
+The solver won game # 929 in 4 days.
+The solver won game # 930 in 3 days.
+
+The solver won 930 out of 930 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 931 in 5 days.
+The solver won game # 932 in 4 days.
+The solver won game # 933 in 5 days.
+The solver won game # 934 in 4 days.
+The solver won game # 935 in 5 days.
+The solver won game # 936 in 5 days.
+The solver won game # 937 in 3 days.
+The solver won game # 938 in 3 days.
+The solver won game # 939 in 5 days.
+The solver won game # 940 in 4 days.
+
+The solver won 940 out of 940 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 941 in 4 days.
+The solver won game # 942 in 3 days.
+The solver won game # 943 in 4 days.
+The solver won game # 944 in 4 days.
+The solver won game # 945 in 5 days.
+The solver won game # 946 in 4 days.
+The solver won game # 947 in 4 days.
+The solver won game # 948 in 5 days.
+The solver won game # 949 in 5 days.
+The solver won game # 950 in 4 days.
+
+The solver won 950 out of 950 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 951 in 4 days.
+The solver won game # 952 in 3 days.
+The solver won game # 953 in 4 days.
+The solver won game # 954 in 3 days.
+The solver won game # 955 in 4 days.
+The solver won game # 956 in 5 days.
+The solver won game # 957 in 4 days.
+The solver won game # 958 in 4 days.
+The solver won game # 959 in 5 days.
+The solver won game # 960 in 5 days.
+
+The solver won 960 out of 960 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 961 in 4 days.
+The solver won game # 962 in 4 days.
+The solver won game # 963 in 4 days.
+The solver won game # 964 in 5 days.
+The solver won game # 965 in 3 days.
+The solver won game # 966 in 4 days.
+The solver won game # 967 in 5 days.
+The solver won game # 968 in 4 days.
+The solver won game # 969 in 2 days.
+The solver won game # 970 in 4 days.
+
+The solver won 970 out of 970 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 971 in 4 days.
+The solver won game # 972 in 4 days.
+The solver won game # 973 in 5 days.
+The solver won game # 974 in 4 days.
+The solver won game # 975 in 3 days.
+The solver won game # 976 in 4 days.
+The solver won game # 977 in 3 days.
+The solver won game # 978 in 4 days.
+The solver won game # 979 in 5 days.
+The solver won game # 980 in 5 days.
+
+The solver won 980 out of 980 test games, or 100.00% of them. On average, a victory took 4.08 days.
+
+The solver won game # 981 in 5 days.
+The solver won game # 982 in 4 days.
+The solver won game # 983 in 5 days.
+The solver won game # 984 in 5 days.
+The solver won game # 985 in 4 days.
+The solver won game # 986 in 4 days.
+The solver won game # 987 in 5 days.
+The solver won game # 988 in 5 days.
+The solver won game # 989 in 4 days.
+The solver won game # 990 in 5 days.
+
+The solver won 990 out of 990 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+The solver won game # 991 in 4 days.
+The solver won game # 992 in 5 days.
+The solver won game # 993 in 5 days.
+The solver won game # 994 in 5 days.
+The solver won game # 995 in 4 days.
+The solver won game # 996 in 4 days.
+The solver won game # 997 in 4 days.
+The solver won game # 998 in 3 days.
+The solver won game # 999 in 3 days.
+The solver won game # 1000 in 4 days.
+
+The solver won 1000 out of 1000 test games, or 100.00% of them. On average, a victory took 4.09 days.
+
+Nr. of games won in 1 days: 2
+Nr. of games won in 2 days: 27
+Nr. of games won in 3 days: 161
+Nr. of games won in 4 days: 503
+Nr. of games won in 5 days: 304
+Nr. of games won in 6 days: 3
+
+time = 2021-07-12 19:06:47.948665
+
+Process finished with exit code 0
