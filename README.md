@@ -17,7 +17,7 @@ The solver:
 5. chooses one of the best ranking N-tests among an adaptive number of randomly chosen possible N-tests; the number is increased as the search space and consequently the computational cost grow smaller
     1. the N-test result probabilities needed for these entropy calculations are re-computed whenever needed from the still admissible permutations.
 6. variants: the tests can be ranked in either of two ways:
-    1. by the vector of their outcome frequencies in decreasing order, so as to maximize the worst-case information discovery on each test; this variant was expected to minimize the probability of losing some games out of bad luck, to the cost of taking more days on average
+    1. by the vector of their outcome frequencies in decreasing order, so as to maximize the worst-case information discovery on each test; this variant was expected to minimize the probability of losing some games out of bad lucktest_10_couples_100_games.txt
     2. by their [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), so as to maximize the average information discovery on each test; this variant was expected to minimize the number of in-game days needed, to the cost risking to lose more games out of bad luck
 
 Using just a random sample in point 5. for speed-up works pretty well because, at the start of the game, all possible N-tests have more or less the same entropy, due to the symmetrical nature of the problem; the possible N-tests start having significantly different entropies only later, right when the search space grows smaller and consequently computing their entropies becomes faster.
