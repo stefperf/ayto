@@ -29,9 +29,10 @@ After testing each variant with 100 games each, the frequency vector-ranking var
 PERFORMANCE STATS
 -----------------
 Both implemented variants of the solver performed more or less equally:
-- Either solver won 100 out of 100 randomly chosen test games, i.e. 100.00% of them.
 - On my MacBook Air with processor 2.2 GHz Dual-Core Intel Core i7, either solver takes about 1 minute on average to solve a game.
-- On average over all test games, either solver won in about 8 in-game days, with the frequency vector-ranking variant doing slighly better.
+- Over 100 test games, the frequency vector-ranking solver worked slightly better than the entropy-ranking solver:
+-- the frequency vector-ranking solver won 99 games taking 7.93 days on average
+-- the entropy-ranking solver won 98 games taking 8.11 days on average
 For more details, please see the test outputs.
 
 ACKNOWLEDGEMENTS
