@@ -1413,6 +1413,7 @@ Nr. of games won in 3 days: 161
 Nr. of games won in 4 days: 525
 Nr. of games won in 5 days: 292
 Nr. of games won in 6 days: 1
+Nr. of games lost: 0
 
 time = 2021-07-12 18:58:35.867755
 ========================================================================================================================
@@ -2857,6 +2858,7 @@ Nr. of games won in 3 days: 161
 Nr. of games won in 4 days: 503
 Nr. of games won in 5 days: 304
 Nr. of games won in 6 days: 3
+Nr. of games lost: 0
 
 time = 2021-07-12 19:06:47.948665
 

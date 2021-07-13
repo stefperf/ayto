@@ -28,7 +28,7 @@ class GameSolver:
     Try to solve the information theory game underlying "Are You the One?", 1st season's rules.
     See project's README.md for more info on the algorithm used.
     """
-    def __init__(self, n, freqs2rank=None, max_permutations_show=24, max_optimize=1e7, show_optimization=False):
+    def __init__(self, n, freqs2rank=None, max_permutations_show=24, max_optimize=1e7, min_optimize=1, show_optimization=False):
         """
         init
         :param n: nr. of couples
@@ -37,7 +37,8 @@ class GameSolver:
             the solver tries to find the lowest ranking possible test.
             The default ranking criterion is by test outcome frequencies in descending order.
         :param max_permutations_show: max. number of permutations being shown when showing the search space
-        :param max_optimize: max. number of comparisons between permutations for calculating N-test entropies
+        :param max_optimize: max. number of comparisons between permutations for calculating N-test ranks
+        :param min_optimize: min. number of admissible permutations to be considered as possible N-tests
         :param show_optimization: True if the internal "reasoning" must be shown, else False
         """
         self.n = n
@@ -49,6 +50,7 @@ class GameSolver:
         self.max_admissible_permutations = int(math.factorial(self.n))
         self.max_permutations_show = max_permutations_show
         self.max_optimize = max_optimize
+        self.min_optimize = min_optimize
         self.show_optimization = show_optimization
         self._couple_probabilities = np.ones((n, n)) / n
         self._day = 0
@@ -122,7 +124,7 @@ class GameSolver:
         self._moment = 1
         nr_analyzed_permutations = min(
             max(
-                1,
+                self.min_optimize,
                 int(self.max_optimize // (self.n * self.n_admissible_permutations))
             ),
             self.n_admissible_permutations

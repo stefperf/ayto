@@ -95,6 +95,7 @@ def collect_stats(n_games, freqs2rank=None):
             print()
     for n_days, freq in sorted(n_days_distrib.items()):
         print(f'Nr. of games won in {n_days} days: {freq}')
+    print(f'Nr. of games lost: {n_games - n_games_won}')
     print()
 
 

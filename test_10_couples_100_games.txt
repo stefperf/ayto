@@ -1,5 +1,5 @@
 /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 /Users/Stefano/Documents/GitHub/ayto/main.py
-time = 2021-07-12 19:11:10.617175
+time = 2021-07-13 08:52:30.668877
 ========================================================================================================================
 --- Ranking possible tests by descending test frequencies ---
 ------------------------------------------------------------------------------
@@ -8,7 +8,7 @@ Collecting stats over 100 games, of which the first is fully shown:
 
 === START OF THE GAME ===
 The oracle has randomly chosen this solution:
-[6, 8, 3, 1, 7, 2, 4, 0, 5, 9]
+[6, 1, 7, 3, 9, 5, 8, 4, 2, 0]
 The solver has 10 days to guess it.
 The solver knows that there are 3628800 admissible permutations now.
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
@@ -24,187 +24,196 @@ Based on the admissible permutations, the solver knows that these are the couple
  [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]]
 
 === On the morning of day 1:
-The solver chooses the M-test (8, 9).
+The solver chooses the M-test (0, 7).
 The oracle answers 0.
 The solver knows that there are 3265920 admissible permutations now.
 
 --- On the night of day 1:
-The solver chooses the N-test [7, 9, 0, 4, 8, 1, 3, 2, 5, 6].
+The solver chooses the N-test [6, 5, 9, 0, 1, 7, 4, 3, 8, 2].
 The oracle answers 1.
 The solver knows that there are 1201464 admissible permutations now.
 
 === On the morning of day 2:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.097 0.099 0.111]
- [0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111]
- [0.097 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111]
- [0.099 0.099 0.099 0.099 0.097 0.099 0.099 0.099 0.099 0.111]
- [0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.097 0.111]
- [0.099 0.097 0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111]
- [0.099 0.099 0.099 0.097 0.099 0.099 0.099 0.099 0.099 0.111]
- [0.099 0.099 0.097 0.099 0.099 0.099 0.099 0.099 0.099 0.111]
- [0.111 0.111 0.111 0.111 0.111 0.111 0.111 0.111 0.111 0.000]
- [0.099 0.099 0.099 0.099 0.099 0.099 0.097 0.099 0.099 0.111]]
-The solver chooses the M-test (8, 3).
+[[0.111 0.111 0.111 0.111 0.111 0.111 0.111 0.000 0.111 0.111]
+ [0.099 0.099 0.099 0.099 0.099 0.097 0.099 0.111 0.099 0.099]
+ [0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111 0.099 0.097]
+ [0.097 0.099 0.099 0.099 0.099 0.099 0.099 0.111 0.099 0.099]
+ [0.099 0.097 0.099 0.099 0.099 0.099 0.099 0.111 0.099 0.099]
+ [0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111 0.099 0.099]
+ [0.099 0.099 0.099 0.099 0.097 0.099 0.099 0.111 0.099 0.099]
+ [0.099 0.099 0.099 0.097 0.099 0.099 0.099 0.111 0.099 0.099]
+ [0.099 0.099 0.099 0.099 0.099 0.099 0.099 0.111 0.097 0.099]
+ [0.099 0.099 0.097 0.099 0.099 0.099 0.099 0.111 0.099 0.099]]
+The solver chooses the M-test (0, 9).
 The oracle answers 0.
 The solver knows that there are 1067968 admissible permutations now.
 
 --- On the night of day 2:
-The solver chooses the N-test [6, 0, 1, 4, 5, 8, 2, 9, 7, 3].
-The oracle answers 1.
-The solver knows that there are 391517 admissible permutations now.
+The solver chooses the N-test [6, 2, 3, 5, 8, 1, 9, 4, 0, 7].
+The oracle answers 2.
+The solver knows that there are 200283 admissible permutations now.
 
 === On the morning of day 3:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.098 0.098 0.098 0.111 0.099 0.097 0.095 0.095 0.098 0.111]
- [0.095 0.097 0.097 0.111 0.099 0.097 0.098 0.097 0.097 0.111]
- [0.096 0.096 0.098 0.111 0.099 0.097 0.098 0.097 0.098 0.111]
- [0.099 0.099 0.099 0.113 0.079 0.099 0.099 0.099 0.100 0.113]
- [0.098 0.098 0.098 0.111 0.099 0.095 0.098 0.097 0.096 0.111]
- [0.098 0.096 0.098 0.111 0.100 0.097 0.098 0.097 0.096 0.111]
- [0.097 0.097 0.095 0.111 0.099 0.097 0.098 0.097 0.097 0.111]
- [0.097 0.097 0.095 0.111 0.099 0.097 0.098 0.097 0.097 0.111]
- [0.124 0.124 0.124 0.000 0.126 0.126 0.124 0.126 0.124 0.000]
- [0.097 0.097 0.098 0.111 0.099 0.097 0.095 0.097 0.097 0.111]]
-The solver chooses the M-test (8, 7).
-The oracle answers 0.
-The solver knows that there are 342029 admissible permutations now.
+[[0.108 0.108 0.108 0.108 0.108 0.108 0.243 0.000 0.108 0.000]
+ [0.089 0.090 0.189 0.089 0.089 0.082 0.085 0.099 0.089 0.099]
+ [0.089 0.089 0.089 0.189 0.089 0.089 0.084 0.098 0.089 0.095]
+ [0.082 0.090 0.089 0.089 0.089 0.189 0.084 0.099 0.089 0.099]
+ [0.089 0.081 0.090 0.090 0.090 0.089 0.085 0.098 0.189 0.099]
+ [0.089 0.189 0.089 0.089 0.089 0.089 0.084 0.095 0.089 0.098]
+ [0.087 0.088 0.088 0.087 0.079 0.087 0.083 0.097 0.087 0.216]
+ [0.089 0.090 0.090 0.081 0.189 0.090 0.085 0.099 0.090 0.098]
+ [0.189 0.089 0.090 0.089 0.089 0.089 0.085 0.099 0.082 0.099]
+ [0.087 0.087 0.079 0.088 0.088 0.087 0.083 0.216 0.087 0.097]]
+The solver chooses the M-test (0, 6).
+The oracle answers 1.
+The solver knows that there are 48714 admissible permutations now.
 
 --- On the night of day 3:
-The solver randomly chooses and analyzes 2 admissible permutations:
-The N-test using the admissible permutation [2, 4, 0, 9, 3, 8, 1, 7, 6, 5] has rank [124973, 120867, 65145, 23036, 6237, 1415, 291, 47, 17, 1, 0].
+The solver randomly chooses and analyzes 20 admissible permutations:
+The N-test using the admissible permutation [6, 9, 2, 7, 0, 1, 3, 8, 5, 4] has rank [17748, 15879, 9913, 3757, 1085, 265, 52, 14, 1, 0, 0].
 ...
-The N-test using the admissible permutation [4, 6, 2, 3, 7, 1, 5, 9, 8, 0] has rank [124434, 121056, 65044, 23144, 6463, 1494, 320, 57, 16, 1, 0].
-The solver chooses the N-test [4, 6, 2, 3, 7, 1, 5, 9, 8, 0].
+The N-test using the admissible permutation [6, 8, 3, 2, 0, 9, 5, 7, 4, 1] has rank [17699, 15906, 9942, 3748, 1085, 267, 53, 13, 1, 0, 0].
+The solver chooses the N-test [6, 8, 3, 2, 0, 9, 5, 7, 4, 1].
 The oracle answers 1.
-The solver knows that there are 124434 admissible permutations now.
+The solver knows that there are 15906 admissible permutations now.
 
 === On the morning of day 4:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.094 0.096 0.093 0.108 0.091 0.093 0.111 0.110 0.093 0.111]
- [0.109 0.095 0.094 0.109 0.096 0.093 0.090 0.111 0.093 0.110]
- [0.091 0.113 0.091 0.108 0.096 0.093 0.095 0.111 0.092 0.110]
- [0.096 0.097 0.095 0.109 0.093 0.095 0.095 0.113 0.095 0.112]
- [0.094 0.095 0.094 0.109 0.096 0.110 0.094 0.110 0.089 0.111]
- [0.096 0.072 0.095 0.111 0.097 0.095 0.096 0.113 0.112 0.112]
- [0.094 0.095 0.111 0.108 0.095 0.089 0.093 0.110 0.093 0.110]
- [0.095 0.097 0.092 0.110 0.097 0.095 0.095 0.112 0.095 0.112]
- [0.140 0.144 0.141 0.000 0.143 0.145 0.141 0.000 0.145 0.000]
- [0.090 0.096 0.094 0.128 0.096 0.092 0.091 0.110 0.093 0.110]]
-The solver chooses the M-test (8, 8).
+[[0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.146 0.146 0.126 0.143 0.146 0.000 0.000 0.147 0.000 0.146]
+ [0.143 0.143 0.143 0.000 0.143 0.143 0.000 0.142 0.143 0.000]
+ [0.000 0.145 0.000 0.143 0.147 0.126 0.000 0.146 0.146 0.146]
+ [0.000 0.000 0.146 0.143 0.146 0.146 0.000 0.146 0.126 0.146]
+ [0.146 0.125 0.146 0.142 0.148 0.146 0.000 0.000 0.147 0.000]
+ [0.147 0.148 0.146 0.143 0.000 0.000 0.000 0.148 0.146 0.123]
+ [0.146 0.147 0.146 0.000 0.123 0.146 0.000 0.000 0.146 0.146]
+ [0.126 0.146 0.146 0.143 0.000 0.146 0.000 0.146 0.000 0.146]
+ [0.145 0.000 0.000 0.143 0.148 0.146 0.000 0.125 0.146 0.147]]
+The solver chooses the M-test (6, 1).
 The oracle answers 0.
-The solver knows that there are 106360 admissible permutations now.
+The solver knows that there are 13556 admissible permutations now.
 
 --- On the night of day 4:
-The solver randomly chooses and analyzes 9 admissible permutations:
-The N-test using the admissible permutation [5, 6, 9, 4, 0, 3, 1, 7, 2, 8] has rank [39035, 37266, 20237, 7136, 2011, 506, 130, 26, 12, 1, 0].
+The solver randomly chooses and analyzes 73 admissible permutations:
+The N-test using the admissible permutation [6, 0, 2, 1, 7, 4, 9, 8, 5, 3] has rank [4799, 3676, 3074, 1358, 470, 136, 32, 10, 1, 0, 0].
 ...
-The N-test using the admissible permutation [0, 4, 2, 9, 6, 7, 1, 8, 5, 3] has rank [38063, 36560, 20755, 7862, 2337, 592, 145, 34, 11, 1, 0].
-The solver chooses the N-test [0, 4, 2, 9, 6, 7, 1, 8, 5, 3].
-The oracle answers 1.
-The solver knows that there are 38063 admissible permutations now.
+The N-test using the admissible permutation [6, 1, 4, 3, 7, 0, 9, 5, 2, 8] has rank [4702, 3724, 3119, 1351, 475, 142, 30, 12, 1, 0, 0].
+The solver chooses the N-test [6, 1, 4, 3, 7, 0, 9, 5, 2, 8].
+The oracle answers 4.
+The solver knows that there are 1351 admissible permutations now.
 
 === On the morning of day 5:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.081 0.092 0.093 0.110 0.110 0.089 0.103 0.101 0.112 0.109]
- [0.103 0.089 0.092 0.109 0.086 0.088 0.108 0.110 0.110 0.106]
- [0.085 0.113 0.085 0.110 0.094 0.091 0.094 0.111 0.108 0.110]
- [0.092 0.092 0.092 0.131 0.086 0.090 0.092 0.111 0.109 0.106]
- [0.093 0.089 0.090 0.107 0.090 0.107 0.080 0.130 0.103 0.110]
- [0.091 0.087 0.090 0.109 0.091 0.092 0.092 0.106 0.134 0.109]
- [0.088 0.084 0.111 0.106 0.091 0.107 0.088 0.109 0.108 0.108]
- [0.091 0.091 0.085 0.109 0.091 0.090 0.092 0.111 0.107 0.134]
- [0.166 0.171 0.169 0.000 0.170 0.157 0.167 0.000 0.000 0.000]
- [0.109 0.092 0.092 0.109 0.093 0.090 0.085 0.112 0.110 0.108]]
-The solver chooses the M-test (8, 1).
-The oracle answers 0.
-The solver knows that there are 31547 admissible permutations now.
+[[0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.113 0.389 0.074 0.108 0.111 0.000 0.000 0.114 0.000 0.090]
+ [0.118 0.119 0.112 0.000 0.318 0.115 0.000 0.109 0.110 0.000]
+ [0.000 0.118 0.000 0.309 0.121 0.091 0.000 0.124 0.116 0.121]
+ [0.000 0.000 0.125 0.110 0.124 0.124 0.000 0.326 0.084 0.107]
+ [0.315 0.113 0.124 0.107 0.107 0.114 0.000 0.000 0.121 0.000]
+ [0.120 0.000 0.120 0.143 0.000 0.000 0.000 0.126 0.124 0.367]
+ [0.123 0.124 0.117 0.000 0.101 0.314 0.000 0.000 0.111 0.110]
+ [0.086 0.136 0.329 0.114 0.000 0.118 0.000 0.118 0.000 0.100]
+ [0.126 0.000 0.000 0.110 0.117 0.125 0.000 0.084 0.333 0.106]]
+The solver chooses the M-test (1, 1).
+The oracle answers 1.
+The solver knows that there are 526 admissible permutations now.
 
 --- On the night of day 5:
-The solver randomly chooses and analyzes 31 admissible permutations:
-The N-test using the admissible permutation [0, 5, 8, 4, 7, 9, 6, 3, 2, 1] has rank [11678, 10553, 6195, 2260, 642, 166, 36, 11, 5, 1, 0].
+The solver randomly chooses and analyzes 526 admissible permutations:
+The N-test using the admissible permutation [6, 1, 7, 9, 8, 0, 2, 5, 3, 4] has rank [198, 137, 101, 57, 24, 6, 2, 1, 0, 0, 0].
 ...
-The N-test using the admissible permutation [2, 8, 3, 7, 0, 6, 4, 9, 5, 1] has rank [11036, 10879, 6013, 2430, 825, 253, 78, 23, 9, 1, 0].
-The solver chooses the N-test [2, 8, 3, 7, 0, 6, 4, 9, 5, 1].
-The oracle answers 4.
-The solver knows that there are 825 admissible permutations now.
+The N-test using the admissible permutation [6, 1, 5, 3, 2, 8, 9, 0, 7, 4] has rank [152, 149, 141, 49, 22, 9, 3, 1, 0, 0, 0].
+The solver chooses the N-test [6, 1, 5, 3, 2, 8, 9, 0, 7, 4].
+The oracle answers 3.
+The solver knows that there are 152 admissible permutations now.
 
 === On the morning of day 6:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.041 0.122 0.333 0.119 0.076 0.039 0.047 0.045 0.109 0.068]
- [0.055 0.102 0.095 0.096 0.044 0.041 0.076 0.115 0.362 0.015]
- [0.029 0.086 0.007 0.354 0.107 0.041 0.121 0.097 0.092 0.065]
- [0.116 0.099 0.093 0.079 0.016 0.039 0.112 0.348 0.087 0.011]
- [0.344 0.088 0.096 0.103 0.105 0.016 0.033 0.074 0.058 0.082]
- [0.109 0.023 0.097 0.099 0.102 0.042 0.322 0.056 0.093 0.056]
- [0.113 0.068 0.096 0.056 0.302 0.023 0.112 0.086 0.086 0.059]
- [0.056 0.058 0.007 0.076 0.065 0.013 0.069 0.067 0.015 0.573]
- [0.069 0.000 0.086 0.000 0.073 0.708 0.064 0.000 0.000 0.000]
- [0.068 0.353 0.090 0.018 0.110 0.038 0.044 0.113 0.097 0.070]]
-The solver chooses the M-test (7, 9).
-The oracle answers 0.
-The solver knows that there are 352 admissible permutations now.
+[[0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.164 0.000 0.132 0.000 0.289 0.132 0.000 0.132 0.151 0.000]
+ [0.000 0.000 0.000 0.250 0.112 0.197 0.000 0.171 0.099 0.171]
+ [0.000 0.000 0.072 0.112 0.171 0.092 0.000 0.289 0.132 0.132]
+ [0.296 0.000 0.217 0.145 0.138 0.125 0.000 0.000 0.079 0.000]
+ [0.138 0.000 0.132 0.211 0.000 0.000 0.000 0.171 0.164 0.184]
+ [0.086 0.000 0.151 0.000 0.178 0.197 0.000 0.000 0.178 0.211]
+ [0.158 0.000 0.296 0.158 0.000 0.138 0.000 0.086 0.000 0.164]
+ [0.158 0.000 0.000 0.125 0.112 0.118 0.000 0.151 0.197 0.138]]
+The solver chooses the M-test (8, 2).
+The oracle answers 1.
+The solver knows that there are 45 admissible permutations now.
 
 --- On the night of day 6:
-The solver randomly chooses and analyzes 352 admissible permutations:
-The N-test using the admissible permutation [9, 8, 6, 7, 0, 1, 4, 5, 2, 3] has rank [144, 100, 59, 21, 12, 8, 3, 3, 1, 1, 0].
+The solver randomly chooses and analyzes 45 admissible permutations:
+The N-test using the admissible permutation [6, 1, 4, 7, 8, 5, 3, 0, 2, 9] has rank [25, 10, 4, 3, 2, 1, 0, 0, 0, 0, 0].
 ...
-The N-test using the admissible permutation [2, 7, 1, 3, 0, 6, 9, 4, 5, 8] has rank [91, 86, 78, 51, 25, 13, 4, 2, 1, 1, 0].
-The solver chooses the N-test [2, 7, 1, 3, 0, 6, 9, 4, 5, 8].
-The oracle answers 1.
-The solver knows that there are 78 admissible permutations now.
+The N-test using the admissible permutation [6, 1, 5, 4, 3, 0, 8, 9, 2, 7] has rank [12, 11, 9, 7, 5, 1, 0, 0, 0, 0, 0].
+The solver chooses the N-test [6, 1, 5, 4, 3, 0, 8, 9, 2, 7].
+The oracle answers 4.
+The solver knows that there are 11 admissible permutations now:
+[(6, 1, 0, 3, 8, 4, 7, 9, 2, 5),
+ (6, 1, 0, 7, 3, 4, 9, 8, 2, 5),
+ (6, 1, 0, 9, 4, 8, 3, 5, 2, 7),
+ (6, 1, 4, 8, 9, 5, 3, 0, 2, 7),
+ (6, 1, 5, 7, 9, 3, 0, 4, 2, 8),
+ (6, 1, 5, 8, 7, 3, 0, 4, 2, 9),
+ (6, 1, 7, 3, 8, 4, 0, 9, 2, 5),
+ (6, 1, 7, 3, 9, 5, 8, 4, 2, 0),
+ (6, 1, 7, 4, 5, 3, 9, 8, 2, 0),
+ (6, 1, 7, 5, 9, 0, 3, 8, 2, 4),
+ (6, 1, 8, 5, 7, 3, 0, 9, 2, 4)]
 
 === On the morning of day 7:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.013 0.077 0.128 0.026 0.179 0.026 0.269 0.026 0.051 0.205]
- [0.064 0.013 0.090 0.000 0.013 0.013 0.103 0.000 0.590 0.115]
- [0.000 0.000 0.064 0.718 0.000 0.038 0.064 0.000 0.000 0.115]
- [0.077 0.051 0.064 0.000 0.064 0.000 0.038 0.590 0.026 0.090]
- [0.192 0.077 0.090 0.038 0.026 0.128 0.026 0.192 0.000 0.231]
- [0.077 0.154 0.115 0.038 0.077 0.013 0.115 0.038 0.218 0.154]
- [0.026 0.026 0.179 0.026 0.577 0.115 0.013 0.013 0.026 0.000]
- [0.256 0.077 0.051 0.077 0.000 0.077 0.269 0.103 0.090 0.000]
- [0.103 0.000 0.167 0.000 0.064 0.564 0.103 0.000 0.000 0.000]
- [0.192 0.526 0.051 0.077 0.000 0.026 0.000 0.038 0.000 0.090]]
-The solver chooses the M-test (9, 1).
-The oracle answers 0.
-The solver knows that there are 37 admissible permutations now.
+[[0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.273 0.000 0.000 0.000 0.091 0.182 0.000 0.364 0.091 0.000]
+ [0.000 0.000 0.000 0.273 0.091 0.182 0.000 0.182 0.182 0.091]
+ [0.000 0.000 0.000 0.091 0.091 0.091 0.000 0.182 0.182 0.364]
+ [0.091 0.000 0.000 0.364 0.273 0.182 0.000 0.000 0.091 0.000]
+ [0.364 0.000 0.000 0.273 0.000 0.000 0.000 0.091 0.091 0.182]
+ [0.091 0.000 0.000 0.000 0.273 0.091 0.000 0.000 0.273 0.273]
+ [0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.182 0.000 0.000 0.000 0.182 0.273 0.000 0.182 0.091 0.091]]
+The solver chooses the M-test (4, 9).
+The oracle answers 1.
+The solver knows that there are 4 admissible permutations now:
+[(6, 1, 4, 8, 9, 5, 3, 0, 2, 7),
+ (6, 1, 5, 7, 9, 3, 0, 4, 2, 8),
+ (6, 1, 7, 3, 9, 5, 8, 4, 2, 0),
+ (6, 1, 7, 5, 9, 0, 3, 8, 2, 4)]
 
 --- On the night of day 7:
-The solver randomly chooses and analyzes 37 admissible permutations:
-The N-test using the admissible permutation [6, 5, 3, 7, 0, 1, 4, 8, 2, 9] has rank [21, 5, 4, 4, 2, 1, 0, 0, 0, 0, 0].
+The solver randomly chooses and analyzes 4 admissible permutations:
+The N-test using the admissible permutation [6, 1, 7, 3, 9, 5, 8, 4, 2, 0] has rank [3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0].
 ...
-The N-test using the admissible permutation [6, 8, 3, 1, 2, 9, 4, 7, 5, 0] has rank [8, 8, 7, 7, 3, 2, 1, 1, 0, 0, 0].
-The solver chooses the N-test [6, 8, 3, 1, 2, 9, 4, 7, 5, 0].
-The oracle answers 6.
-The solver knows that there are 3 admissible permutations now:
-[(6, 8, 3, 0, 7, 9, 4, 1, 5, 2),
- (6, 8, 3, 1, 7, 2, 4, 0, 5, 9),
- (6, 8, 9, 7, 2, 3, 4, 1, 5, 0)]
+The N-test using the admissible permutation [6, 1, 4, 8, 9, 5, 3, 0, 2, 7] has rank [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0].
+The solver chooses the N-test [6, 1, 4, 8, 9, 5, 3, 0, 2, 7].
+The oracle answers 5.
+The solver knows that there are 2 admissible permutations now:
+[(6, 1, 7, 3, 9, 5, 8, 4, 2, 0), (6, 1, 7, 5, 9, 0, 3, 8, 2, 4)]
 
 === On the morning of day 8:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
 [[0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000]
- [0.000 0.000 0.000 0.667 0.000 0.000 0.000 0.000 0.000 0.333]
- [0.333 0.333 0.000 0.000 0.000 0.000 0.000 0.333 0.000 0.000]
- [0.000 0.000 0.333 0.000 0.000 0.000 0.000 0.667 0.000 0.000]
- [0.000 0.000 0.333 0.333 0.000 0.000 0.000 0.000 0.000 0.333]
- [0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000]
- [0.333 0.667 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000]
- [0.333 0.000 0.333 0.000 0.000 0.000 0.000 0.000 0.000 0.333]]
-The solver chooses the M-test (2, 3).
-The oracle answers 1.
-The solver knows that there are 2 admissible permutations now:
-[(6, 8, 3, 0, 7, 9, 4, 1, 5, 2), (6, 8, 3, 1, 7, 2, 4, 0, 5, 9)]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
+ [0.000 0.000 0.000 0.500 0.000 0.500 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.500 0.000 0.000 0.000 0.000 0.500 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.500 0.000 0.000 0.000 0.000 0.500 0.000]
+ [0.000 0.000 0.000 0.000 0.500 0.000 0.000 0.000 0.500 0.000]
+ [0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.500 0.000 0.000 0.000 0.500 0.000 0.000 0.000 0.000 0.000]]
+The solver chooses the M-test (5, 0).
+The oracle answers 0.
+The solver knows that there is 1 admissible permutation now:
+[(6, 1, 7, 3, 9, 5, 8, 4, 2, 0)]
 
 --- On the night of day 8:
-The solver randomly chooses and analyzes 2 admissible permutations:
-The N-test using the admissible permutation [6, 8, 3, 1, 7, 2, 4, 0, 5, 9] has rank [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0].
-...
-The N-test using the admissible permutation [6, 8, 3, 0, 7, 9, 4, 1, 5, 2] has rank [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0].
-The solver chooses the N-test [6, 8, 3, 1, 7, 2, 4, 0, 5, 9].
+The solver chooses the N-test [6, 1, 7, 3, 9, 5, 8, 4, 2, 0].
 The oracle answers 10.
 The solver has won the game!
 
@@ -213,146 +222,147 @@ The solver has won the game!
 
 The solver won game # 1 in 8 days.
 The solver won game # 2 in 9 days.
-The solver won game # 3 in 9 days.
-The solver won game # 4 in 8 days.
-The solver won game # 5 in 7 days.
-The solver won game # 6 in 8 days.
-The solver won game # 7 in 8 days.
+The solver won game # 3 in 7 days.
+The solver won game # 4 in 5 days.
+The solver won game # 5 in 6 days.
+The solver won game # 6 in 7 days.
+The solver won game # 7 in 6 days.
 The solver won game # 8 in 8 days.
-The solver won game # 9 in 9 days.
-The solver won game # 10 in 7 days.
+The solver won game # 9 in 10 days.
+The solver won game # 10 in 10 days.
 
-The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 8.10 days.
+The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 7.60 days.
 
-The solver won game # 11 in 7 days.
-The solver won game # 12 in 9 days.
-The solver won game # 13 in 8 days.
+The solver won game # 11 in 6 days.
+The solver won game # 12 in 7 days.
+The solver won game # 13 in 10 days.
 The solver won game # 14 in 9 days.
-The solver won game # 15 in 9 days.
-The solver won game # 16 in 8 days.
-The solver won game # 17 in 8 days.
+The solver won game # 15 in 8 days.
+The solver won game # 16 in 4 days.
+The solver won game # 17 in 9 days.
 The solver won game # 18 in 8 days.
 The solver won game # 19 in 8 days.
-The solver won game # 20 in 6 days.
+The solver won game # 20 in 8 days.
 
-The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 8.05 days.
+The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 7.65 days.
 
-The solver won game # 21 in 7 days.
-The solver won game # 22 in 9 days.
+The solver won game # 21 in 8 days.
+The solver won game # 22 in 8 days.
 The solver won game # 23 in 9 days.
 The solver won game # 24 in 8 days.
-The solver won game # 25 in 8 days.
+The solver won game # 25 in 7 days.
 The solver won game # 26 in 9 days.
-The solver won game # 27 in 6 days.
-The solver won game # 28 in 8 days.
-The solver won game # 29 in 5 days.
-The solver won game # 30 in 10 days.
+The solver won game # 27 in 9 days.
+The solver won game # 28 in 7 days.
+The solver won game # 29 in 7 days.
+The solver won game # 30 in 8 days.
 
-The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 8.00 days.
+The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 7.77 days.
 
-The solver won game # 31 in 7 days.
+The solver won game # 31 in 8 days.
 The solver won game # 32 in 8 days.
-The solver won game # 33 in 8 days.
-The solver won game # 34 in 9 days.
-The solver won game # 35 in 9 days.
-The solver won game # 36 in 9 days.
-The solver won game # 37 in 8 days.
-The solver won game # 38 in 7 days.
-The solver won game # 39 in 8 days.
-The solver won game # 40 in 6 days.
+The solver won game # 33 in 7 days.
+The solver won game # 34 in 8 days.
+The solver won game # 35 in 7 days.
+The solver won game # 36 in 8 days.
+The solver won game # 37 in 7 days.
+The solver won game # 38 in 5 days.
+The solver won game # 39 in 10 days.
+The solver won game # 40 in 9 days.
 
-The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 7.97 days.
+The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 7.75 days.
 
-The solver won game # 41 in 9 days.
-The solver won game # 42 in 7 days.
-The solver won game # 43 in 7 days.
+The solver won game # 41 in 8 days.
+The solver won game # 42 in 6 days.
+The solver won game # 43 in 9 days.
 The solver won game # 44 in 8 days.
-The solver won game # 45 in 8 days.
-The solver won game # 46 in 7 days.
+The solver won game # 45 in 9 days.
+The solver won game # 46 in 10 days.
 The solver won game # 47 in 7 days.
-The solver won game # 48 in 7 days.
-The solver won game # 49 in 6 days.
+The solver won game # 48 in 10 days.
+The solver won game # 49 in 8 days.
 The solver won game # 50 in 8 days.
 
 The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 7.86 days.
 
-The solver won game # 51 in 9 days.
-The solver won game # 52 in 8 days.
+The solver won game # 51 in 6 days.
+The solver won game # 52 in 9 days.
 The solver won game # 53 in 7 days.
-The solver won game # 54 in 6 days.
-The solver won game # 55 in 6 days.
+The solver won game # 54 in 8 days.
+The solver won game # 55 in 8 days.
 The solver won game # 56 in 8 days.
-The solver won game # 57 in 6 days.
+The solver won game # 57 in 8 days.
 The solver won game # 58 in 8 days.
-The solver won game # 59 in 7 days.
-The solver won game # 60 in 6 days.
+The solver won game # 59 in 8 days.
+The solver won game # 60 in 7 days.
 
-The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 7.73 days.
+The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 7.83 days.
 
 The solver won game # 61 in 9 days.
 The solver won game # 62 in 8 days.
-The solver won game # 63 in 8 days.
-The solver won game # 64 in 8 days.
+The solver won game # 63 in 6 days.
+The solver won game # 64 in 7 days.
 The solver won game # 65 in 9 days.
-The solver won game # 66 in 8 days.
-The solver won game # 67 in 8 days.
-The solver won game # 68 in 6 days.
+The solver won game # 66 in 9 days.
+The solver won game # 67 in 9 days.
+The solver won game # 68 in 8 days.
 The solver won game # 69 in 8 days.
-The solver won game # 70 in 10 days.
+The solver won game # 70 in 9 days.
 
-The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 7.80 days.
+The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 7.89 days.
 
-The solver won game # 71 in 6 days.
-The solver won game # 72 in 9 days.
+The solver won game # 71 in 9 days.
+The solver lost game # 72.
 The solver won game # 73 in 8 days.
-The solver won game # 74 in 7 days.
-The solver won game # 75 in 8 days.
+The solver won game # 74 in 9 days.
+The solver won game # 75 in 5 days.
 The solver won game # 76 in 8 days.
-The solver won game # 77 in 8 days.
-The solver won game # 78 in 7 days.
-The solver won game # 79 in 9 days.
-The solver won game # 80 in 10 days.
+The solver won game # 77 in 10 days.
+The solver won game # 78 in 8 days.
+The solver won game # 79 in 8 days.
+The solver won game # 80 in 6 days.
 
-The solver won 80 out of 80 test games, or 100.00% of them. On average, a victory took 7.83 days.
+The solver won 79 out of 80 test games, or 98.75% of them. On average, a victory took 7.89 days.
 
-The solver won game # 81 in 7 days.
-The solver won game # 82 in 7 days.
-The solver won game # 83 in 8 days.
-The solver won game # 84 in 9 days.
-The solver won game # 85 in 10 days.
-The solver won game # 86 in 6 days.
-The solver won game # 87 in 8 days.
+The solver won game # 81 in 9 days.
+The solver won game # 82 in 8 days.
+The solver won game # 83 in 9 days.
+The solver won game # 84 in 8 days.
+The solver won game # 85 in 8 days.
+The solver won game # 86 in 9 days.
+The solver won game # 87 in 7 days.
 The solver won game # 88 in 9 days.
-The solver won game # 89 in 9 days.
-The solver won game # 90 in 9 days.
+The solver won game # 89 in 7 days.
+The solver won game # 90 in 8 days.
 
-The solver won 90 out of 90 test games, or 100.00% of them. On average, a victory took 7.87 days.
+The solver won 89 out of 90 test games, or 98.89% of them. On average, a victory took 7.92 days.
 
-The solver won game # 91 in 10 days.
-The solver won game # 92 in 9 days.
-The solver won game # 93 in 8 days.
-The solver won game # 94 in 9 days.
-The solver won game # 95 in 9 days.
+The solver won game # 91 in 9 days.
+The solver won game # 92 in 6 days.
+The solver won game # 93 in 9 days.
+The solver won game # 94 in 8 days.
+The solver won game # 95 in 8 days.
 The solver won game # 96 in 9 days.
 The solver won game # 97 in 8 days.
-The solver won game # 98 in 7 days.
+The solver won game # 98 in 9 days.
 The solver won game # 99 in 7 days.
-The solver won game # 100 in 6 days.
+The solver won game # 100 in 7 days.
 
-The solver won 100 out of 100 test games, or 100.00% of them. On average, a victory took 7.90 days.
+The solver won 99 out of 100 test games, or 99.00% of them. On average, a victory took 7.93 days.
 
 Nr. of games won in 1 days: 0
 Nr. of games won in 2 days: 0
 Nr. of games won in 3 days: 0
-Nr. of games won in 4 days: 0
-Nr. of games won in 5 days: 1
-Nr. of games won in 6 days: 12
-Nr. of games won in 7 days: 19
-Nr. of games won in 8 days: 37
-Nr. of games won in 9 days: 26
-Nr. of games won in 10 days: 5
+Nr. of games won in 4 days: 1
+Nr. of games won in 5 days: 3
+Nr. of games won in 6 days: 8
+Nr. of games won in 7 days: 17
+Nr. of games won in 8 days: 38
+Nr. of games won in 9 days: 25
+Nr. of games won in 10 days: 7
+Nr. of games lost: 1
 
-time = 2021-07-12 20:40:30.566624
+time = 2021-07-13 10:28:37.616957
 ========================================================================================================================
 --- Ranking possible tests by entropy ---
 ------------------------------------------------------------------------------
@@ -361,7 +371,7 @@ Collecting stats over 100 games, of which the first is fully shown:
 
 === START OF THE GAME ===
 The oracle has randomly chosen this solution:
-[3, 9, 4, 0, 6, 8, 1, 5, 7, 2]
+[2, 9, 3, 5, 7, 8, 4, 1, 6, 0]
 The solver has 10 days to guess it.
 The solver knows that there are 3628800 admissible permutations now.
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
@@ -377,369 +387,324 @@ Based on the admissible permutations, the solver knows that these are the couple
  [0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100]]
 
 === On the morning of day 1:
-The solver chooses the M-test (5, 2).
+The solver chooses the M-test (4, 0).
 The oracle answers 0.
 The solver knows that there are 3265920 admissible permutations now.
 
 --- On the night of day 1:
-The solver chooses the N-test [2, 6, 5, 0, 4, 1, 9, 3, 7, 8].
-The oracle answers 2.
-The solver knows that there are 608153 admissible permutations now.
+The solver chooses the N-test [1, 2, 0, 3, 4, 6, 5, 7, 9, 8].
+The oracle answers 0.
+The solver knows that there are 1186632 admissible permutations now.
 
 === On the morning of day 2:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.087 0.085 0.220 0.087 0.087 0.087 0.087 0.087 0.087 0.087]
- [0.089 0.087 0.098 0.089 0.089 0.089 0.195 0.089 0.089 0.089]
- [0.089 0.087 0.098 0.089 0.089 0.195 0.089 0.089 0.089 0.089]
- [0.195 0.087 0.098 0.089 0.089 0.089 0.089 0.089 0.089 0.089]
- [0.089 0.087 0.098 0.089 0.195 0.089 0.089 0.089 0.089 0.089]
- [0.098 0.220 0.000 0.098 0.098 0.098 0.098 0.098 0.098 0.098]
- [0.089 0.087 0.098 0.089 0.089 0.089 0.089 0.089 0.089 0.195]
- [0.089 0.087 0.098 0.195 0.089 0.089 0.089 0.089 0.089 0.089]
- [0.089 0.087 0.098 0.089 0.089 0.089 0.089 0.195 0.089 0.089]
- [0.089 0.087 0.098 0.089 0.089 0.089 0.089 0.089 0.195 0.089]]
-The solver chooses the M-test (0, 2).
+[[0.125 0.000 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.125 0.109 0.000 0.109 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.000 0.111 0.111 0.111 0.112 0.111 0.111 0.111 0.111 0.111]
+ [0.125 0.109 0.109 0.000 0.111 0.109 0.109 0.109 0.109 0.109]
+ [0.000 0.125 0.125 0.125 0.000 0.125 0.125 0.125 0.125 0.125]
+ [0.125 0.109 0.109 0.109 0.111 0.109 0.000 0.109 0.109 0.109]
+ [0.125 0.109 0.109 0.109 0.111 0.000 0.109 0.109 0.109 0.109]
+ [0.125 0.109 0.109 0.109 0.111 0.109 0.109 0.000 0.109 0.109]
+ [0.125 0.109 0.109 0.109 0.111 0.109 0.109 0.109 0.109 0.000]
+ [0.125 0.109 0.109 0.109 0.111 0.109 0.109 0.109 0.000 0.109]]
+The solver chooses the M-test (3, 0).
 The oracle answers 0.
-The solver knows that there are 474656 admissible permutations now.
+The solver knows that there are 1038303 admissible permutations now.
 
 --- On the night of day 2:
-The solver randomly chooses and analyzes 2 admissible permutations:
-The N-test using the admissible permutation [9, 8, 1, 6, 4, 3, 2, 5, 7, 0] has rank -2.0144425259227363.
-...
-The N-test using the admissible permutation [5, 6, 9, 2, 4, 3, 0, 7, 8, 1] has rank -2.0147312778873747.
-The solver chooses the N-test [5, 6, 9, 2, 4, 3, 0, 7, 8, 1].
-The oracle answers 0.
-The solver knows that there are 145534 admissible permutations now.
+The solver chooses the N-test [2, 0, 7, 5, 8, 1, 3, 4, 6, 9].
+The oracle answers 3.
+The solver knows that there are 82926 admissible permutations now.
 
 === On the morning of day 3:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.119 0.114 0.000 0.120 0.145 0.000 0.145 0.119 0.119 0.119]
- [0.101 0.097 0.165 0.103 0.123 0.106 0.000 0.102 0.102 0.101]
- [0.076 0.072 0.134 0.078 0.101 0.283 0.101 0.077 0.077 0.000]
- [0.288 0.079 0.000 0.083 0.108 0.087 0.108 0.083 0.083 0.083]
- [0.101 0.097 0.165 0.103 0.000 0.106 0.123 0.102 0.102 0.101]
- [0.087 0.322 0.000 0.000 0.117 0.093 0.117 0.088 0.088 0.088]
- [0.000 0.073 0.134 0.078 0.101 0.082 0.101 0.077 0.077 0.276]
- [0.076 0.072 0.134 0.280 0.101 0.081 0.101 0.000 0.077 0.077]
- [0.077 0.073 0.134 0.078 0.102 0.082 0.102 0.276 0.000 0.078]
- [0.076 0.000 0.134 0.078 0.101 0.081 0.101 0.077 0.275 0.077]]
-The solver chooses the M-test (5, 1).
+[[0.106 0.000 0.281 0.089 0.089 0.085 0.089 0.088 0.085 0.089]
+ [0.363 0.081 0.000 0.081 0.082 0.076 0.081 0.079 0.076 0.081]
+ [0.000 0.090 0.089 0.090 0.090 0.086 0.090 0.290 0.086 0.090]
+ [0.000 0.097 0.097 0.000 0.098 0.324 0.097 0.097 0.093 0.097]
+ [0.000 0.097 0.097 0.098 0.000 0.093 0.097 0.097 0.323 0.097]
+ [0.106 0.283 0.088 0.089 0.089 0.084 0.000 0.088 0.085 0.089]
+ [0.106 0.088 0.087 0.286 0.088 0.000 0.088 0.087 0.084 0.088]
+ [0.106 0.088 0.087 0.089 0.286 0.084 0.088 0.000 0.084 0.088]
+ [0.106 0.089 0.088 0.089 0.089 0.084 0.283 0.088 0.085 0.000]
+ [0.106 0.088 0.087 0.089 0.089 0.084 0.088 0.087 0.000 0.282]]
+The solver chooses the M-test (1, 0).
 The oracle answers 0.
-The solver knows that there are 98709 admissible permutations now.
+The solver knows that there are 52787 admissible permutations now.
 
 --- On the night of day 3:
-The solver randomly chooses and analyzes 10 admissible permutations:
-The N-test using the admissible permutation [4, 1, 5, 0, 7, 6, 2, 8, 9, 3] has rank -2.1935747185984575.
+The solver randomly chooses and analyzes 18 admissible permutations:
+The N-test using the admissible permutation [9, 6, 7, 5, 1, 4, 3, 0, 8, 2] has rank -2.228811257956733.
 ...
-The N-test using the admissible permutation [7, 5, 0, 1, 8, 4, 9, 3, 6, 2] has rank -2.20308038716258.
-The solver chooses the N-test [7, 5, 0, 1, 8, 4, 9, 3, 6, 2].
+The N-test using the admissible permutation [4, 7, 6, 5, 2, 1, 8, 0, 3, 9] has rank -2.247044900663703.
+The solver chooses the N-test [4, 7, 6, 5, 2, 1, 8, 0, 3, 9].
 The oracle answers 1.
-The solver knows that there are 33919 admissible permutations now.
+The solver knows that there are 17534 admissible permutations now.
 
 === On the morning of day 4:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.111 0.182 0.000 0.123 0.154 0.000 0.151 0.052 0.112 0.115]
- [0.092 0.154 0.188 0.105 0.129 0.045 0.000 0.095 0.094 0.098]
- [0.016 0.112 0.139 0.069 0.096 0.357 0.092 0.063 0.056 0.000]
- [0.367 0.055 0.000 0.078 0.108 0.076 0.105 0.071 0.069 0.072]
- [0.092 0.154 0.187 0.106 0.000 0.100 0.128 0.096 0.039 0.099]
- [0.137 0.000 0.000 0.000 0.115 0.146 0.185 0.140 0.139 0.138]
- [0.000 0.115 0.140 0.074 0.098 0.069 0.098 0.066 0.066 0.274]
- [0.061 0.114 0.139 0.298 0.097 0.067 0.095 0.000 0.063 0.067]
- [0.057 0.115 0.142 0.071 0.097 0.067 0.041 0.346 0.000 0.066]
- [0.067 0.000 0.065 0.077 0.107 0.074 0.106 0.072 0.360 0.072]]
-The solver chooses the M-test (3, 0).
-The oracle answers 1.
-The solver knows that there are 12444 admissible permutations now.
+[[0.182 0.000 0.366 0.074 0.019 0.073 0.072 0.072 0.063 0.080]
+ [0.000 0.142 0.000 0.138 0.135 0.133 0.137 0.047 0.125 0.142]
+ [0.000 0.092 0.087 0.085 0.078 0.086 0.023 0.383 0.073 0.093]
+ [0.000 0.099 0.106 0.000 0.099 0.308 0.100 0.100 0.090 0.099]
+ [0.000 0.099 0.024 0.090 0.000 0.092 0.086 0.087 0.423 0.099]
+ [0.191 0.235 0.088 0.083 0.082 0.077 0.000 0.083 0.075 0.087]
+ [0.184 0.080 0.078 0.342 0.070 0.000 0.076 0.071 0.018 0.080]
+ [0.069 0.085 0.085 0.082 0.366 0.079 0.080 0.000 0.068 0.086]
+ [0.185 0.082 0.080 0.024 0.071 0.075 0.344 0.075 0.066 0.000]
+ [0.190 0.086 0.087 0.082 0.081 0.076 0.083 0.082 0.000 0.233]]
+The solver chooses the M-test (4, 8).
+The oracle answers 0.
+The solver knows that there are 10114 admissible permutations now.
 
 --- On the night of day 4:
-The solver randomly chooses and analyzes 80 admissible permutations:
-The N-test using the admissible permutation [4, 2, 1, 0, 8, 5, 6, 9, 7, 3] has rank -2.0343455539942656.
+The solver randomly chooses and analyzes 98 admissible permutations:
+The N-test using the admissible permutation [3, 9, 7, 1, 5, 0, 8, 4, 6, 2] has rank -2.1632858123597325.
 ...
-The N-test using the admissible permutation [1, 8, 4, 0, 9, 7, 6, 3, 2, 5] has rank -2.138913595599768.
-The solver chooses the N-test [1, 8, 4, 0, 9, 7, 6, 3, 2, 5].
-The oracle answers 2.
-The solver knows that there are 4270 admissible permutations now.
+The N-test using the admissible permutation [2, 9, 8, 5, 1, 7, 4, 3, 6, 0] has rank -2.3787324514273163.
+The solver chooses the N-test [2, 9, 8, 5, 1, 7, 4, 3, 6, 0].
+The oracle answers 6.
+The solver knows that there are 92 admissible permutations now.
 
 === On the morning of day 5:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.157 0.000 0.154 0.144 0.000 0.152 0.106 0.155 0.133]
- [0.000 0.157 0.169 0.131 0.128 0.091 0.000 0.122 0.084 0.119]
- [0.000 0.128 0.145 0.110 0.090 0.233 0.108 0.093 0.094 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.149 0.161 0.127 0.000 0.127 0.129 0.120 0.092 0.097]
- [0.000 0.000 0.000 0.000 0.173 0.168 0.187 0.141 0.173 0.158]
- [0.000 0.123 0.131 0.106 0.100 0.090 0.087 0.082 0.089 0.192]
- [0.000 0.147 0.152 0.145 0.121 0.105 0.119 0.000 0.102 0.109]
- [0.000 0.141 0.125 0.111 0.119 0.112 0.083 0.218 0.000 0.091]
- [0.000 0.000 0.118 0.116 0.126 0.073 0.134 0.120 0.212 0.101]]
-The solver chooses the M-test (2, 5).
+[[0.033 0.000 0.804 0.043 0.000 0.000 0.011 0.022 0.054 0.033]
+ [0.000 0.087 0.000 0.076 0.120 0.043 0.022 0.000 0.109 0.543]
+ [0.000 0.043 0.000 0.098 0.109 0.011 0.000 0.163 0.500 0.076]
+ [0.000 0.000 0.000 0.000 0.043 0.902 0.000 0.033 0.011 0.011]
+ [0.000 0.598 0.000 0.120 0.000 0.011 0.022 0.152 0.000 0.098]
+ [0.120 0.054 0.033 0.087 0.120 0.011 0.000 0.402 0.109 0.065]
+ [0.141 0.065 0.054 0.120 0.370 0.000 0.065 0.120 0.011 0.054]
+ [0.011 0.109 0.065 0.402 0.120 0.011 0.043 0.000 0.141 0.098]
+ [0.033 0.022 0.011 0.000 0.033 0.000 0.815 0.022 0.065 0.000]
+ [0.663 0.022 0.033 0.054 0.087 0.011 0.022 0.087 0.000 0.022]]
+The solver chooses the M-test (2, 8).
 The oracle answers 0.
-The solver knows that there are 3274 admissible permutations now.
+The solver knows that there are 46 admissible permutations now.
 
 --- On the night of day 5:
-The solver randomly chooses and analyzes 305 admissible permutations:
-The N-test using the admissible permutation [4, 5, 6, 0, 3, 7, 2, 1, 9, 8] has rank -2.0899632509021133.
+The solver randomly chooses and analyzes 46 admissible permutations:
+The N-test using the admissible permutation [2, 9, 5, 8, 7, 1, 4, 3, 6, 0] has rank -1.5448572963588125.
 ...
-The N-test using the admissible permutation [1, 2, 3, 0, 7, 8, 9, 4, 5, 6] has rank -2.2075435616137544.
-The solver chooses the N-test [1, 2, 3, 0, 7, 8, 9, 4, 5, 6].
-The oracle answers 2.
-The solver knows that there are 1069 admissible permutations now.
+The N-test using the admissible permutation [2, 1, 9, 5, 3, 7, 4, 8, 6, 0] has rank -2.4205020063907257.
+The solver chooses the N-test [2, 1, 9, 5, 3, 7, 4, 8, 6, 0].
+The oracle answers 5.
+The solver knows that there are 13 admissible permutations now:
+[(2, 4, 9, 5, 1, 8, 7, 3, 6, 0),
+ (2, 8, 1, 5, 7, 9, 4, 3, 6, 0),
+ (2, 8, 4, 5, 9, 7, 1, 3, 6, 0),
+ (2, 8, 9, 5, 1, 0, 4, 3, 6, 7),
+ (2, 8, 9, 5, 1, 4, 7, 3, 6, 0),
+ (2, 8, 9, 5, 1, 7, 0, 3, 6, 4),
+ (2, 9, 3, 5, 1, 0, 4, 8, 6, 7),
+ (2, 9, 3, 5, 1, 4, 7, 8, 6, 0),
+ (2, 9, 3, 5, 1, 7, 0, 8, 6, 4),
+ (2, 9, 3, 5, 7, 8, 4, 1, 6, 0),
+ (2, 9, 4, 5, 1, 3, 7, 8, 6, 0),
+ (2, 9, 4, 5, 1, 7, 0, 8, 6, 3),
+ (3, 9, 7, 5, 1, 2, 4, 8, 6, 0)]
 
 === On the morning of day 6:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.123 0.000 0.148 0.143 0.000 0.172 0.095 0.166 0.152]
- [0.000 0.162 0.150 0.114 0.128 0.138 0.000 0.116 0.075 0.118]
- [0.000 0.160 0.172 0.143 0.123 0.000 0.139 0.135 0.127 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.159 0.181 0.117 0.000 0.179 0.135 0.054 0.068 0.108]
- [0.000 0.000 0.000 0.000 0.175 0.233 0.210 0.083 0.109 0.189]
- [0.000 0.135 0.144 0.100 0.097 0.141 0.089 0.071 0.072 0.151]
- [0.000 0.126 0.139 0.212 0.095 0.138 0.119 0.000 0.067 0.102]
- [0.000 0.135 0.114 0.071 0.108 0.099 0.061 0.322 0.000 0.091]
- [0.000 0.000 0.100 0.094 0.130 0.072 0.075 0.123 0.315 0.090]]
-The solver chooses the M-test (8, 7).
-The oracle answers 1.
-The solver knows that there are 344 admissible permutations now.
+[[0.000 0.000 0.923 0.077 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.077 0.000 0.000 0.000 0.385 0.538]
+ [0.000 0.077 0.000 0.308 0.231 0.000 0.000 0.077 0.000 0.308]
+ [0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000]
+ [0.000 0.769 0.000 0.000 0.000 0.000 0.000 0.154 0.000 0.077]
+ [0.154 0.000 0.077 0.077 0.154 0.000 0.000 0.308 0.154 0.077]
+ [0.231 0.077 0.000 0.000 0.385 0.000 0.000 0.308 0.000 0.000]
+ [0.000 0.077 0.000 0.462 0.000 0.000 0.000 0.000 0.462 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [0.615 0.000 0.000 0.077 0.154 0.000 0.000 0.154 0.000 0.000]]
+The solver chooses the M-test (7, 8).
+The oracle answers 0.
+The solver knows that there are 7 admissible permutations now:
+[(2, 4, 9, 5, 1, 8, 7, 3, 6, 0),
+ (2, 8, 1, 5, 7, 9, 4, 3, 6, 0),
+ (2, 8, 4, 5, 9, 7, 1, 3, 6, 0),
+ (2, 8, 9, 5, 1, 0, 4, 3, 6, 7),
+ (2, 8, 9, 5, 1, 4, 7, 3, 6, 0),
+ (2, 8, 9, 5, 1, 7, 0, 3, 6, 4),
+ (2, 9, 3, 5, 7, 8, 4, 1, 6, 0)]
 
 --- On the night of day 6:
-The solver randomly chooses and analyzes 344 admissible permutations:
-The N-test using the admissible permutation [4, 5, 2, 0, 3, 8, 6, 1, 7, 9] has rank -2.057608833303734.
+The solver randomly chooses and analyzes 7 admissible permutations:
+The N-test using the admissible permutation [2, 8, 1, 5, 7, 9, 4, 3, 6, 0] has rank -1.3787834934861753.
 ...
-The N-test using the admissible permutation [1, 3, 8, 0, 5, 9, 4, 6, 7, 2] has rank -2.2741342647368716.
-The solver chooses the N-test [1, 3, 8, 0, 5, 9, 4, 6, 7, 2].
+The N-test using the admissible permutation [2, 8, 9, 5, 1, 7, 0, 3, 6, 4] has rank -2.2359263506290326.
+The solver chooses the N-test [2, 8, 9, 5, 1, 7, 0, 3, 6, 4].
 The oracle answers 3.
-The solver knows that there are 113 admissible permutations now.
+The solver knows that there is 1 admissible permutation now:
+[(2, 9, 3, 5, 7, 8, 4, 1, 6, 0)]
 
 === On the morning of day 7:
 Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.097 0.000 0.239 0.097 0.000 0.177 0.000 0.195 0.195]
- [0.000 0.150 0.186 0.071 0.142 0.204 0.000 0.000 0.106 0.142]
- [0.000 0.204 0.142 0.195 0.248 0.000 0.124 0.000 0.088 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.150 0.097 0.115 0.000 0.088 0.088 0.000 0.221 0.239]
- [0.000 0.000 0.000 0.000 0.292 0.168 0.124 0.000 0.212 0.204]
- [0.000 0.230 0.150 0.168 0.035 0.168 0.159 0.000 0.088 0.000]
- [0.000 0.168 0.142 0.000 0.115 0.221 0.133 0.000 0.088 0.133]
+[[0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000]
+ [0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000]
  [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
- [0.000 0.000 0.283 0.212 0.071 0.150 0.195 0.000 0.000 0.088]]
-The solver chooses the M-test (5, 4).
+ [0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000]
+ [0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
+ [0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000]
+ [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]]
+The solver chooses the M-test (8, 1).
 The oracle answers 0.
-The solver knows that there are 80 admissible permutations now.
+The solver knows that there is 1 admissible permutation now:
+[(2, 9, 3, 5, 7, 8, 4, 1, 6, 0)]
 
 --- On the night of day 7:
-The solver randomly chooses and analyzes 80 admissible permutations:
-The N-test using the admissible permutation [1, 5, 2, 0, 3, 6, 8, 9, 7, 4] has rank -1.8888364642294766.
-...
-The N-test using the admissible permutation [3, 5, 4, 0, 2, 9, 1, 8, 7, 6] has rank -2.4991201987063882.
-The solver chooses the N-test [3, 5, 4, 0, 2, 9, 1, 8, 7, 6].
-The oracle answers 5.
-The solver knows that there are 8 admissible permutations now:
-[(3, 2, 4, 0, 8, 5, 1, 6, 7, 9),
- (3, 5, 2, 0, 9, 8, 1, 6, 7, 4),
- (3, 5, 4, 0, 1, 8, 2, 6, 7, 9),
- (3, 9, 4, 0, 6, 8, 1, 5, 7, 2),
- (6, 2, 4, 0, 8, 9, 1, 5, 7, 3),
- (8, 5, 1, 0, 2, 9, 6, 4, 7, 3),
- (8, 5, 3, 0, 2, 9, 6, 1, 7, 4),
- (9, 3, 4, 0, 8, 5, 1, 2, 7, 6)]
-
-=== On the morning of day 8:
-Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.000 0.000 0.500 0.000 0.000 0.125 0.000 0.250 0.125]
- [0.000 0.000 0.250 0.125 0.000 0.500 0.000 0.000 0.000 0.125]
- [0.000 0.125 0.125 0.125 0.625 0.000 0.000 0.000 0.000 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.125 0.250 0.000 0.000 0.000 0.125 0.000 0.375 0.125]
- [0.000 0.000 0.000 0.000 0.000 0.250 0.000 0.000 0.375 0.375]
- [0.000 0.625 0.125 0.000 0.000 0.000 0.250 0.000 0.000 0.000]
- [0.000 0.125 0.125 0.000 0.125 0.250 0.375 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
- [0.000 0.000 0.125 0.250 0.250 0.000 0.125 0.000 0.000 0.250]]
-The solver chooses the M-test (0, 3).
-The oracle answers 1.
-The solver knows that there are 4 admissible permutations now:
-[(3, 2, 4, 0, 8, 5, 1, 6, 7, 9),
- (3, 5, 2, 0, 9, 8, 1, 6, 7, 4),
- (3, 5, 4, 0, 1, 8, 2, 6, 7, 9),
- (3, 9, 4, 0, 6, 8, 1, 5, 7, 2)]
-
---- On the night of day 8:
-The solver randomly chooses and analyzes 4 admissible permutations:
-The N-test using the admissible permutation [3, 9, 4, 0, 6, 8, 1, 5, 7, 2] has rank -0.8112781244591328.
-...
-The N-test using the admissible permutation [3, 5, 2, 0, 9, 8, 1, 6, 7, 4] has rank -1.5.
-The solver chooses the N-test [3, 5, 2, 0, 9, 8, 1, 6, 7, 4].
-The oracle answers 5.
-The solver knows that there are 2 admissible permutations now:
-[(3, 2, 4, 0, 8, 5, 1, 6, 7, 9), (3, 9, 4, 0, 6, 8, 1, 5, 7, 2)]
-
-=== On the morning of day 9:
-Based on the admissible permutations, the solver knows that these are the couple probabilities:
-[[0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.500 0.000 0.000 0.000 0.000 0.000 0.000 0.500]
- [0.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 0.000 0.000]
- [1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.500 0.000 0.500 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.500 0.000 0.000 0.500 0.000]
- [0.000 1.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.500 0.500 0.000 0.000 0.000]
- [0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.000 0.000 0.000]
- [0.000 0.000 0.500 0.000 0.000 0.000 0.000 0.000 0.000 0.500]]
-The solver chooses the M-test (5, 8).
-The oracle answers 1.
-The solver knows that there is 1 admissible permutation now:
-[(3, 9, 4, 0, 6, 8, 1, 5, 7, 2)]
-
---- On the night of day 9:
-The solver chooses the N-test [3, 9, 4, 0, 6, 8, 1, 5, 7, 2].
+The solver chooses the N-test [2, 9, 3, 5, 7, 8, 4, 1, 6, 0].
 The oracle answers 10.
 The solver has won the game!
 
 === END OF THE GAME ===
 
 
-The solver won game # 1 in 9 days.
-The solver won game # 2 in 5 days.
+The solver won game # 1 in 7 days.
+The solver won game # 2 in 8 days.
 The solver won game # 3 in 7 days.
 The solver won game # 4 in 10 days.
-The solver won game # 5 in 9 days.
-The solver won game # 6 in 8 days.
+The solver won game # 5 in 7 days.
+The solver won game # 6 in 9 days.
 The solver won game # 7 in 7 days.
-The solver won game # 8 in 8 days.
-The solver won game # 9 in 10 days.
-The solver won game # 10 in 7 days.
+The solver won game # 8 in 7 days.
+The solver won game # 9 in 7 days.
+The solver won game # 10 in 10 days.
 
-The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 8.00 days.
+The solver won 10 out of 10 test games, or 100.00% of them. On average, a victory took 7.90 days.
 
-The solver won game # 11 in 8 days.
-The solver won game # 12 in 9 days.
-The solver won game # 13 in 6 days.
-The solver won game # 14 in 7 days.
-The solver won game # 15 in 10 days.
-The solver won game # 16 in 9 days.
-The solver won game # 17 in 9 days.
-The solver won game # 18 in 9 days.
-The solver won game # 19 in 9 days.
-The solver won game # 20 in 7 days.
+The solver won game # 11 in 6 days.
+The solver won game # 12 in 7 days.
+The solver won game # 13 in 9 days.
+The solver won game # 14 in 8 days.
+The solver won game # 15 in 8 days.
+The solver won game # 16 in 7 days.
+The solver won game # 17 in 8 days.
+The solver won game # 18 in 10 days.
+The solver won game # 19 in 8 days.
+The solver won game # 20 in 10 days.
 
-The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 8.15 days.
+The solver won 20 out of 20 test games, or 100.00% of them. On average, a victory took 8.00 days.
 
-The solver won game # 21 in 8 days.
-The solver won game # 22 in 9 days.
+The solver won game # 21 in 10 days.
+The solver won game # 22 in 7 days.
 The solver won game # 23 in 9 days.
-The solver won game # 24 in 8 days.
-The solver won game # 25 in 9 days.
-The solver won game # 26 in 7 days.
-The solver won game # 27 in 10 days.
-The solver won game # 28 in 7 days.
-The solver won game # 29 in 8 days.
-The solver won game # 30 in 7 days.
+The solver won game # 24 in 9 days.
+The solver won game # 25 in 8 days.
+The solver won game # 26 in 8 days.
+The solver won game # 27 in 7 days.
+The solver won game # 28 in 9 days.
+The solver won game # 29 in 9 days.
+The solver won game # 30 in 8 days.
 
-The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 8.17 days.
+The solver won 30 out of 30 test games, or 100.00% of them. On average, a victory took 8.13 days.
 
-The solver won game # 31 in 9 days.
+The solver won game # 31 in 8 days.
 The solver won game # 32 in 8 days.
-The solver won game # 33 in 9 days.
+The solver won game # 33 in 8 days.
 The solver won game # 34 in 7 days.
-The solver won game # 35 in 9 days.
-The solver won game # 36 in 8 days.
-The solver won game # 37 in 7 days.
+The solver won game # 35 in 7 days.
+The solver won game # 36 in 7 days.
+The solver won game # 37 in 9 days.
 The solver won game # 38 in 9 days.
-The solver won game # 39 in 8 days.
-The solver won game # 40 in 8 days.
+The solver won game # 39 in 10 days.
+The solver won game # 40 in 9 days.
 
-The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 8.18 days.
+The solver won 40 out of 40 test games, or 100.00% of them. On average, a victory took 8.15 days.
 
-The solver won game # 41 in 9 days.
-The solver won game # 42 in 9 days.
+The solver won game # 41 in 6 days.
+The solver won game # 42 in 7 days.
 The solver won game # 43 in 8 days.
-The solver won game # 44 in 9 days.
-The solver won game # 45 in 7 days.
-The solver won game # 46 in 10 days.
-The solver won game # 47 in 8 days.
+The solver won game # 44 in 7 days.
+The solver won game # 45 in 9 days.
+The solver won game # 46 in 8 days.
+The solver won game # 47 in 6 days.
 The solver won game # 48 in 7 days.
-The solver won game # 49 in 7 days.
-The solver won game # 50 in 8 days.
+The solver won game # 49 in 9 days.
+The solver won game # 50 in 9 days.
 
-The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 8.18 days.
+The solver won 50 out of 50 test games, or 100.00% of them. On average, a victory took 8.04 days.
 
 The solver won game # 51 in 8 days.
-The solver won game # 52 in 7 days.
-The solver won game # 53 in 10 days.
-The solver won game # 54 in 8 days.
+The solver won game # 52 in 8 days.
+The solver lost game # 53.
+The solver won game # 54 in 7 days.
 The solver won game # 55 in 7 days.
-The solver won game # 56 in 7 days.
+The solver won game # 56 in 8 days.
 The solver won game # 57 in 7 days.
-The solver won game # 58 in 8 days.
-The solver won game # 59 in 7 days.
-The solver won game # 60 in 7 days.
+The solver won game # 58 in 6 days.
+The solver won game # 59 in 6 days.
+The solver won game # 60 in 10 days.
 
-The solver won 60 out of 60 test games, or 100.00% of them. On average, a victory took 8.08 days.
+The solver won 59 out of 60 test games, or 98.33% of them. On average, a victory took 7.95 days.
 
-The solver won game # 61 in 10 days.
-The solver won game # 62 in 7 days.
-The solver won game # 63 in 8 days.
-The solver won game # 64 in 9 days.
+The solver won game # 61 in 7 days.
+The solver won game # 62 in 9 days.
+The solver won game # 63 in 7 days.
+The solver won game # 64 in 8 days.
 The solver won game # 65 in 9 days.
-The solver won game # 66 in 8 days.
+The solver won game # 66 in 7 days.
 The solver won game # 67 in 8 days.
-The solver won game # 68 in 6 days.
-The solver won game # 69 in 7 days.
-The solver won game # 70 in 9 days.
+The solver won game # 68 in 8 days.
+The solver won game # 69 in 9 days.
+The solver won game # 70 in 8 days.
 
-The solver won 70 out of 70 test games, or 100.00% of them. On average, a victory took 8.09 days.
+The solver won 69 out of 70 test games, or 98.57% of them. On average, a victory took 7.96 days.
 
-The solver won game # 71 in 8 days.
+The solver won game # 71 in 10 days.
 The solver won game # 72 in 9 days.
-The solver won game # 73 in 8 days.
-The solver won game # 74 in 7 days.
-The solver won game # 75 in 7 days.
-The solver won game # 76 in 9 days.
+The solver won game # 73 in 10 days.
+The solver won game # 74 in 8 days.
+The solver won game # 75 in 9 days.
+The solver won game # 76 in 10 days.
 The solver won game # 77 in 9 days.
 The solver won game # 78 in 8 days.
-The solver won game # 79 in 9 days.
+The solver won game # 79 in 8 days.
 The solver won game # 80 in 9 days.
 
-The solver won 80 out of 80 test games, or 100.00% of them. On average, a victory took 8.11 days.
+The solver won 79 out of 80 test games, or 98.75% of them. On average, a victory took 8.09 days.
 
-The solver won game # 81 in 8 days.
-The solver won game # 82 in 8 days.
-The solver won game # 83 in 8 days.
+The solver won game # 81 in 9 days.
+The solver lost game # 82.
+The solver won game # 83 in 9 days.
 The solver won game # 84 in 8 days.
 The solver won game # 85 in 8 days.
-The solver won game # 86 in 8 days.
-The solver won game # 87 in 9 days.
-The solver won game # 88 in 8 days.
-The solver won game # 89 in 7 days.
-The solver won game # 90 in 10 days.
+The solver won game # 86 in 9 days.
+The solver won game # 87 in 7 days.
+The solver won game # 88 in 9 days.
+The solver won game # 89 in 9 days.
+The solver won game # 90 in 9 days.
 
-The solver won 90 out of 90 test games, or 100.00% of them. On average, a victory took 8.12 days.
+The solver won 88 out of 90 test games, or 97.78% of them. On average, a victory took 8.14 days.
 
 The solver won game # 91 in 9 days.
-The solver won game # 92 in 8 days.
-The solver won game # 93 in 10 days.
+The solver won game # 92 in 7 days.
+The solver won game # 93 in 9 days.
 The solver won game # 94 in 8 days.
 The solver won game # 95 in 8 days.
-The solver won game # 96 in 10 days.
-The solver won game # 97 in 8 days.
-The solver won game # 98 in 7 days.
-The solver won game # 99 in 9 days.
-The solver won game # 100 in 7 days.
+The solver won game # 96 in 8 days.
+The solver won game # 97 in 7 days.
+The solver won game # 98 in 8 days.
+The solver won game # 99 in 7 days.
+The solver won game # 100 in 8 days.
 
-The solver won 100 out of 100 test games, or 100.00% of them. On average, a victory took 8.15 days.
+The solver won 98 out of 100 test games, or 98.00% of them. On average, a victory took 8.11 days.
 
 Nr. of games won in 1 days: 0
 Nr. of games won in 2 days: 0
 Nr. of games won in 3 days: 0
 Nr. of games won in 4 days: 0
-Nr. of games won in 5 days: 1
-Nr. of games won in 6 days: 2
+Nr. of games won in 5 days: 0
+Nr. of games won in 6 days: 5
 Nr. of games won in 7 days: 26
-Nr. of games won in 8 days: 33
-Nr. of games won in 9 days: 28
+Nr. of games won in 8 days: 30
+Nr. of games won in 9 days: 27
 Nr. of games won in 10 days: 10
+Nr. of games lost: 2
 
-time = 2021-07-12 22:11:39.372063
+time = 2021-07-13 12:05:54.581039
 
 Process finished with exit code 0
