@@ -4,7 +4,7 @@ from game_solver import GameSolver, entropy_delta
 
 
 n_couples = 10  # number of perfect matches alpha-beta to be identified = number of days available
-n_games = 100  # number of games to be played in order to collect stats
+n_games = 1000  # number of games to be played in order to collect stats
 
 
 def play_game(show_process, freqs2rank=None):

@@ -24,14 +24,14 @@ Using just a random sample in point 5. for speed-up works pretty well because, a
 
 However, point 5. could be parallelized in order to assess all possible N-tests.
 
-After testing each variant with 100 games each, the frequency vector-ranking variant seemed slightly superior under both criteria of average winning speed and leaving a "buffer" of in-game days, contrary to expectations, but this could be an artefact of testing with only 100 games and/or of not optimizing over all possible tests.
+Testing each variant with 1000 games each yielded more or less equivalent results, so it was not possible to assess which variant is better. This might be due to the fact that the best-ranking n-test is very often the same under either ranking method, even though it does not necessarily need to be so.
 
 PERFORMANCE STATS
 -----------------
 Both implemented variants of the solver performed more or less equally:
-- Either solver won 100 out of 100 randomly chosen test games, i.e. 100.00% of them.
+- Either solver variant won more than 99% of the test games and lost less than 1% of them.
+- On average over all test games, either solver won in about 8 in-game days.
 - On my MacBook Air with processor 2.2 GHz Dual-Core Intel Core i7, either solver takes about 1 minute on average to solve a game.
-- On average over all test games, either solver won in about 8 in-game days, with the frequency vector-ranking variant doing slighly better.
 For more details, please see the test outputs.
 
 ACKNOWLEDGEMENTS
