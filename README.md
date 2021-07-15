@@ -26,6 +26,8 @@ However, point 5. could be parallelized in order to assess all possible N-tests.
 
 Testing each variant with 1000 games each yielded more or less equivalent results, so it was not possible to assess which variant is better. This might be due to the fact that the best-ranking n-test is very often the same under either ranking method, even though it does not necessarily need to be so.
 
+![chart comparing solution variants](comparison of solution variants.png "comparison of solution variants")
+
 PERFORMANCE STATS
 -----------------
 Both implemented variants of the solver performed more or less equally:
