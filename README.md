@@ -35,7 +35,3 @@ Both implemented variants of the solver performed more or less equally:
 - On average over all test games, either solver won in about 8 in-game days.
 - On my MacBook Air with processor 2.2 GHz Dual-Core Intel Core i7, either solver takes about 1 minute on average to solve a game.
 For more details, please see the test outputs.
-
-ACKNOWLEDGEMENTS
-----------------
-Many thanks to Daniel Ronde for acquainting me with this problem.
