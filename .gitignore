@@ -1,0 +1,46 @@
+# Ignore the PyCharm specific files and directories
+.idea/
+*.iml
+.idea/workspace.xml
+.idea/**
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+.venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore other common development environment files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+
+# Ignore mypy cache
+.mypy_cache/
+
+# Ignore other common Python-related files
+*.env
+*.pytest_cache/
