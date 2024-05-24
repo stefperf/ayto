@@ -28,7 +28,7 @@ class GameSolver:
     Try to solve the information theory game underlying "Are You the One?", 1st season's rules.
     See project's README.md for more info on the algorithm used.
     """
-    def __init__(self, n, freqs2rank=None, max_permutations_show=24, max_optimize=1e7, min_optimize=1, show_optimization=False):
+    def __init__(self, n, freqs2rank=None, max_permutations_show=24, show_optimization=False):
         """
         init
         :param n: nr. of couples
@@ -42,40 +42,53 @@ class GameSolver:
         :param show_optimization: True if the internal "reasoning" must be shown, else False
         """
         self.n = n
-        self.freqs2rank = freqs2rank if freqs2rank else lambda freqs, n_total: sorted(freqs, reverse=True)
+        self._freqs2rank = freqs2rank if freqs2rank else lambda freqs, n_total: sorted(freqs, reverse=True)
         self.alphas = list(range(n))
         self.betas = self.alphas
-        self.admissible_permutations = set(itertools.permutations(self.betas))
-        self.n_admissible_permutations = len(self.admissible_permutations)
         self.max_admissible_permutations = int(math.factorial(self.n))
-        self.max_permutations_show = max_permutations_show
-        self.max_optimize = max_optimize
-        self.min_optimize = min_optimize
-        self.show_optimization = show_optimization
+        self._initial_admissible_permutation_list = list(itertools.permutations(self.betas))
+        self._sets_by_couple = self.init_sets_by_couple(self.n, self._initial_admissible_permutation_list)
+        self._admissible_permutation_index_set = set(range(self.max_admissible_permutations))
+        self._n_admissible_permutations = self.max_admissible_permutations
+        self._max_permutations_show = max_permutations_show
+        self._show_optimization = show_optimization
         self._couple_probabilities = np.ones((n, n)) / n
         self._day = 0
         self._time = 0  # 0 = morning, 1 = night
         self._moment = 0  # 0 = before testing, 1 = after testing
-        # calculating upper bounds
-        self.m_test_rank_ubound = self.freqs2rank(
-            np.array([self.max_admissible_permutations, 0]),
-            self.max_admissible_permutations
-        )
-        self.n_test_rank_ubound = self.freqs2rank(
+        self._abs_tol = 1e-6  # tolerance for comparing floats
+        # upper bounds of test rankings
+        self._m_test_rank_ubound = 0.5
+        self._n_test_rank_ubound = self._freqs2rank(
             np.array([self.max_admissible_permutations] + [0] * (n)),
             self.max_admissible_permutations
         )
+        # thresholds chosen by trial and error
+        self._n_test_choice_method_higher_threshold = int(10 * self.max_admissible_permutations ** 0.5)
+        self._n_test_choice_method_lower_threshold = int(0.1 * self.max_admissible_permutations ** 0.5)
+        self._max_comparison_nr = self._n_test_choice_method_lower_threshold ** 2
+
+    @staticmethod
+    def init_sets_by_couple(n, permutation_list):
+        sets_by_couple = {
+            (row, col): set()
+            for row in range(n) for col in range(n)
+        }
+        for iap_ix, iap in enumerate(permutation_list):
+            for row, col in enumerate(iap):
+                sets_by_couple[(row, col)].add(iap_ix)
+        return sets_by_couple
 
     def get_couple_probabilities(self):
         """
         return all couple probabilities computed from the still admissible permutations
         """
-        couple_probabilities = np.zeros((self.n, self.n), dtype=float)
-        incr = 1. / len(self.admissible_permutations)
-        for ap in self.admissible_permutations:
+        couple_frequencies = np.zeros((self.n, self.n), dtype=float)
+        for api in self._admissible_permutation_index_set:
+            ap = self._initial_admissible_permutation_list[api]
             for alpha, beta in enumerate(ap):
-                couple_probabilities[alpha, beta] += incr
-        return couple_probabilities
+                couple_frequencies[alpha, beta] += 1
+        return couple_frequencies / len(self._admissible_permutation_index_set)
 
     def choose_m_test(self):
         """
@@ -83,23 +96,12 @@ class GameSolver:
         """
         assert self._day < self.n and self._time == 0 and self._moment == 0
         self._moment = 1
-        if self.n_admissible_permutations == self.max_admissible_permutations:
+        if self._n_admissible_permutations == self.max_admissible_permutations:
             return random.randrange(self.n), random.randrange(self.n)
-        self._couple_probabilities = self.get_couple_probabilities()  # recalculate just in time as they become needed
-        min_rank = self.m_test_rank_ubound
-        candidate_tests = []
-        for r in range(self.n):
-            for c in range(self.n):
-                prob = self._couple_probabilities[r, c]
-                rank = self.freqs2rank(np.array([prob, 1. - prob]), 1.)
-                if rank < min_rank:
-                    candidate_tests = [(r, c)]
-                    min_rank = rank
-                elif rank == min_rank:
-                    candidate_tests.append((r, c))
-        if self.show_optimization:
+        self._couple_probabilities = self.get_couple_probabilities()  # refresh just in time as needed
+        if self._show_optimization:
             self.print_couple_stats()
-        return random.choice(candidate_tests)
+        return self.choose_best_couple()
 
     def assess_m_test(self, alpha, beta, result):
         """
@@ -108,12 +110,13 @@ class GameSolver:
         assert self._day < self.n and self._time == 0 and self._moment == 1
         self._time = 1
         self._moment = 0
-        for permutation in list(self.admissible_permutations):
+        for permutation_index in tuple(self._admissible_permutation_index_set):
+            permutation = self._initial_admissible_permutation_list[permutation_index]
             if (1 if permutation[alpha] == beta else 0) != result:
-                self.admissible_permutations.remove(permutation)
-        self.n_admissible_permutations = len(self.admissible_permutations)
+                self._admissible_permutation_index_set.remove(permutation_index)
+        self._n_admissible_permutations = len(self._admissible_permutation_index_set)
         self._couple_probabilities = None  # delete the no longer valid couple probabilities
-        if self.show_optimization:
+        if self._show_optimization:
             self.print_admissible_permutations()
 
     def choose_n_test(self):
@@ -122,48 +125,108 @@ class GameSolver:
         """
         assert self._day < self.n and self._time == 1 and self._moment == 0
         self._moment = 1
-        nr_analyzed_permutations = min(
-            max(
-                self.min_optimize,
-                int(self.max_optimize // (self.n * self.n_admissible_permutations))
-            ),
-            self.n_admissible_permutations
-        )
-        if nr_analyzed_permutations == 1:
-            return random.choice(list(self.admissible_permutations))
-        elif self.n_admissible_permutations > nr_analyzed_permutations:
-            candidate_permutations = random.sample(tuple(self.admissible_permutations), nr_analyzed_permutations)
+        if self._n_admissible_permutations > self._n_test_choice_method_higher_threshold:
+            return self.choose_good_permutation()
         else:
-            candidate_permutations = self.admissible_permutations
-        candidate_permutations = {cp: None for cp in candidate_permutations}
-        min_rank = self.n_test_rank_ubound
+            testable_permutation_index_set = self._admissible_permutation_index_set
+            good_permutation = self.choose_good_permutation()
+            for row, col in enumerate(good_permutation):
+                smaller_set = testable_permutation_index_set.intersection(self._sets_by_couple[(row, col)])
+                if len(smaller_set) > 0:
+                    testable_permutation_index_set = smaller_set
+                if len(smaller_set) <= self._n_test_choice_method_lower_threshold:
+                    break
+            candidates_nr = len(testable_permutation_index_set)
+            admissible_permuntations_nr = len(self._admissible_permutation_index_set)
+            all_comparisons_nr = candidates_nr * admissible_permuntations_nr
+            candidate_permutation_index_set = \
+                testable_permutation_index_set if all_comparisons_nr <= self._max_comparison_nr else \
+                random.sample(
+                    list(testable_permutation_index_set),
+                    min(candidates_nr, self._max_comparison_nr // admissible_permuntations_nr)
+                )
+            candidate_permutation_indexes_with_ranks = {cpi: -1 for cpi in candidate_permutation_index_set}
+            min_rank = self._n_test_rank_ubound
+            candidate_tests = []
+            initial_frequencies = np.zeros((self.n + 1), dtype=int)
+            for candidate_permutation_index in candidate_permutation_indexes_with_ranks:
+                candidate_permutation = self._initial_admissible_permutation_list[candidate_permutation_index]
+                test_frequencies = initial_frequencies.copy()
+                for api in self._admissible_permutation_index_set:
+                    ap = self._initial_admissible_permutation_list[api]
+                    nr_overlaps = 0
+                    for c, a in zip(ap, candidate_permutation):
+                        if c == a:
+                            nr_overlaps += 1
+                    test_frequencies[nr_overlaps] += 1
+                rank = self._freqs2rank(test_frequencies, self._n_admissible_permutations)
+                candidate_permutation_indexes_with_ranks[candidate_permutation_index] = rank
+                if rank < min_rank:
+                    candidate_tests = [candidate_permutation]
+                    min_rank = rank
+                elif rank == min_rank:
+                    candidate_tests.append(candidate_permutation)
+            if self._show_optimization:
+                print(f'The solver analyzes all the {len(candidate_permutation_indexes_with_ranks)} '
+                      f'admissible permutation{"s" if len(candidate_permutation_indexes_with_ranks) > 1 else ""}:')
+                sorted_candidate_indexes = sorted(candidate_permutation_indexes_with_ranks.items(), key=lambda x: x[1])
+                worst_candidate = self._initial_admissible_permutation_list[sorted_candidate_indexes[-1][0]]
+                worst_candidate_rank = sorted_candidate_indexes[-1][1]
+                best_candidate = self._initial_admissible_permutation_list[sorted_candidate_indexes[0][0]]
+                best_candidate_rank = sorted_candidate_indexes[0][1]
+                print(f'The N-test using the admissible permutation {list(worst_candidate)} '
+                          f'has rank {worst_candidate_rank}.')
+                if len(candidate_permutation_indexes_with_ranks) > 1:
+                    print('...')
+                    print(f'The N-test using the admissible permutation {list(best_candidate)} '
+                          f'has rank {best_candidate_rank}.')
+            return random.choice(candidate_tests)
+
+    def choose_good_permutation(self):
+        """
+        choose a good permutation by greedily choose each optimal couple one after the other, ignoring covariances
+        """
+        self._couple_probabilities = self.get_couple_probabilities()  # refresh just in time as needed
+        ranked_couples = sorted([
+            (row, col, abs(self._couple_probabilities[row, col] - 0.5))
+            for row in range(self.n) for col in range(self.n)
+        ], key=lambda triplet: triplet[2])
+        chosen_permutation = [-1] * self.n
+        found_couples_count = 0
+        used_rows, used_cols = set(), set()
+        for row, col, rank in ranked_couples:
+            if row in used_rows or col in used_cols:
+                continue
+            else:
+                chosen_permutation[row] = col
+                used_rows.add(row)
+                used_cols.add(col)
+                found_couples_count += 1
+                if found_couples_count == self.n:
+                    break
+        return tuple(chosen_permutation)
+
+    def choose_best_couple(self, excluded_rows=None, excluded_cols=None):
+        """
+        choose the optimal couple in terms of information discovery, excluding the given rows and columns
+        """
+        excluded_rows = excluded_rows or set()
+        excluded_cols = excluded_cols or set()
+        min_rank = self._m_test_rank_ubound
         candidate_tests = []
-        initial_frequencies = np.zeros((self.n + 1), dtype=int)
-        for candidate_permutation in candidate_permutations:
-            test_frequencies = initial_frequencies.copy()
-            for ap in self.admissible_permutations:
-                nr_overlaps = 0
-                for c, a in zip(ap, candidate_permutation):
-                    if c == a:
-                        nr_overlaps += 1
-                test_frequencies[nr_overlaps] += 1
-            rank = self.freqs2rank(test_frequencies, self.n_admissible_permutations)
-            candidate_permutations[candidate_permutation] = rank
-            if rank < min_rank:
-                candidate_tests = [candidate_permutation]
-                min_rank = rank
-            elif rank == min_rank:
-                candidate_tests.append(candidate_permutation)
-        if self.show_optimization:
-            print(f'The solver randomly chooses and analyzes {len(candidate_permutations)} '
-                  f'admissible permutation{"s" if len(candidate_permutations) > 1 else ""}:')
-            sorted_candidates = sorted(candidate_permutations.items(), key=lambda x: x[1])
-            print(f'The N-test using the admissible permutation {list(sorted_candidates[-1][0])} '
-                      f'has rank {sorted_candidates[-1][1]}.')
-            if len(candidate_permutations) > 1:
-                print('...')
-                print(f'The N-test using the admissible permutation {list(sorted_candidates[0][0])} '
-                      f'has rank {sorted_candidates[0][1]}.')
+        for r in range(self.n):
+            if r in excluded_rows:
+                continue
+            for c in range(self.n):
+                if c in excluded_cols:
+                    continue
+                prob = self._couple_probabilities[r, c]
+                rank = abs(prob - 0.5)
+                if rank < min_rank:
+                    candidate_tests = [(r, c)]
+                    min_rank = rank
+                elif math.isclose(rank, min_rank, abs_tol=self._abs_tol):
+                    candidate_tests.append((r, c))
         return random.choice(candidate_tests)
 
     def assess_n_test(self, betas, result):
@@ -174,25 +237,29 @@ class GameSolver:
         self._day += 1
         self._time = 0
         self._moment = 0
-        for permutation in list(self.admissible_permutations):
+        for permutation_index in list(self._admissible_permutation_index_set):
+            permutation = self._initial_admissible_permutation_list[permutation_index]
             if sum([1 if b == p else 0 for b, p in zip(betas, permutation)]) != result:
-                self.admissible_permutations.remove(permutation)
-        self.n_admissible_permutations = len(self.admissible_permutations)
-        if self.show_optimization:
+                self._admissible_permutation_index_set.remove(permutation_index)
+        self._n_admissible_permutations = len(self._admissible_permutation_index_set)
+        if self._show_optimization:
             self.print_admissible_permutations()
 
     def print_admissible_permutations(self):
         """
         print all still admissible permutations, or just their number if they are more than self.max_permutations_show
         """
-        message = f'The solver knows that there {"are" if self.n_admissible_permutations > 1 else "is"} ' + \
-                  f'{self.n_admissible_permutations} ' + \
-                  f'admissible permutation{"s" if self.n_admissible_permutations > 1 else ""} now'
-        if self.n_admissible_permutations > self.max_permutations_show:
+        message = f'The solver knows that there {"are" if self._n_admissible_permutations > 1 else "is"} ' + \
+                  f'{self._n_admissible_permutations} ' + \
+                  f'admissible permutation{"s" if self._n_admissible_permutations > 1 else ""} now'
+        if self._n_admissible_permutations > self._max_permutations_show:
             print(message + '.')
         else:
             print(message + ':')
-            pprint(sorted(self.admissible_permutations))
+            pprint(
+                sorted(self._initial_admissible_permutation_list[api]
+                       for api in self._admissible_permutation_index_set)
+            )
 
     def print_couple_stats(self):
         """
@@ -201,4 +268,3 @@ class GameSolver:
         if self._couple_probabilities is not None:
             print('Based on the admissible permutations, the solver knows that these are the couple probabilities:')
             print(self._couple_probabilities)
-

@@ -15,24 +15,23 @@ def play_game(show_process, freqs2rank=None):
     :return: (was the game won?: boolean, nr. of days elapsed)
     """
     oracle = GameOracle(n_couples)
-    solver = GameSolver(n_couples, freqs2rank=freqs2rank, show_optimization=show_process)
     if show_process:
         print()
         print('=== START OF THE GAME ===')
         print('The oracle has randomly chosen this solution:')
         print(list(oracle.betas))
         print(f'The solver has {n_couples} days to guess it.')
-        solver.print_admissible_permutations()
-        solver.print_couple_stats()
+    solver = GameSolver(n_couples, freqs2rank=freqs2rank, show_optimization=show_process)
     
     game_won = False
     for day in range(n_couples):
-    
+
+        (alpha, beta) = solver.choose_m_test()
         if show_process:
             print()
             print(f'=== On the morning of day {day + 1}:')
-        (alpha, beta) = solver.choose_m_test()
-        if show_process:
+            solver.print_admissible_permutations()
+            solver.print_couple_stats()
             print(f'The solver chooses the M-test ({alpha}, {beta}).')
         m_test_result = oracle.m_test(alpha, beta)
         if show_process:
@@ -42,6 +41,8 @@ def play_game(show_process, freqs2rank=None):
         if show_process:
             print()
             print(f'--- On the night of day {day + 1}:')
+            solver.print_admissible_permutations()
+            solver.print_couple_stats()
         betas = solver.choose_n_test()
         if show_process:
             print(f'The solver chooses the N-test {list(betas)}.')
@@ -105,7 +106,8 @@ if __name__ == '__main__':
     print(f'--- Ranking possible tests by descending test frequencies ---')
     collect_stats(n_games=n_games, freqs2rank=None)
     print(f'time = {datetime.now()}')
-    print('=' * 120)
-    print(f'--- Ranking possible tests by entropy ---')
-    collect_stats(n_games=n_games, freqs2rank=entropy_delta)
-    print(f'time = {datetime.now()}')
+    # # no longer using entropy as a scoring function!
+    # print('=' * 120)
+    # print(f'--- Ranking possible tests by entropy ---')
+    # collect_stats(n_games=n_games, freqs2rank=entropy_delta)
+    # print(f'time = {datetime.now()}')
