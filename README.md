@@ -4,7 +4,6 @@ SUMMARY
 -------
 - Solving the mathematical problem underlying the reality show ["Are You the One?"](https://en.wikipedia.org/wiki/Are_You_the_One%3F), 1st season's rules.
 - Mathematical problem: 20 "contestants", 10 male and 10 female, have 10 days to pair up in 10 "perfect" mixed-sex couples, as chosen secretly by the game oracle at the start. Every morning, they can test the correctness of one single couple, with the oracle replying truthfully. Every evening, they can test the correctness of 10 mixed-sex couples at the same time, with the oracle telling them truthfully how many perfect matches they got right. What algorithm is best for deducing the solution 1. with the highest winning probability, 2. with the lowest number of guesses, 3. computing fastest?
-- Developed with Python 3.9.1.
 
 ALGORITHM (AND VARIANTS)
 ------------------------
